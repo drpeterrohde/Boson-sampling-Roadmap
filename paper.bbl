@@ -1,5 +1,5 @@
 \providecommand{\noopsort}[1]{}\providecommand{\singleletter}[1]{#1}%
-\begin{thebibliography}{85}
+\begin{thebibliography}{89}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -307,6 +307,19 @@
   \bibinfo{journal}{Phys. Rev. A} \textbf{\bibinfo{volume}{93}},
   \bibinfo{pages}{012335} (\bibinfo{year}{2016}).
 
+\bibitem[{\citenamefont{Motes et~al.}(2013)\citenamefont{Motes, Dowling, and
+  Rohde}}]{bib:34}
+\bibinfo{author}{\bibfnamefont{K.~R.} \bibnamefont{Motes}},
+  \bibinfo{author}{\bibfnamefont{J.~P.} \bibnamefont{Dowling}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{P.~P.} \bibnamefont{Rohde}},
+  \bibinfo{journal}{Phys. Rev. A} \textbf{\bibinfo{volume}{88}},
+  \bibinfo{pages}{063822} (\bibinfo{year}{2013}).
+
+\bibitem[{\citenamefont{Aaronson}(2013)}]{bib:35}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Aaronson}},
+  \bibinfo{journal}{http://www.scottaaronson.com/blog/?p= 1579}
+  (\bibinfo{year}{2013}).
+
 \bibitem[{\citenamefont{Lund et~al.}(2014)\citenamefont{Lund, Laing,
   Rahimi-Keshari, Rudolph, O¡¯Brien, and Ralph}}]{bib:36}
 \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Lund}},
@@ -317,6 +330,27 @@
   \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Ralph}},
   \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{113}},
   \bibinfo{pages}{100502} (\bibinfo{year}{2014}).
+
+\bibitem[{\citenamefont{Bentivegna et~al.}(2015)\citenamefont{Bentivegna,
+  Spagnolo, Vitelli, Flamini, Viggianiello, Latmiral, Mataloni, Brod,
+  Galv{\~a}o, Crespi et~al.}}]{bib:38}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Bentivegna}},
+  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Spagnolo}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Vitelli}},
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Flamini}},
+  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Viggianiello}},
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Latmiral}},
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Mataloni}},
+  \bibinfo{author}{\bibfnamefont{D.~J.} \bibnamefont{Brod}},
+  \bibinfo{author}{\bibfnamefont{E.~F.} \bibnamefont{Galv{\~a}o}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Crespi}},
+  \bibnamefont{et~al.}, \bibinfo{journal}{Science advances}
+  \textbf{\bibinfo{volume}{1}}, \bibinfo{pages}{e1400255}
+  (\bibinfo{year}{2015}).
+
+\bibitem[{\citenamefont{Latmiral}(2015)}]{bib:37}
+\bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Latmiral}},
+  \bibinfo{journal}{arXiv:1511.08161}  (\bibinfo{year}{2015}).
 
 \bibitem[{\citenamefont{Zhang et~al.}(2015)\citenamefont{Zhang, Huang, Wang,
   Liu, Li, and Guo}}]{bib:39}

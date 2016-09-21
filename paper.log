@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.6)  22 SEP 2016 06:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.6)  22 SEP 2016 07:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -317,23 +317,23 @@ File: dvipsnam.def 2014/10/14 v3.0j Driver-dependent file (DPC,SPQR)
 (./paper.aux)
 \openout1 = `paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-Class revtex4 Info: Patching LaTeX tabular. on input line 14.
-Class revtex4 Info: cite was not loaded (OK!) on input line 14.
-Class revtex4 Info: multicol was not loaded (OK!) on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+Class revtex4 Info: Patching LaTeX tabular. on input line 19.
+Class revtex4 Info: cite was not loaded (OK!) on input line 19.
+Class revtex4 Info: multicol was not loaded (OK!) on input line 19.
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -369,7 +369,7 @@ e
 Package hyperref Warning: Height of page (\paperheight) is invalid (0.0pt),
 (hyperref)                using 11in.
 
-Package hyperref Info: Link coloring ON on input line 14.
+Package hyperref Info: Link coloring ON on input line 19.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -378,25 +378,25 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count122
 )
-LaTeX Info: Redefining \ref on input line 14.
-LaTeX Info: Redefining \pageref on input line 14.
-LaTeX Info: Redefining \nameref on input line 14.
+LaTeX Info: Redefining \ref on input line 19.
+LaTeX Info: Redefining \pageref on input line 19.
+LaTeX Info: Redefining \nameref on input line 19.
 
 (./paper.out) (./paper.out)
 \@outlinefile=\write3
 \openout3 = `paper.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 46.
+LaTeX Font Info:    Try loading font information for U+msa on input line 51.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 46.
+LaTeX Font Info:    Try loading font information for U+msb on input line 51.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 46.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 51.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -405,33 +405,28 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 Class revtex4 Warning: Assuming \noaffiliation for Authors after me.
 
 (./paper.toc
-Overfull \hbox (3.50012pt too wide) detected at line 16
- \OT1/cmr/m/n/8 10
- []
-
-
 Overfull \hbox (3.50012pt too wide) detected at line 17
- \OT1/cmr/m/n/8 10
+ \OT1/cmr/m/n/8 11
  []
 
 
 Overfull \hbox (3.50012pt too wide) detected at line 18
- \OT1/cmr/m/n/8 10
+ \OT1/cmr/m/n/8 11
  []
 
 
 Overfull \hbox (3.50012pt too wide) detected at line 19
- \OT1/cmr/m/n/8 11
+ \OT1/cmr/m/n/8 12
  []
 
 
 Overfull \hbox (3.50012pt too wide) detected at line 20
- \OT1/cmr/m/n/8 11
+ \OT1/cmr/m/n/8 12
  []
 
 
 Overfull \hbox (3.50012pt too wide) detected at line 21
- \OT1/cmr/m/n/8 11
+ \OT1/cmr/m/n/8 12
  []
 
 
@@ -441,62 +436,67 @@ Overfull \hbox (3.50012pt too wide) detected at line 22
 
 
 Overfull \hbox (3.50012pt too wide) detected at line 23
- \OT1/cmr/m/n/8 12
+ \OT1/cmr/m/n/8 13
  []
 
 
 Overfull \hbox (3.50012pt too wide) detected at line 24
- \OT1/cmr/m/n/8 12
+ \OT1/cmr/m/n/8 13
  []
 
 
 Overfull \hbox (3.50012pt too wide) detected at line 25
- \OT1/cmr/m/n/8 13
+ \OT1/cmr/m/n/8 14
  []
 
 
 Overfull \hbox (3.50012pt too wide) detected at line 26
- \OT1/cmr/m/n/8 13
+ \OT1/cmr/m/n/8 14
  []
 
 
 Overfull \hbox (3.50012pt too wide) detected at line 27
- \OT1/cmr/m/n/8 13
+ \OT1/cmr/m/n/8 14
  []
 
 
 Overfull \hbox (3.50012pt too wide) detected at line 28
- \OT1/cmr/m/n/8 13
+ \OT1/cmr/m/n/8 14
  []
 
 
 Overfull \hbox (3.50012pt too wide) detected at line 29
- \OT1/cmr/m/n/8 13
+ \OT1/cmr/m/n/8 14
  []
 
 
 Overfull \hbox (3.50012pt too wide) detected at line 30
- \OT1/cmr/m/n/8 14
+ \OT1/cmr/m/n/8 15
  []
 
 
 Overfull \hbox (3.50012pt too wide) detected at line 31
- \OT1/cmr/m/n/8 14
+ \OT1/cmr/m/n/8 15
  []
 
 
-Overfull \hbox (3.50012pt too wide) detected at line 33
- \OT1/cmr/m/n/8 14
+Overfull \hbox (3.50012pt too wide) detected at line 32
+ \OT1/cmr/m/n/8 16
  []
 
 
 Overfull \hbox (3.50012pt too wide) detected at line 34
- \OT1/cmr/m/n/8 14
+ \OT1/cmr/m/n/8 16
  []
 
 
 Overfull \hbox (3.50012pt too wide) detected at line 35
- \OT1/cmr/m/n/8 14
+ \OT1/cmr/m/n/8 16
+ []
+
+
+Overfull \hbox (3.50012pt too wide) detected at line 36
+ \OT1/cmr/m/n/8 16
  []
 
 )
@@ -504,167 +504,156 @@ Overfull \hbox (3.50012pt too wide) detected at line 35
 \openout4 = `paper.toc'.
 
  [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<model.pdf, id=218, 321.2pt x 152.57pt>
+<model.pdf, id=223, 321.2pt x 152.57pt>
 File: model.pdf Graphic file (type pdf)
  <use model.pdf>
-Package pdftex.def Info: model.pdf used on input line 64.
+Package pdftex.def Info: model.pdf used on input line 69.
 (pdftex.def)             Requested size: 246.0pt x 116.85301pt.
+ [2 <./model.pdf>]
+
+Package natbib Warning: Citation `???' on page 3 undefined on input line 101.
 
 
-Package natbib Warning: Citation `???' on page 2 undefined on input line 96.
+Package natbib Warning: Citation `???' on page 3 undefined on input line 113.
 
-[2 <./model.pdf>]
-
-Package natbib Warning: Citation `???' on page 3 undefined on input line 108.
-
-<curves_1.pdf, id=279, 371.3875pt x 181.67876pt>
+<curves_1.pdf, id=280, 371.3875pt x 181.67876pt>
 File: curves_1.pdf Graphic file (type pdf)
  <use curves_1.pdf>
-Package pdftex.def Info: curves_1.pdf used on input line 121.
+Package pdftex.def Info: curves_1.pdf used on input line 126.
 (pdftex.def)             Requested size: 246.0pt x 120.34357pt.
  [3]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 128.
+ on input line 131.
 
-<space_encoding.pdf, id=296, 454.69875pt x 99.37125pt>
+<space_encoding.pdf, id=301, 454.69875pt x 99.37125pt>
 File: space_encoding.pdf Graphic file (type pdf)
 
 <use space_encoding.pdf>
-Package pdftex.def Info: space_encoding.pdf used on input line 138.
+Package pdftex.def Info: space_encoding.pdf used on input line 143.
 (pdftex.def)             Requested size: 246.0pt x 53.76277pt.
- <loop_arch.pdf, id=313, 253.94875pt x 148.555pt>
+ <loop_arch.pdf, id=318, 253.94875pt x 148.555pt>
 File: loop_arch.pdf Graphic file (type pdf)
 
 <use loop_arch.pdf>
-Package pdftex.def Info: loop_arch.pdf used on input line 149.
+Package pdftex.def Info: loop_arch.pdf used on input line 154.
 (pdftex.def)             Requested size: 246.0pt x 143.91002pt.
  [4 <./curves_1.pdf> <./space_encoding.pdf>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 154.
+ on input line 159.
 
-<curves_2.pdf, id=347, 342.27875pt x 169.63374pt>
+<curves_2.pdf, id=352, 342.27875pt x 169.63374pt>
 File: curves_2.pdf Graphic file (type pdf)
  <use curves_2.pdf>
-Package pdftex.def Info: curves_2.pdf used on input line 168.
+Package pdftex.def Info: curves_2.pdf used on input line 173.
 (pdftex.def)             Requested size: 246.0pt x 121.92136pt.
 
-<microwave.pdf, id=353, 240.9pt x 153.57375pt>
+<microwave.pdf, id=358, 240.9pt x 153.57375pt>
 File: microwave.pdf Graphic file (type pdf)
  <use microwave.pdf>
-Package pdftex.def Info: microwave.pdf used on input line 177.
+Package pdftex.def Info: microwave.pdf used on input line 182.
 (pdftex.def)             Requested size: 246.0pt x 156.8306pt.
  [5 <./loop_arch.pdf> <./curves_2.pdf>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 182.
+ on input line 187.
 
-[6 <./microwave.pdf>] <curves_loss.pdf, id=472, 352.31625pt x 173.64874pt>
+[6 <./microwave.pdf>] <curves_loss.pdf, id=477, 352.31625pt x 173.64874pt>
 File: curves_loss.pdf Graphic file (type pdf)
 
 <use curves_loss.pdf>
-Package pdftex.def Info: curves_loss.pdf used on input line 216.
+Package pdftex.def Info: curves_loss.pdf used on input line 221.
 (pdftex.def)             Requested size: 246.0pt x 121.24857pt.
-
-
-Package natbib Warning: Citation `bib:34' on page 7 undefined on input line 224
-.
-
-
-Package natbib Warning: Citation `bib:35' on page 7 undefined on input line 224
-.
-
-
-Package natbib Warning: Citation `bib:35' on page 7 undefined on input line 224
-.
-
-
-Package natbib Warning: Citation `bib:38' on page 7 undefined on input line 224
-.
-
-<scattershot_model.pdf, id=480, 336.25626pt x 148.555pt>
+ <scattershot_model.pdf, id=493, 336.25626pt x 148.555pt>
 File: scattershot_model.pdf Graphic file (type pdf)
 
 <use scattershot_model.pdf>
-Package pdftex.def Info: scattershot_model.pdf used on input line 227.
+Package pdftex.def Info: scattershot_model.pdf used on input line 234.
 (pdftex.def)             Requested size: 246.0pt x 108.68225pt.
-
-
-Package natbib Warning: Citation `bib:37' on page 7 undefined on input line 250
-.
-
-[7 <./curves_loss.pdf> <./scattershot_model.pdf>]
-
-LaTeX Warning: Reference `curves_1' on page 8 undefined on input line 252.
-
-<curve_scattershot.pdf, id=523, 173.64874pt x 172.645pt>
+ [7 <./curves_loss.pdf> <./scattershot_model.pdf>]
+<curve_scattershot.pdf, id=541, 173.64874pt x 172.645pt>
 File: curve_scattershot.pdf Graphic file (type pdf)
 
 <use curve_scattershot.pdf>
-Package pdftex.def Info: curve_scattershot.pdf used on input line 255.
+Package pdftex.def Info: curve_scattershot.pdf used on input line 264.
 (pdftex.def)             Requested size: 123.0pt x 122.29428pt.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 271.
 
+Underfull \hbox (badness 1137) in paragraph at lines 276--277
+[]\OT1/cmr/m/n/10 When the de-tec-tors are per-fect but non-number-
+ []
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
+[8 <./curve_scattershot.pdf>] <SBS_pair_gen.pdf, id=568, 240.9pt x 152.57pt>
+File: SBS_pair_gen.pdf Graphic file (type pdf)
+
+<use SBS_pair_gen.pdf>
+Package pdftex.def Info: SBS_pair_gen.pdf used on input line 291.
+(pdftex.def)             Requested size: 246.0pt x 155.80557pt.
+ <SBS_eff.pdf, id=569, 391.4625pt x 261.97874pt>
+File: SBS_eff.pdf Graphic file (type pdf)
+
+<use SBS_eff.pdf>
+Package pdftex.def Info: SBS_eff.pdf used on input line 296.
+(pdftex.def)             Requested size: 246.0pt x 164.63174pt.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 306.
+
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 271.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 306.
 
-Underfull \hbox (badness 1331) in paragraph at lines 271--272
+Underfull \hbox (badness 1331) in paragraph at lines 306--307
  []\OT1/cmr/m/n/10 Source time-jitter: This is caused by clas-si-cal
  []
 
-
-Underfull \hbox (badness 1694) in paragraph at lines 273--274
+[9 <./SBS_pair_gen.pdf> <./SBS_eff.pdf>]
+Underfull \hbox (badness 1694) in paragraph at lines 308--309
  \OT1/cmr/m/n/10 pletely dis-tin-guish-able pho-tons, boson-samplers
  []
 
 
-Package natbib Warning: Citation `bib:RohdeMauerer' on page 8 undefined on inpu
-t line 276.
+Package natbib Warning: Citation `bib:RohdeMauerer' on page 10 undefined on inp
+ut line 311.
 
-[8 <./curve_scattershot.pdf>] <fidelity.pdf, id=542, 361.35pt x 380.42125pt>
+<fidelity.pdf, id=598, 361.35pt x 380.42125pt>
 File: fidelity.pdf Graphic file (type pdf)
-
-<use fidelity.pdf>
-Package pdftex.def Info: fidelity.pdf used on input line 333.
+ <use fidelity.pdf>
+Package pdftex.def Info: fidelity.pdf used on input line 368.
 (pdftex.def)             Requested size: 246.0pt x 258.98486pt.
- [9 <./fidelity.pdf>]
+ [10]
 
-Package natbib Warning: Citation `bib:MotesScal' on page 10 undefined on input 
-line 343.
+Package natbib Warning: Citation `bib:MotesScal' on page 11 undefined on input 
+line 378.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 353--354
+Underfull \hbox (badness 10000) in paragraph at lines 388--389
 \OT1/cmr/m/n/10 Additionally, so-called quasi-phase-matching in a
  []
 
-[10] [11]
+[11 <./fidelity.pdf>] [12]
 Missing character: There is no × in font cmr10!
 
-Underfull \hbox (badness 1721) in paragraph at lines 409--410
+Underfull \hbox (badness 1721) in paragraph at lines 444--445
 []\OT1/cmr/m/n/10 Due to the ultra-low loss of sin-gle mode fi-bres
  []
 
 
-Underfull \hbox (badness 1728) in paragraph at lines 413--414
+Underfull \hbox (badness 1728) in paragraph at lines 448--449
 []\OT1/cmr/m/n/10 As men-tioned above, dis-crete bulk-optics cir-cuits
  []
 
-[12]
-Underfull \hbox (badness 1831) in paragraph at lines 435--436
+[13] [14]
+Underfull \hbox (badness 1831) in paragraph at lines 470--471
 []\OT1/cmr/m/n/10 Titanium su-per-con-duct-ing tran-si-tion edge sen-sors
  []
 
-[13]
-Underfull \hbox (badness 3386) in paragraph at lines 449--450
+
+Underfull \hbox (badness 3386) in paragraph at lines 484--485
 []\OT1/cmr/m/n/10 The anal-y-sis pre-sented here pro-vides an ini-tial
  []
 
-(./paper.bbl [14]
+[15] (./paper.bbl
 Underfull \hbox (badness 1895) in paragraph at lines 138--150
  \OT1/cmr/m/n/9 S. Un-sle-ber, C. Chen, H. Wang, Y.-M. He, et al.,
  []
@@ -677,36 +666,36 @@ Underfull \hbox (badness 1412) in paragraph at lines 224--237
 Missing character: There is no ¡ in font cmr9!
 Missing character: There is no ¯ in font cmr9!
 
-Underfull \hbox (badness 2005) in paragraph at lines 382--394
+Underfull \hbox (badness 2005) in paragraph at lines 416--428
  []\OT1/cmr/m/n/9 J. W. Sil-ver-stone, D. Bon-neau, K. Ohira, N. Suzuki,
  []
 
+[16]
 Missing character: There is no ¡ in font cmr9!
 Missing character: There is no ¯ in font cmr9!
 Missing character: There is no ¡ in font cmr9!
 Missing character: There is no ¯ in font cmr9!
 
-Underfull \hbox (badness 1968) in paragraph at lines 635--643
+Underfull \hbox (badness 1968) in paragraph at lines 669--677
  []\OT1/cmr/m/n/9 K. Sakuma, S. Ishikawa, T. Shikata, T. Fukuda, and
  []
 
-[15]
 Missing character: There is no ¡ in font cmr9!
 Missing character: There is no ¯ in font cmr9!
 
-Underfull \hbox (badness 1888) in paragraph at lines 805--817
+Underfull \hbox (badness 1888) in paragraph at lines 839--851
  \OT1/cmr/m/n/9 poulidis, R. Schmogrow, P. Za-kyn-thi-nos, R. Palmer,
  []
 
 
-Underfull \hbox (badness 1412) in paragraph at lines 876--889
+Underfull \hbox (badness 1412) in paragraph at lines 910--923
  []\OT1/cmr/m/n/9 M. Hofheinz, H. Wang, M. Ans-mann, R. C. Bial-czak,
  []
 
 Missing character: There is no ¡ in font cmr9!
 Missing character: There is no ¯ in font cmr9!
 
-Underfull \hbox (badness 2012) in paragraph at lines 893--905
+Underfull \hbox (badness 2012) in paragraph at lines 927--939
  []\OT1/cmr/m/n/9 M. Hofheinz, E. Weig, M. Ans-mann, R. C. Bial-czak,
  []
 
@@ -714,30 +703,22 @@ Underfull \hbox (badness 2012) in paragraph at lines 893--905
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 472.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 472.
-[16] (./paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 472.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 472.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 507.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 507.
+[17] (./paper.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 507.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 507.
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: 3E0951B7A880B1E9F0EF979CF98B92AB;2233.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right .
-
-
+(rerunfilecheck)             Checksum: 2081F41C24323F6511C6EC7B75C5F20F;2290.
  ) 
 Here is how much of TeX's memory you used:
- 8554 strings out of 493089
- 118901 string characters out of 6134842
- 250382 words of memory out of 5000000
- 11752 multiletter control sequences out of 15000+600000
+ 8591 strings out of 493089
+ 119453 string characters out of 6134842
+ 277948 words of memory out of 5000000
+ 11777 multiletter control sequences out of 15000+600000
  15438 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 32i,11n,35p,1565b,607s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,11n,35p,1565b,580s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><
 /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></u
@@ -768,10 +749,10 @@ e1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmtt9.pfb>
-Output written on paper.pdf (16 pages, 1166386 bytes).
+Output written on paper.pdf (17 pages, 1327602 bytes).
 PDF statistics:
- 998 PDF objects out of 1000 (max. 8388607)
- 896 compressed objects within 9 object streams
- 171 named destinations out of 1000 (max. 500000)
- 307 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1058 PDF objects out of 1200 (max. 8388607)
+ 948 compressed objects within 10 object streams
+ 181 named destinations out of 1000 (max. 500000)
+ 325 words of extra memory for PDF output out of 10000 (max. 10000000)
 

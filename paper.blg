@@ -9,45 +9,45 @@ Warning--I didn't find a database entry for "bib:RohdeMauerer"
 Warning--I didn't find a database entry for "bib:MotesScal"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 85 entries,
+You've used 89 entries,
             3411 wiz_defined-function locations,
-            1587 strings with 27660 characters,
-and the built_in function-call counts, 85661 in all, are:
-= -- 4025
-> -- 4368
-< -- 542
-+ -- 4014
-- -- 1084
-* -- 12360
-:= -- 8367
-add.period$ -- 85
-call.type$ -- 85
-change.case$ -- 341
-chr.to.int$ -- 79
-cite$ -- 85
-duplicate$ -- 7496
-empty$ -- 6521
-format.name$ -- 2409
-if$ -- 15790
+            1605 strings with 28373 characters,
+and the built_in function-call counts, 88677 in all, are:
+= -- 4179
+> -- 4495
+< -- 559
++ -- 4126
+- -- 1116
+* -- 12764
+:= -- 8695
+add.period$ -- 89
+call.type$ -- 89
+change.case$ -- 357
+chr.to.int$ -- 83
+cite$ -- 89
+duplicate$ -- 7766
+empty$ -- 6768
+format.name$ -- 2481
+if$ -- 16351
 int.to.chr$ -- 7
-int.to.str$ -- 86
-missing$ -- 1130
-newline$ -- 271
-num.names$ -- 255
-pop$ -- 1582
+int.to.str$ -- 90
+missing$ -- 1170
+newline$ -- 283
+num.names$ -- 267
+pop$ -- 1640
 preamble$ -- 2
-purify$ -- 340
+purify$ -- 356
 quote$ -- 0
-skip$ -- 3652
+skip$ -- 3788
 stack$ -- 0
-substring$ -- 2007
-swap$ -- 6549
-text.length$ -- 521
+substring$ -- 2095
+swap$ -- 6756
+text.length$ -- 536
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 506
+type$ -- 530
 warning$ -- 0
-while$ -- 245
+while$ -- 255
 width$ -- 0
-write$ -- 857
+write$ -- 895
 (There were 3 warnings)

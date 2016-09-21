@@ -12,24 +12,25 @@
 \contentsline {subsection}{\numberline {C}Hybrid Encoding Architecture}{5}{section*.10}
 \contentsline {subsection}{\numberline {D}Lossy Boson-Sampling}{6}{section*.11}
 \contentsline {subsection}{\numberline {E}Scattershot Boson-Sampling}{7}{section*.12}
-\contentsline {section}{\numberline {IV}Fidelity of Boson-Sampling Devices}{8}{section*.13}
-\contentsline {section}{\numberline {V}Advances in Single-Photon Sources}{10}{section*.14}
-\contentsline {subsection}{\numberline {A}Spontaneous Parametric Down-Conversion (SPDC)}{10}{section*.15}
-\contentsline {subsection}{\numberline {B}Four-Wave Mixing (FWM)}{10}{section*.16}
-\contentsline {subsection}{\numberline {C}Quantum Dots (QD)}{11}{section*.17}
-\contentsline {section}{\numberline {VI}Advances in Linear Optical Networks}{11}{section*.18}
-\contentsline {subsection}{\numberline {A}Optical Waveguides}{11}{section*.19}
-\contentsline {subsection}{\numberline {B}Fibre-Loops}{12}{section*.20}
-\contentsline {subsection}{\numberline {C}Fibre Beamsplitters}{12}{section*.21}
-\contentsline {subsection}{\numberline {D}Miniaturised Bulk-Optics}{12}{section*.22}
-\contentsline {subsection}{\numberline {E}Microwave Circuits}{13}{section*.23}
-\contentsline {section}{\numberline {VII}Advances in Single-Photon Detectors}{13}{section*.24}
-\contentsline {subsection}{\numberline {A}Single-Photon Avalanche Diodes (SPAD)}{13}{section*.25}
-\contentsline {subsection}{\numberline {B}Superconducting Nanowire Single-Photon Detectors (SNSPD)}{13}{section*.26}
-\contentsline {subsection}{\numberline {C}Superconducting Transition-Edge Sensors (TES)}{13}{section*.27}
-\contentsline {section}{\numberline {VIII}Conclusion}{14}{section*.28}
-\contentsline {section}{\numberline {}Acknowledgments}{14}{section*.29}
+\contentsline {subsubsection}{\numberline {1}Analysis}{8}{section*.13}
+\contentsline {section}{\numberline {IV}Fidelity of Boson-Sampling Devices}{9}{section*.14}
+\contentsline {section}{\numberline {V}Advances in Single-Photon Sources}{11}{section*.15}
+\contentsline {subsection}{\numberline {A}Spontaneous Parametric Down-Conversion (SPDC)}{11}{section*.16}
+\contentsline {subsection}{\numberline {B}Four-Wave Mixing (FWM)}{12}{section*.17}
+\contentsline {subsection}{\numberline {C}Quantum Dots (QD)}{12}{section*.18}
+\contentsline {section}{\numberline {VI}Advances in Linear Optical Networks}{12}{section*.19}
+\contentsline {subsection}{\numberline {A}Optical Waveguides}{12}{section*.20}
+\contentsline {subsection}{\numberline {B}Fibre-Loops}{13}{section*.21}
+\contentsline {subsection}{\numberline {C}Fibre Beamsplitters}{13}{section*.22}
+\contentsline {subsection}{\numberline {D}Miniaturised Bulk-Optics}{14}{section*.23}
+\contentsline {subsection}{\numberline {E}Microwave Circuits}{14}{section*.24}
+\contentsline {section}{\numberline {VII}Advances in Single-Photon Detectors}{14}{section*.25}
+\contentsline {subsection}{\numberline {A}Single-Photon Avalanche Diodes (SPAD)}{14}{section*.26}
+\contentsline {subsection}{\numberline {B}Superconducting Nanowire Single-Photon Detectors (SNSPD)}{14}{section*.27}
+\contentsline {subsection}{\numberline {C}Superconducting Transition-Edge Sensors (TES)}{15}{section*.28}
+\contentsline {section}{\numberline {VIII}Conclusion}{15}{section*.29}
+\contentsline {section}{\numberline {}Acknowledgments}{16}{section*.30}
 \appendix 
-\contentsline {section}{\numberline {A}Numerically Modelling the Effects of Signal-to-Noise Ratios}{14}{section*.30}
-\contentsline {section}{\numberline {B}Details of Scattershot Boson-Sampling Analysis}{14}{section*.31}
-\contentsline {section}{\numberline {}References}{14}{section*.32}
+\contentsline {section}{\numberline {A}Numerically Modelling the Effects of Signal-to-Noise Ratios}{16}{section*.31}
+\contentsline {section}{\numberline {B}Details of Scattershot Boson-Sampling Analysis}{16}{section*.32}
+\contentsline {section}{\numberline {}References}{16}{section*.33}
