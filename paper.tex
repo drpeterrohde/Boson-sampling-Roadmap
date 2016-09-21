@@ -108,7 +108,7 @@ How can a classical computer simulate this bosonic process, and sample from its 
 The permanent is a matrix function originating from the permutation symmetry of bosons, similar to the role of determinants for fermions. Na{\"i}ve calculation of the permanent of an $n\times n$ matrix requires $n!$ operations. However, a more efficient classical algorithm developed by Ryser \cite{bib:16} in 1963 requires $O(n^2 2^{n+1})$ operations, which is nonetheless exponential. No general polynomial-time algorithms have been described, in contrast to the clever Gaussian elimination method for calculate matrix determinants. In fact, calculating the permanent was proved to be \#P-complete in 1979 by Valiant \cite{bib:17}. A more intuitive understanding is that the permanent corresponds to counting the number of different matching ways between input state and output state through the interferometer, much like adding Feynman paths \cite{???} to determine quantum amplitudes.
 
 Consequently, for a classical simulator, the time required to acquire a sample using this approach is,
-\begin{align}
+\begin{align} \label{eq:tau_c}
 \tau_c \approx \frac{n^2 2^{n+1}}{A},
 \end{align}
 where $A$ is number of floating-point operations per second (FLOPS) of the classical computer.
@@ -221,16 +221,33 @@ From right to left, the lines respectively refer to no lost photons, one lost ph
 
 \subsection{Scattershot Boson-Sampling}
 
+The brightness of $n$ photons will decay exponentially as $p^n$ if each SPS has efficiency $p$. For current mature heralded SPSs based on spontaneous parametric down-conversion (SPDC), one solution is to introduce more SPDC sources and make $p$ approach unity by the technique of multiplexing \cite{bib:34}. For boson-sampling, there is an even simpler method known as `scattershot' boson-sampling (SBS) \cite{bib:35, bib:36}, which allows us to perform an identically hard computation without deterministic SPSs or multiplexers. The core idea is to run $m$ SPDCs simultaneously, and post-select the instances where $n$ heralded detectors are triggered, regardless of which detectors click. SBS seems something of a `double sampling' problem, which can be decomposed into uniform sampling at the input state, followed by ordinary boson-sampling. But each single sample is an instance of original boson-sampling with different input states. In fact, Aaronson \cite{bib:35} and Lund \cite{bib:36} pointed out that SBS remains in the same computational complexity class. The first 3-photon experiment has been implemented with 6 equivalent SPDC sources in a 13-mode circuit \cite{bib:38}. The model is shown in Fig.~\ref{fig:scattershot_model}.
+
 \begin{figure}[!htb]
 \includegraphics[width=\columnwidth]{scattershot_model}
 \caption{The scheme for scattershot boson-sampling \cite{bib:36}. For an \mbox{$m\times m$}-mode interferometer, there are $m$ pairs of SPDCs, of which only $n$ generate single photons at a time.} \label{fig:scattershot_model}
 \end{figure}
+It is well-known that the two-mode squeezed state via SPDC has the form
+\begin{align}
+\ket\psi_\mathrm{SPDC} = \sqrt{1-\chi^2}\sum_{N=0}^\infty \ket{N,N},
+\end{align}
+where $N$ is photon-number and $\chi$ is the squeezing parameter, related to the nonlinearity of the crystal, the pump amplitude and the crystal length. Thus the SPS efficiency is $p=\chi^2(1-\chi^2)$. The model of SBS is illustrated in Fig.~\ref{fig:scattershot_model}. There are in total $\binom{m}{n}$ combinations of different acceptable input configurations, and the generation probability of $n$ single photons is therefore promoted to,
+\begin{align}
+P(n) = \binom{m}{n} \chi^{2n}(1-\chi^2)^{n^2}.
+\end{align}
 
+When \mbox{$\chi=1/\sqrt{n+1}$} or \mbox{$p=n/(n+1)^2$} \cite{bib:36}, the generation probability $P(n)$ can be maximised to,
+\begin{align}
+P_\mathrm{max}(n) = \frac{1}{e\sqrt{2\pi n}}.
+\end{align}This only incurs an $O(\sqrt{n})$ overhead to the initial state preparation compared to deterministic SPSs. Then given there are in total $2m$ detectors in SBS, we can express $\tau_q$ for scattershot boson-sampling as,\begin{align}
+t_{q(\mathrm{SBS})} = \frac{P_\mathrm{max}(n)}{\eta_t^n\eta_d^n R},
+\end{align}where $\eta_t$ is the detection efficiency of the triggering detector, and $\eta_d$ is the net efficiency to detect a photon after the optical network.
+As pointed out in Sec.~\ref{sec:sampling_time}, the only thing we care about in the competition of quantum boson-samplers versus classical simulators is who would be the first to produce a legitimate sample from the permanent-related probability distribution. And in the context of no a priori knowledge about which input configuration would be picked in the experiment, to simulate SBS, a classical computer can obtain a legitimate sample just by simulating ordinary boson-sampling with deterministic input states. Thus, we follow the same $t_c$ in Eq.~\ref{eq:tau_c} for SBS, which does not need to be multiplied by a combinatorial factor at all as in \cite{bib:37}.By comparing $\tau_q$ and $\tau_c$, in Fig.~\ref{fig:curve_scattershot} we plot the supremacy boundaries for SBS using nondeterministic SPS via SPDC. We can see that, with the help of the number of different combinations, SPDC survives and SBS is a feasible approach to beating advanced classical competitors. However, in order to scale SBS to the interesting regime of $20\sim 30$ photons, other challenges remain challenging. First, SBS requires $n^2$ SPDC sources, quadratically more than the usual $n$. And a larger-depth optical network is required to fully implement an $m\times m$ unitary matrix, rather than in original boson-sampling, with a fixed number of $n$ input modes, it can be simplified to an $m\times n$ matrix. Besides, as twice the number of photodetectors will be employed, to assure a certain sample rate, the requirement of detection efficiency imposed on photodetectors of SBS would be higher. Comparing Fig.~\ref{curves_1} and Fig.~\ref{fig:curve_scattershot}, we see that, to beat a classical computer, SBS should either scale to a large size or require the quantum device to have a higher total efficiency with respect to ordinary boson-sampling.
 
-
-
-
-
+\begin{figure}[!htb]
+\includegraphics[width=0.5\columnwidth]{curve_scattershot}
+\caption{The quantum and classical supremacy of scattershot boson-sampling is separated by the red line, where the top-right region belongs to quantum supremacy and vice versa. The numbers 3, 6, etc. on the lines refer to $10^3$FLOPS, $10^6$FLOPS etc. of classical computers respectively. The efficiency denoted on the horizontal axis is the overall system efficiency except the preparation efficiency of the source, whereby the preparation efficiency of $n$ sources is substituted with $1/\sqrt{2\pi n}$ \cite{bib:36}.} \label{fig:curve_scattershot}
+\end{figure}
 
 %\begin{figure}[!htb]
 %\includegraphics[width=\columnwidth]{lossy}
@@ -358,7 +375,10 @@ The first waveguide platform we consider is silica-on-silicon planar lightwave c
 Silica & Technology & $\Delta$(\%) & Min. radius (mm) & PL (db/cm) & CL (dB/facet) \\
 \hline
 \hline
-Ge-doped & PLC  & 0.25 & 25 & $<0.01$ & $<0.1$ \\Ge-doped & PLC  & 1.5  & 2  & 0.05    & 2.0 \\Fused    & FLDW & 0.7  & 50 & 0.3     & 0.1 \\Fused    & FLDW & 1.0  & 15 & 0.6     & 0.1 \\
+Ge-doped & PLC  & 0.25 & 25 & $<0.01$ & $<0.1$ \\
+Ge-doped & PLC  & 1.5  & 2  & 0.05    & 2.0 \\
+Fused    & FLDW & 0.7  & 50 & 0.3     & 0.1 \\
+Fused    & FLDW & 1.0  & 15 & 0.6     & 0.1 \\
 \hline
 \end{tabular} \caption{Properties of waveguides fabricated by PLC \cite{bib:61} and FLDW \cite{bib:62} (wavelength: 1550 nm).} \label{tab:one}
 \end{table*}
