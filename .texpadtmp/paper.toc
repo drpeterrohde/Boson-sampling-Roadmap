@@ -1,4 +1,34 @@
 \tocdepth@munge 
 \contentsline {section}{\numberline {}Contents}{1}{section*.1}
 \tocdepth@restore 
-\contentsline {section}{\numberline {}Acknowledgments}{1}{section*.2}
+\contentsline {section}{\numberline {I}Introduction}{1}{section*.2}
+\contentsline {section}{\numberline {II}Sampling Time}{2}{section*.3}
+\contentsline {subsection}{\numberline {A}Quantum Simulation}{2}{section*.4}
+\contentsline {subsection}{\numberline {B}Classical Simulation}{2}{section*.5}
+\contentsline {subsection}{\numberline {C}Threshold}{2}{section*.6}
+\contentsline {section}{\numberline {III}Experimental Schemes}{2}{section*.7}
+\contentsline {subsection}{\numberline {A}Spatial Encoding Architecture}{2}{section*.8}
+\contentsline {subsection}{\numberline {B}Time-Bin Encoding Architecture}{3}{section*.9}
+\contentsline {subsection}{\numberline {C}Hybrid Encoding Architecture}{3}{section*.10}
+\contentsline {subsection}{\numberline {D}Lossy Boson-Sampling}{3}{section*.11}
+\contentsline {subsection}{\numberline {E}Scattershot Boson-Sampling}{3}{section*.12}
+\contentsline {section}{\numberline {IV}Fidelity of Boson-Sampling Devices}{3}{section*.13}
+\contentsline {section}{\numberline {V}Advances in Single-Photon Sources}{3}{section*.14}
+\contentsline {subsection}{\numberline {A}Spontaneous Parametric Down-Conversion (SPDC)}{3}{section*.15}
+\contentsline {subsection}{\numberline {B}Four-Wave Mixing (FWM)}{3}{section*.16}
+\contentsline {subsection}{\numberline {C}Quantum Dots (QD)}{3}{section*.17}
+\contentsline {section}{\numberline {VI}Advances in Linear Optical Networks}{3}{section*.18}
+\contentsline {subsection}{\numberline {A}Optical Waveguides}{3}{section*.19}
+\contentsline {subsection}{\numberline {B}Fibre-Loops}{3}{section*.20}
+\contentsline {subsection}{\numberline {C}Fibre Beamsplitters}{3}{section*.21}
+\contentsline {subsection}{\numberline {D}Miniaturised Bulk-Optics}{3}{section*.22}
+\contentsline {subsection}{\numberline {E}Microwave Circuits}{3}{section*.23}
+\contentsline {section}{\numberline {VII}Advances in Single-Photon Detectors}{3}{section*.24}
+\contentsline {subsection}{\numberline {A}Single-Photon Avalanche Diodes (SPAD)}{3}{section*.25}
+\contentsline {subsection}{\numberline {B}Superconducting Nanowire Single-Photon Detectors (SNSPD)}{3}{section*.26}
+\contentsline {subsection}{\numberline {C}Superconducting Transition-Edge Sensors (TES)}{4}{section*.27}
+\contentsline {section}{\numberline {VIII}Conclusion}{4}{section*.28}
+\contentsline {section}{\numberline {}Acknowledgments}{5}{section*.29}
+\appendix 
+\contentsline {section}{\numberline {A}Numerically Modelling the Effects of Signal-to-Noise Ratios}{5}{section*.30}
+\contentsline {section}{\numberline {B}Details of Scattershot Boson-Sampling Analysis}{5}{section*.31}

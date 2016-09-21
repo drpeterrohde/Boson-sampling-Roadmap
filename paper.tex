@@ -7,6 +7,9 @@
 \usepackage[pdftex]{graphicx}
 \usepackage{mathrsfs}
 \usepackage[colorlinks]{hyperref}
+\usepackage[dvipsnames]{xcolor}
+
+\newcommand{\comment}[1]{{\color{blue}{#1}}}
 
 \begin{document}
 
@@ -16,16 +19,20 @@
 % Title
 %
 
-\title{Boson-sampling with single photons: A roadmap to post-classical computation}
+\title{Boson-Sampling with Single Photons: A Roadmap to Post-Classical Computation}
 
 %
 % Authors
 %
 
-%\author{Peter P. Rohde}
-%\email[]{dr.rohde@gmail.com}
-%\homepage{http://www.peterrohde.org}
-%\affiliation{Centre for Quantum Computation and Intelligent Systems (QCIS), Faculty of Engineering \& Information Technology, University of Technology Sydney, NSW 2007, Australia}
+\author{Authors before me}
+
+\author{Peter P. Rohde}
+\email[]{dr.rohde@gmail.com}
+\homepage{http://www.peterrohde.org}
+\affiliation{Centre for Quantum Computation and Intelligent Systems (QCIS), Faculty of Engineering \& Information Technology, University of Technology Sydney, NSW 2007, Australia}
+
+\author{Authors after me}
 
 \date{\today}
 
@@ -36,11 +43,237 @@
 %
 
 \begin{abstract}
+Boson-sampling is thus far the most feasible approach for demonstrating the supremacy of quantum computation over classical computation in the near future. We take the view that proof-of-principle demonstration of quantum supremacy is a pressing goal, with enormous implications, and should be considered an utmost priority by the experimental community. Here we strive to outline a roadmap to achieving this elusive goal, examining competing architectures and technologies, and paving the way forward for the first experimental demonstration of post-classical computation. We firstly develop a practical model to compare the performance of boson-samplers and classical simulators. In this model, we find that low-photon-number boson-sampling operating in the current experimental regime (\mbox{$n<10$} photons) could beat present commodity computers with GHz clock-rates only if the overall system efficiency and repetition rate are sufficiently high. Further, we calculate the required efficiency and photon-number to surpass classical computers of different clock-rates using various experimental schemes. Especially, we find that only if both photon-number-resolving detectors and high-speed optical shutters are available, scattershot boson-sampling is feasibly scalable to tens of photons. In order to provide a clear roadmap for boson-sampling, we also review and discuss various state-of-the-art single-photon sources, quantum circuits, and single-photon detectors.
 \end{abstract}
 
 \maketitle
 
 \tableofcontents
+
+\section{Introduction} \label{sec:introduction}
+
+Quantum computers are expected to be able to solve certain problems much faster than classical computers \cite{bib:1}, and people have been making unremitting efforts towards them for more than two decades. However, actual quantum computers are presently still in their infancy. Thanks to its simplicity, boson-sampling is expected to be the first specialised quantum computer outperforming classical ones in the near term \cite{bib:2}. More importantly, this would also constitute the strongest evidence yet against a foundational tenet in computer science: the Extended Church-Turing Thesis (ECT), which postulates that all realistic physical systems can be efficiently simulated with a (classical) probabilistic Turing machine. However, the realisation of large-scale boson-samplers still faces many demanding technological challenges, despite being far easier to build than universal quantum computers.
+
+To scale up to a large enough level to exhibit quantum supremacy, the first and most important consideration is the total efficiency of the system, including the generation efficiency of single-photon sources, the coupling and propagation efficiency of the circuit, and the coupling and detection efficiency of single-photon detectors.
+
+In Sec.~\ref{sec:sampling_time}, taking the repetition rate of the sampling system into account, we develop a rigorous and fair model for comparing the performance of boson-samplers and classical simulators. Given a certain classical computer, the regime of quantum supremacy of boson-sampling is specified by a simple continuous curve in the plane of total efficiencies versus photon-numbers. \comment{To our surprise, there is such a (optimal) turning point in this curve where four-photon boson-samplers with repetition rates of 76MHz could beat present commodity computers with GHz clock-rates}. Based upon this, such a computer could only be defeated by \mbox{$20\sim 30$}-photon boson-sampling \cite{bib:2, bib:3}. Furthermore, in Sec.~\ref{sec:exp_schemes}, we calculate the required efficiencies and photon-numbers for different experimental schemes to outperform classical computers of given clock-rates. In particular, we find that both photon-number-resolving detectors and high-speed optical shutters are indispensable to correctly implementing scattershot boson-sampling with tens of photons.
+
+An intact boson-sampler includes three parts (see Fig.~\ref{fig:model}): single-photon sources, passive linear optical circuits, and single-photon detectors. A number of small-scale boson-sampling implementations have been reported in optical waveguides \cite{bib:4, bib:5, bib:6, bib:7, bib:8, bib:9} and fibre beamsplitters \cite{bib:10} using spontaneous parametric down-conversion (SPDC) sources, and fibre-loops \cite{bib:11} with quantum dot (QD) sources. In Sec.~\ref{sec:adv_sources}, we introduce some of the most promising single-photon sources and their recent advances, including SPDC, four-wave mixing (FWM) and QDs. In Sec.~\ref{sec:adv_networks}, we review and discuss some advances in linear optical networks, including optical waveguides, fibre-loops, and fibre beamsplitters. In Sec.~\ref{sec:adv_detectors}, we consider single-photon detectors (SPD), including single-photon avalanche photodiodes (SPAD), superconducting nanowire single-photon detectors (SNSPD) and transition-edge sensors (TES). These three types of detectors represent the most mature, high-speed, and near-unit efficiency respectively.
+
+\begin{figure}[!htb]
+\includegraphics[width=\columnwidth]{model}
+\caption{The boson-sampling model. $n$ single photons are injected into an $m$-mode passive linear optical network. The output statistics are then sampled via $m$-fold coincidence photodetection.} \label{fig:model}
+\end{figure}
+
+\section{Sampling Time} \label{sec:sampling_time}
+
+In this section, we will first briefly introduce the boson-sampling model and quantum sampling time, then review and discuss classical simulation methods and their respective sampling time, finally performing a quantum versus classical comparison, with the aim of characterising the operating regime for quantum supremacy. We find that with repetition rates of 76MHz, only if the net efficiency of the system is greater than 40\%, four-photon boson-sampling could outperform GHz classical computers. On the other hand, the classical limit may be achieved using a 20-photon boson-sampler with a sampling rate of just 1Hz.
+
+\subsection{Quantum Simulation}
+
+\subsection{Classical Simulation}
+
+\subsection{Threshold}
+
+\section{Experimental Schemes} \label{sec:exp_schemes}
+
+\subsection{Spatial Encoding Architecture}
+
+A fully spatially-encoded scheme is one whereby the circuit itself does not consume any time resources (beyond the propagation time from the input to the output time of the circuit, which is fixed). This includes optical waveguides, fused fibre couplers and bulk-optics circuits, as shown in Fig.~\ref{fig:space_encoding}. The time required for this scheme is the same as Eq.~\ref{eq:2}.
+
+\begin{figure}[!htb]
+\includegraphics[width=\columnwidth]{space_encoding}
+\caption{Spatially-encoded optical circuits: (a) optical waveguide; (b) fused fibre coupler; and, (c) bulk-optics.} \label{fig:space_encoding}
+\end{figure}
+
+It was proven by Reck \emph{et al.} \cite{bib:18} that an arbitrary $m$-mode linear optical network can be efficiently constructed using $O(m^2)$ linear optical elements (i.e. beamsplitters and phase-shifters). This can be reduced to $O(mn)$ in the case of boson-sampling, where there are $n$ photons in $m$ modes. Although `efficient', this scaling implies that constructing a network with hundreds of modes with discrete elements, one probably needs several room-sized optical tables, inevitably suffering from severe air turbulence and mechanical instability. For perfect quantum interference, photons should arrive at the points of interference simultaneously and be perfectly mode-matched (to be discussed in more detail in Sec.~\ref{fidelity_of_devices}), which means all of the thousands of optical elements must be carefully simultaneously aligned. More integrated and stable alternatives are of pressing importance. In fact, all initial demonstrations of boson-sampling were based on integrated optical circuits including, waveguides based on direct laser writing techniques \cite{bib:4, bib:5, bib:6} and fused fibre couplers \cite{bib:10}.
+
+\subsection{Time-Bin Encoding Architecture}
+
+\subsection{Hybrid Encoding Architecture}
+
+\subsection{Lossy Boson-Sampling}
+
+\subsection{Scattershot Boson-Sampling}
+
+\section{Fidelity of Boson-Sampling Devices} \label{sec:fidelity_of_devices}
+
+Thus far, we have considered sampling rates as the benchmark for performing a classical versus quantum comparison for supremacy. However, it is not only the rate at which samples are be obtained that is of importance. Just as important is the quality of the samples -- are they correct, and do they actually correspond to what would come of a true boson-sampler?
+
+Our analysis thus far has taken loss into consideration as a dominant form of error. As we have seen, this type of error manifests itself in the overall efficiency of the system, and is easily modelled as such. In this section we consider other realistic errors arising in experimental boson-sampling devices and how they impact operation. We give special attention to spatio-temporal errors, whereby imperfections result in degradation of photon indistinguishability, thereby undermining correct multi-photon interference. This analysis encompasses, amongst others, the following prominent error mechanisms in realistic experimental scenarios:
+\begin{itemize}
+\item Source time-jitter: This is caused by classical uncertainty in the preparation time of photons' wavepackets, yielding a state which is mixed in the temporal degree of freedom. This could arise, for example, from the finite time-resolution of the heralding detector in a heralded SPDC source. 
+\item Source spectral impurity: The equivalent effect as before, but in the spectral domain. This is known to be particularly problematic when employing heralded SPDC sources. If an SPDC photon-pair is not perfectly spectrally separable, heralding one mode projects the other mode onto a spectrally mixed state.
+\item Mode-mismatch: When photons interfering at a beamsplitter are not perfectly indistinguishable, quantum interference is reduced. This arises whenever optical modes are not perfectly aligned upon interfering at a beamsplitter. In the limit of completely distinguishable photons, boson-samplers obey classical statistics, which are computationally easy to simulate.
+\end{itemize}
+
+To model the above, we must first employ a representation for photons, which accommodates their spatio-temporal structure. Ordinarily, we represent photons as the photon creation operator acting on the vacuum state, \mbox{$\ket{1}=\hat{a}^\dag\ket{0}$}. This is appropriate when dealing with indistinguishable photons. However, photons have rich spatio-temporal structure, and in these degrees of freedom photons are never perfectly indistinguishable. To capture this, we replace photon creation operators with mode operators \cite{bib:RohdeMauerer}, that represent photons in these additional degrees of freedom. In the temporal degree of freedom, for example,
+\begin{align}
+\hat{A}^\dag_\psi = \int_{-\infty}^\infty \psi(t) \hat{a}^\dag(t) \,dt.
+\end{align}
+Here $\psi$ is the temporal distribution function (TDF) of the photon, and $\hat{a}^\dag(t)$ is the time-specific creation operator. $\psi$ is normalised, such that,
+\begin{align}
+\int_{-\infty}^\infty |\psi(t)|^2 \, dt = 1.
+\end{align}
+The Fourier transform gives us the spectral distribution function. Then, a single-photon state with associated TDF $\psi$, is given by,
+\begin{align}
+\ket{1_\psi} = \hat{A}^\dag_\psi \ket{0}.
+\end{align}
+This can be logically generalised into other degrees of freedom, such as the spatial degrees of freedom. For example, to capture both temporal and $x$-$y$ spatial degrees of freedom, we could use the representation,
+\begin{align}
+\hat{A}^\dag_\psi = \int_{-\infty}^\infty \int_{-\infty}^\infty \int_{-\infty}^\infty \psi(t,x,y) \hat{a}^\dag(t,x,y) \, dt\, dx\, dy.
+\end{align}
+
+The overlap between two single-photon states characterised by distinct TDFs is simply,
+\begin{align}
+\langle 1_\psi | 1_\phi \rangle &= \bra{0} \hat{A}_{\psi} \hat{A}^\dag_{\phi} \ket{0} \nonumber \\
+&= \int_{-\infty}^\infty \int_{-\infty}^\infty \psi(t)^*\phi(t') \langle t|t'\rangle \, dt \, dt' \nonumber \\
+&= \int_{-\infty}^\infty \int_{-\infty}^\infty \psi(t)^*\phi(t') \delta(t-t')\,dt \, dt' \nonumber \\
+&= \int_{-\infty}^\infty \psi(t)^*\phi(t) \,dt.
+\end{align}
+
+If we choose an orthonormal basis of TDFs, an arbitrary photon may be decomposed into a linear combination of the associated basis mode operators. Let us define such a basis as $\{\xi\}$. Let $\xi_0$ be the `desired' spatio-temporal mode. Because of the orthonormality,
+\begin{align}
+\bra{0} \hat{A}_{\xi_i} \hat{A}^\dag_{\xi_j} \ket{0} = \delta_{i,j},
+\end{align}
+we define our mode operators as,
+\begin{align}
+\hat{A}^\dag_{\psi_i} = \alpha \hat{A}^\dag_{\xi_0} + \sqrt{1-\alpha^2} \hat{A}^\dag_{\xi_i}.
+\end{align}
+That is, each input photon has an amplitude overlap of $\alpha$ with every other, via the $\xi_0$ component of the TDF. Thus, $\alpha$ characterises the degree of photon distinguishability in the system.
+
+Exactly the same argument applies to incoherent processes, such as time-jitter, except that rather than being a coherent superposition of different spatio-temporal modes, the density operator would be a classical mixture of the different terms,
+
+Then the fidelity of a single-photon input (i.e its overlap with all other photons) is,
+\begin{align}
+F_\mathrm{in} = |\alpha|^2.
+\end{align}
+The fidelity of the entire $n$-photon input state is then,
+\begin{align}
+F_\mathrm{total} &= {F_\mathrm{in}}^n \nonumber \\
+&= |\alpha|^{2n}.
+\end{align}
+This can be interpreted as the probability that, upon measurement, we have projected onto the desired spatio-temporal mode.
+
+Since the fidelity between two states is invariant under a common unitary evolution,
+\begin{align}
+F(\hat\rho_1,\hat\rho_2) = F(\hat{U}\hat\rho_1\hat{U}^\dag, \hat{U}\hat\rho_2\hat{U}^\dag),
+\end{align}
+the output fidelity is the same as the input fidelity, \mbox{$F_\mathrm{out} = F_\mathrm{total}$}. The output fidelity has a direct operational interpretation, as the probability that a given sample was taken from a boson-sampling distribution (as opposed to some other erroneous distribution).
+
+The relationship between the single-photon input and net output fidelities are illustrated in Fig.~\ref{fig:fidelity}. Based on this, to achieve an output fidelity of \mbox{$F_\mathrm{out} = 0.9$} requires single-photon input fidelities of \mbox{$F_\mathrm{in} = 0.995$} for 10 photons, and \mbox{$F_\mathrm{in} = 0.998$} for 20 photons. This type of single-photon interference fidelity is realistic using present-day technology, which comes very close to unity.
+
+\begin{figure}[!htb]
+\includegraphics[width=\columnwidth]{fidelity}
+\caption{Fidelity of the output state of a boson-sampler, $F_\mathrm{out}$, given single-photon input fidelities of $F_\mathrm{in}$, where $n$ is the number of photons entering the circuit.} \label{fig:fidelity}
+\end{figure}
+
+\section{Advances in Single-Photon Sources} \label{sec:adv_sources}
+
+One of the pressing challenges facing experimental implementation of boson-sampling is SPSs. Based on the generation efficiency, single-photon sources fall into two categories: probabilistic and deterministic.
+
+The probabilistic single-photon sources mainly includes photons created in pairs via spontaneous parametric down-conversion (SPDC) in bulk crystals \cite{bib:39, bib:40} or waveguides \cite{bib:41, bib:42}, and four-wave mixing (FWM) in waveguides \cite{bib:43, bib:44} and optical fibres \cite{bib:45, bib:46}. For these sources, the creation of photon pairs is probabilistic, rather than deterministic. However, because the photons are created in pairs, one photon (the heralding photon) can be used to herald the creation of the other photon (the heralded photon). Relatively speaking, despite being probabilistic, SPDC and FWM sources are technically mature and enjoy warm popularity in quantum optics labs. For this reason, almost all boson-sampling experiments thus far have been based on SPDC sources. 
+
+However, SPDC or FWM might be not easily scaled to arbitrary size due to higher-order emissions, and multiplexing requirements \cite{bib:MotesScal}. Thus truly deterministic SPSs will be indispensable for future large-scale implementations. Here we only take quantum dots as an example of deterministic single-photon sources, due to their high purity, high indistinguishability, and high extraction efficiency \cite{bib:47, bib:48, bib:49, bib:50, bib:51, bib:52}. Other deterministic SPSs, such as NV centres and single atoms, are treated in excellent review papers \cite{bib:53}.
+
+\subsection{Spontaneous Parametric Down-Conversion (SPDC)}
+
+In SPDC, a laser pumps a second-order nonlinear material (e.g. BBO or KDP) and creates two photons under the constraints of momentum and energy conservation (known as phase-matching). There are several different types of phase matching:
+\begin{itemize}
+\item Type-I: Both photons have the same polarisation.
+\item Type-II: Both photons have orthogonal polarisation.
+\item Type-0: All polarisations are identical. \comment{How is this different to type-I?}
+\end{itemize}
+Additionally, so-called quasi-phase-matching in a periodically-poled structure allows a positive net flow of down-conversion, and collinear propagation direction, thus eliminating spatial walk-off effects in the transverse direction \comment{Maybe we could explain what this means? I'm a theorist and I don't know these terms :)}. As a result, the best collection efficiency of \mbox{$\sim 90\%$} is realised with quasi-phase-matching \cite{bib:41, bib:42}.
+
+By tuning the squeezing parameter $\chi$ to approach zero, the output state may be tuned to be a vacuum state with highest probability, single photon pairs with a lower probability, and `negligible' multi-photon-pairs. As photons are produced in pairs in SPDC, one can use one photon as a trigger, and inject the other into the unitary network. Irrespective of higher-order terms and detection efficiency, the generation rate of $n$ simultaneous single-photons drops exponentially with $n$.
+
+The best narrowband-filtered SPDC source reported thus far exhibits a purity of \mbox{$\sim 91\%$} and heralding efficiency of \mbox{$\sim 42\%$} \cite{bib:54}. Engineering the group velocity matching of crystals could help to improve the degree of spectral separability of the photons as a means to improve spectral purity \cite{bib:55, bib:56}. For a non-separable state, detection of the heralding photon collapses the state of the heralded photon onto a mixed state, i.e its spectral structure may vary between trials. With separable states, the characteristics of the heralded photon are completely independent of the measurement result obtained upon detection of the heralding photon. One such crystal is KDP, which has the property that the group velocity of e-polarised light at 415 nm is the same as that of o-polarised light at 830 nm, hence satisfying the group velocity matching conditions for separable states. These have achieved single photons with a purity of \mbox{$\sim 95\%$} and heralding efficiency \mbox{$\sim 25\%$} \cite{bib:56}. Another example is PPKTP at telecom wavelength \cite{bib:57}. More details about source engineering can be found in \cite{bib:58, bib:59, bib:60}.
+
+\subsection{Four-Wave Mixing (FWM)}
+
+Four-wave mixing is a third-order nonlinear effect in which two pump photons are converted into two correlated photons. Although the nonlinear effect per unit strength \comment{(length??)} of FWM is relatively small compared to SPDC, photon-pairs can be produced effectively by increasing the interaction length, such as in long optical fibres \cite{bib:45, bib:46} or silicon-based waveguides \cite{bib:43, bib:44}. Spontaneous Raman scattering is one of dominant noise mechanisms, however, which could be either suppressed or detuned. Recently, Spring \emph{et al.} have prepared silica-based SPSs with purity \mbox{$\sim 97\%$} and heralding efficiency \mbox{$\sim 31\%$} \cite{bib:44}. They further implemented the experiments of two and three-photon Hong-Ou-Mandel interference with high visibilities \cite{bib:44}. Such heralded sources are also valuable for SBS. Another potential advantage of  FWM sources is their high coupling efficiency with circuits integrated on the same platform \cite{bib:43, bib:44}.
+
+\subsection{Quantum Dots (QD)}
+
+Semiconductor QDs have been researched as SPSs for a long time. Their small size (\mbox{$5\sim50$} nm) allows them to be grown via molecular beam epitaxy, resulting in a discrete energy structure for the electrons and holes, whose pairwise generation and recombination results in single-photon emission. The radiative lifetime is on the order of 1 ns. QDs can be excited either optically or electrically. Examples of optically active QDs include CdSe/ZnS, InP/GaInP, and InAs/GaAs. By embedding QDs in cavities (including planar cavities, micro-pillars, micro-disks, photonic crystals, nanowires, etc.), it has been shown that the rate of spontaneous emission can be significantly enhanced via the Purcell effect. However, it is important to note that while the generation efficiency can be close to unity, the total efficiency of the system can still be low.
+
+Significant advances are continually emerging, enabling on-demand single-photon sources with ever increasing purity, indistinguishability and efficiency. By s-shell resonant laser excitation on a single QD with picosecond laser pulses, near-background-free resonance fluorescence (RF) has been achieved. Under $\pi$ pulse excitation, single photons have been deterministically generated with a single-photon purity of 98.8\% \cite{bib:47} and indistinguishability of 99.5\% \cite{bib:48}. Replacing the planar cavity with a micro-pillar system, RF single-photons were generated with an extraction efficiency of \mbox{$\sim 66\%$}, second-order correlation \mbox{$g_2=0.009$}, and two-photon interference visibility of 98.5\% \cite{bib:49, bib:50}. Furthermore, long streams \cite{bib:51, bib:52} of thousands of near-transform-limited single photons were measured as a function of their emission time separation varying from 13ns to 14.7. There the two-photon interference visibility slightly drops from 95.9\% to a plateau of 92.1\% through a slow dephasing process occurring at a time scale of \mbox{$0.7\mu s$} \cite{bib:51}. Currently, the only limitation is that the overall system efficiency is 4.6\% -- the highest reported in QDs. In the near future, it is hoped to improve system efficiency of quantum dot SPSs using techniques such as orthogonal excitation and detection of RF with superconducting nanowire single-photon detection.
+
+\section{Advances in Linear Optical Networks} \label{sec:adv_networks}
+
+Interference stability and loss are two key elements in the scalability of boson-sampling. Here we review and analyse several promising candidates for constructing linear optical networks: optical waveguides, fibre-loops, fibre beamsplitters, miniature bulk-optics, and microwave circuits.
+
+\subsection{Optical Waveguides}
+
+Optical waveguides are one of the most common methods to construct large-scale linear optics networks. Boson-sampling was also first demonstrated mainly using this technology \cite{bib:4, bib:5, bib:6}. Compared to discrete bulk-optical elements, waveguides can be integrated onto a small chip, which is free of alignment, more compact, and phase-stable. The main obstacle facing scaling up waveguide platforms is their high loss, including propagation loss, and coupling loss between waveguides and the photon sources/detectors. Here we discuss several of them briefly.
+
+The first waveguide platform we consider is silica-on-silicon planar lightwave circuits (PLC) \cite{bib:61}, due to its ultra-low propagation loss ($<0.01$dB/cm) and coupling loss ($<0.1$dB/facet). In present small-scale quantum applications \cite{bib:9}, its coupling loss of $\sim 0.4$dB/facet may be low enough. However, each directional coupler (DC) exhibits loss of $\sim 0.1$dB, still unacceptable for large-scale circuits containing hundreds of DCs. In principle, losses could be improved to meet requirements using state-of-the-art techniques. Another more severe problem dimming the prospect for such micrometer waveguides is the size of DCs. As shown in Tab.~\ref{tab:one}, the smallest radius is 2mm, achieved by PLC waveguides with index contrast of 1.5\%, allowing for tight bends and shortest DC length (1mm). In fact, they usually reach several millimetres \cite{bib:9}, leading to an exaggerated total length of $\sim 1$m for circuits containing hundreds of DCs.
+
+The problem of size also haunts another popular platform in the field of optical quantum processing -- fused silica waveguides, fabricated using femtosecond laser direct-written (FLDW) technology. Unlike PLC fabrication, the FLDW is a powerful and flexible technique for rapid 3D fabrication, requiring no masking procedure or cleanroom environment. However, this one-step fabrication process also makes the propagation loss rely heavily on the motion control accuracy of the precision stage \cite{bib:63}. FLDW waveguides exhibit lowest losses on the order of 0.1dB/cm \cite{bib:63}, substantially higher than that of PLC waveguides. Also, the maximum refractive index contrast achieved so far is 1\%, which limits waveguide bends to a radius of about 15 mm (see Tab.~\ref{tab:one}).
+
+A possible solution to relaxing this problem is silicon nitride ($\mathrm{Si}_3\mathrm{N}_4$) planar waveguides, which are also transparent from visible through telecom wavelengths. Thanks to higher refractive index contrast ($\sim 25$\%), their integration density could be about an order of magnitude more compact than silica waveguides. In fact, Bowers \emph{et al.} have developed high-aspect-ratio $\mathrm{Si}_3\mathrm{N}_4$ waveguides with favourably low propagation loss ($<1$dB/m) \cite{bib:64}, and minimum bend radii less than 1mm \cite{bib:65}.
+
+Another possible solution would be silicon waveguides, which have higher refractive index than the other waveguides mentioned previously, thus allowing a dramatic reduction in the bend radius ($<10\mu\mathrm{m}$). Correspondingly, the length of DC can be dramatically reduced, e.g. the $2\times 2$ MMI coupler in silicon ($27\mu\mathrm{m}$) \cite{bib:66} is 40 times shorter than the one in silica (1.1mm) \cite{bib:67}. On the other hand, the best propagation losses can reach 0.1dB/cm \cite{bib:68, bib:69} and coupling losses of 0.5dB/facet are possible using spot-size converters (SSC) \cite{bib:70, bib:71}. That is to say, it is possible to construct large networks with thousands of DCs with insertion loss as low as 2dB in principle. However, current quantum experiments based on silicon waveguides \cite{bib:43, bib:72} have typical propagation losses of $2\sim 4$dB/cm and coupling losses of $2\sim 4$dB/facet, leading to device losses in the range of $6\sim 10$dB. Another important loss we cannot ignore is the excess loss of each DC, on the order of 0.1dB \cite{bib:72, bib:73, bib:74}, a substantial hurdle in the quest for scalability. Note that visible wavelengths, including 780nm, are forbidden, but 1550nm, the typical telecom wavelength, is in its transparent window and can be detected with high-efficiency ($>95\%$) using superconducting single-photon detectors \cite{bib:75}.
+
+\subsection{Fibre-Loops}
+
+The fibre-loop architecture \cite{bib:11, bib:19}, where a pulse-train of time-bin-encoded photons are employed, is extremely resource-frugal, irrespective of the size of the desired interferometer, whose scale is limited only by the loss rates of the fibre, dynamic switches and couplers. The scheme requires only two delay lines, three dynamic switches, a single photon source operating at high repetition rate, and a single time-resolved photodetector. The architecture is shown in Fig.~\ref{fig:loop_arch}.
+
+\begin{figure}[!htb]
+\includegraphics[width=\columnwidth]{loop_arch}
+\caption{The fibre-loop scheme for boson-sampling. A pulse-train of photons in $m$ time-bins defines the input state, with time-bin separation $\tau$. The pulse-train is coupled into and out of the outer loop using two outer dynamic switches. The inner loop of length $\tau$ allows neighbouring time-bins to interfere at the central dynamic switch. The outer two switches need only switch between being completely reflective and completely transmissive, whereas the inner switch must be able to tune to any beamsplitter reflectivity. The only component that scales with the size of the interferometer is the length of the outer loop, which must be long enough to contain the entire pulse-train, $>m\tau$.} \label{fig:loop_arch}
+\end{figure}
+
+Depending on the scale of the time-bins, the fibre loops could be replaced by any delay lines, or even propagation in free-space, which would eliminate fibre loss. In this case, the dominant source of loss would be in the dynamic switches and couplers. While state-of-the-art integrated switches/couplers are fast enough, on the order of GHz \cite{bib:76, bib:77}, they involve high loss ($>1$dB). This will encourage further development of these types of technologies.
+
+In order to lower loss \cite{bib:11}, the controlled switch was realised using a bulk electro-optic modulator (EOM) with a transmission ratio of 97.3\%, modulated at 80MHz. The single-photons were coupled in and out of the loop using an acousto-optic modulator (AOM) with a transmission ratio of 99\%, rise-time of less than 20ns and first order diffraction efficiency of $\sim 85\%$. Inside the loop, the coupling efficiency from free-space to single-mode fibre was 92\%. Thus, a single-loop (BS operation) efficiency of 83\% was achieved.
+
+\subsection{Fibre Beamsplitters}
+
+Due to the ultra-low loss of single mode fibres (0.2dB/km at 1550nm), fused fibre couplers (FFC) are a promising candidate. The couplings between any two adjacent fibres are hard to control on a large scale due to the fusing process, thus commercial FFCs are rare with greater than $4\times 4$ input/output modes. In fact, such random coupling devices are not welcomed by applications other than boson-sampling. In one of the first demonstrations of boson-sampling \cite{bib:10}, the circuit was a 3×3 FFC with coupling efficiency of 64\%. Recently, Lin \emph{et al.} \cite{bib:78} fabricated a $15\times 15$-mode FBS and claimed that such a large-scale device has a total loss as low as 1dB, and could potentially be scaled up to hundreds of modes with improvements to the fabrication process.
+
+\subsection{Miniaturised Bulk-Optics}
+
+As mentioned above, discrete bulk-optics circuits exhibit unacceptable physical size and phase-stability problems. However, all the optical elements can be antireflection-coated easily and with near-perfect transmission ratios ($>99.9\%$). For this reason bulk-optics should nonetheless be considered a good candidate for the implementation of linear optical networks, provided some necessary technological improvements. If one could miniaturise the size of each element down to the $\sim 1$mm scale, a 20-photon boson-sampling circuit would only cover an area of less than $1\mathrm{m}^2$, which would fit on a standard optical table. In order to solve the phase-stability problem, all elements could be bonded together using the optical contact technique or placed into a constant temperature vacuum chamber.
+
+\subsection{Microwave Circuits}
+
+In microwave boson-sampling, to guarantee that all operations finish before photons escape the cavity, the total operational time must be less than the cavity lifetime. With present-day technology ($150\mu\mathrm{s}$ cavity lifetime), we are able to scale microwave boson-sampling to 500 modes. As demonstrated in \cite{bib:20}, present superconducting technology has the ability to scale microwave boson-sampling to $N\sim 20$. Supposing a total efficiency of 0.65 (0.99 fidelity for each step, and in total 20 steps for each mode, then multiplying the preparation and measurement efficiency $0.9\times 0.9$), a conservative estimate would be that 20-photon microwave boson-sampling could match the performance of a classical computer of gigaFLOPS, beyond our expectation for ordinary optical boson-samplers with today's technology. 
+
+On the other hand, microwave boson-sampling is also suitable for generalised versions of boson-sampling, e.g. boson-sampling using cat states \cite{bib:79}, photon-added or photon-subtracted squeezed states \cite{bib:80}, displaced single-photon Fock states and single-photon-added coherent states \cite{bib:81}, and molecular vibronic spectra \cite{bib:82}. Arbitrary quantum states have already been synthesised in superconducting resonators with an average fidelity of 0.9 \cite{bib:83}. Furthermore, photon-number-resolving measurement has been described using several methods \cite{bib:84, bib:85}.
+
+\section{Advances in Single-Photon Detectors} \label{sec:adv_detectors}
+
+Last but not least, we briefly discuss single-photon detectors, the final and very important stage in the experimental implementation of boson-sampling. Single-photon detectors with high quantum efficiency, low dark-noise and fast response are a pressing goal to scale up boson-sampling to the post-classical scale. There are a variety of single-photon detectors, detailed descriptions of which can be found in several excellent review papers \cite{bib:53, bib:86}. Targeting the most widely used single-photon sources in boson-sampling experiments, probabilistic SPDC sources and deterministic single-photons from quantum dots \cite{bib:11}, as well as emerging on-chip sources based on semiconductor devices \cite{bib:43, bib:44}, we mainly focus on single-photon detectors that have good spectral response in the near-infrared region ($780\sim 1550$nm), the typical wavelength of such photon sources.
+
+\subsection{Single-Photon Avalanche Diodes (SPAD)}
+
+Firstly, the most compact and common single-photon detector is the single-photon avalanche diode (SPAD). SPADs are avalanche diodes operated in Geiger mode (above breakdown voltage) to obtain a high gain. To our knowledge, there are several SPADs available commercially off-the-shelf, with detection efficiencies around 60\% at 780nm, maximum count-rates of 25MHz and dark-count rates as low as 25Hz. Even higher detection efficiencies are available. However, on account of the significant trade-off between detection efficiency, dark-noise and dead-time (affected by after-pulsing effects), it is often at the expense of a lower maximum count rate (a typical dead-time is $1\mu\mathrm{s}$, yielding a 1MHz count rate) and higher levels of dark-noise. It should be noted that the features of detectors are usually optimised at different wavelengths according to specific needs.
+
+\subsection{Superconducting Nanowire Single-Photon Detectors (SNSPD)}
+
+More efficient are superconducting nanowire single photon detectors (SNSPD). Up until now, the highest detection efficiency of SNSPDs is 93\% at 1550nm, demonstrated in 2014 \cite{bib:87}. SNSPDs are also commercially available. There are companies specialising in best-performance SNSPDs with high detection efficiency. They have achieved specifications with peak detection efficiencies higher than 80\% around 800nm, maximum dark-count rates of $100\sim 300$Hz, and a dead-time ranging from $10\sim 70$ns. Similar performance is expected for optimised SNSPD at other wavelengths ($780\sim 1550$nm). However, SNSPDs must be operated at cryogenic temperatures of a few Kelvin to maintain the superconducting state in the sensing material. This is the main reason why SNSPDs are much more cumbersome and expensive than SPADs.
+
+\subsection{Superconducting Transition-Edge Sensors (TES)}
+
+Titanium superconducting transition edge sensors (TES), exploit the character that the resistance of a superconducting material increases sharply and linearly when its temperature surpasses the superconducting critical temperature. Using such detectors, even higher detection efficiencies of 98\% (95\%) at wavelengths around 850nm (1556nm) have been reported \cite{bib:88, bib:75}. Moreover, these detectors are photon-number-resolving, owing to the linear relationship between resistance and temperature. TESs far outperforms other kinds of single-photon detectors in many important respects: high detection efficiency; photon-number resolution; and, low dark-noise. However, the typical thermal recovery times of TESs are a fraction of a microsecond, resulting in low count rates and limiting their application in quantum simulation. The superconducting transition temperature of titanium is in the range of 100mK, more than an order of magnitude lower than SNSPD, which makes it challenging to migrate the technique from lab to market. On the other hand, higher superconducting transition temperatures are also favourable for faster recovery times. Thus, high temperature superconductors will have great implications for future single-photon detectors.
+
+In summary, for state-of-the-art single-photon detectors, high performance detectors are available, but not sufficient with respect to the three key detector features of relevance to boson-sampling, and the challenging optimisations given the interplay between the different parameters.
+
+\section{Conclusion} \label{sec:conclusion}
+
+We constructed a rigorous and fair model for comparing the performance of genuine boson-samplers with classical simulators by taking both the repeat frequency and system efficiency of the boson-sampling system into account. We also considered the effects of error models such as mode-mismatch, photon distinguishability, spectral impurity and time-jitter, and how these relate to the size of the boson-sampler.
+
+In our model, we can easily determine how many single-photons, and what repeat frequency and efficiency are needed to beat classical computers with given clock-speeds. To attain quantum supremacy, there are lower single-photon number thresholds ($<20$ photons) in systems with higher efficiencies and repeat frequencies. Therefore, improving repeat frequency plays a bigger role than photon number for those circuits with limited size but high transmittance, e.g., bulk optical circuits. \comment{Don't quite understand this last sentence}.
+
+From the asymptotic flavour of computational complexity, implementing boson-sampling with more single-photons would be of interest to theorists. It is crucial to improve efficiencies of every part of the system, which is the dominant effect undermining sampling rates as photon-number increases.
+
+In the latter half of this paper, we reviewed and clarified the advantages and disadvantages of different protocols and systems, including single-photon sources, optical circuits and single-photon detectors, which will shed light the road towards scalability of boson-sampling experiments. Among the different combinations, scattershot boson-sampling and normal boson-sampling with quantum dots are the two most promising routes forward. In order to realise larger scale boson-sampling ($>20$ photons), however, the former still requires improving the heralding efficiency of SPDC photon sources, while the latter requires developing either ultra-high efficiency delay-loops or active multiplexing techniques \cite{bib:89}. Both must further lower circuit losses if the elusive goal of demonstrating quantum supremacy is to be achieved.
+
+The analysis presented here provides an initial roadmap for what is perhaps the most promising route towards the first demonstration of quantum supremacy over classical computers. While we have focused largely on experimental issues surrounding the implementation of boson-sampling, there remain significant theoretical challenges facing large-scale realisations. Most notably, verification of boson-sampling data has shown itself to be a highly non-trivial problem. To-date, no unambiguous test has been described for verifying the validity of boson-sampling data. Significant progress has been made in processing experimental data to rule out some classical theories, such as uniform sampling and distinguishable photon sampling, but proving categorically that a sample set originated from a genuine boson-sampler remains an unsolved problem. It may very well never be solved, as many quantum algorithms are believed to not be efficiently verifiable. Quite plausibly, boson-sampling is one of them.
+
+Also from a theoretical perspective, is the broader question of `What good is a boson-sampler? What does it even do?'. The answer is that, to the best of our knowledge, it really doesn't solve any particular problem of practical interest, which may lead some to question the merit of pursuing this line of research at all. However, we take the entirely opposing view that, although it doesn't solve a problem of interest, the mere fact that it could outperform existing classical computers and provide a proof-of-principle of quantum supremacy would already be a stunning achievement. And given the relative simplicity of the boson-sampling architecture, and the rapid developments taking place in the field, it is plausible that the first ever post-classical quantum device may be a boson-sampler.
 
 %
 % Acknowledgments
@@ -49,10 +282,16 @@
 \begin{acknowledgments}
 \end{acknowledgments}
 
+\appendix
+
+\section{Numerically Modelling the Effects of Signal-to-Noise Ratios}
+
+\section{Details of Scattershot Boson-Sampling Analysis}
+
 %
 % Bibliography
 %
 
-\bibliography{bibliography}
+\bibliography{roadmap}
 
 \end{document}
