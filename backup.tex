@@ -96,7 +96,7 @@ The amplitude associated with each output basis is given by \cite{bib:2, bib:12}
 where $\Phi(U)$ is a homomorphism of $U$, and $U_{S,T_i}$ is an $n\times n$ submatrix of $U$, obtained by taking $s_i$ copies of the $i$th row of $U$, and $t_i$ copies of the $i$th column of $U$. It has been proven that \cite{bib:2, bib:13, bib:14} one will observe a collision (i.e. two or more photons in the same mode) with probability bounded away from 0 only if the number of modes scales as at least $m=O(n^2)$ -- the so-called `bosonic birthday paradox' \cite{???}. In this instance, it suffices to use non-photon-number-resolving detectors, substantially simplifying technological requirements. Thus, throughout this paper we only discuss the `collision-free' situation, i.e. $s_i,t_j=\{0,1\}$.
 
 Consider the practical situation, where we have an imperfect photonic simulator to implement boson-sampling, whose net per-photon efficiency is $\eta$, combining the single-photon generation rate, circuit transmission efficiency, and coupling and detection efficiency (in a linear optics network, all losses can be commuted to the front or back of the circuit, provided all losses are uniform across all modes, allowing us to merge all the individual efficiencies into a single overall efficiency factor). The time required to obtain an $n$-photon coincidence event is,
-\begin{align} \label{eq:tau_q}
+\begin{align}
 \tau_q = \frac{1}{\eta^n R}
 \end{align}
 where $R$ is the effective repetition rate of the quantum boson-sampler, restricted by the choice of single photon source (SPS), the experimental architecture, and the dead-time of the detectors.
@@ -104,10 +104,8 @@ where $R$ is the effective repetition rate of the quantum boson-sampler, restric
 \subsection{Classical Simulation}
 
 How can a classical computer simulate this bosonic process, and sample from its exact or approximate probability distribution? A na{\"i}ve brute-force method is to calculate all $|\Phi|$ permanents of the set of submatrices $U_{S,T_i}$, thereby determining the full probability distribution, and then sample from this known distribution. \textbf{However, neither does the boson-sampler know even the approximate probability distribution before enough samples are obtained} \comment{What does that sentence mean?}. Smarter classical algorithms exist to generate correct samples without knowing the entire underlying distribution. For example, using the acceptance-rejection method \cite{bib:15} one can sample an output configuration $\ket{T_i}$ uniformly from the configuration space and a number $u$ from the uniform distribution over $\{0,1\}$, then calculate the permanents of the respective submatrices and compare them to $u$; If \mbox{$u<|\mathrm{Per}(U_{S,T_i})|^2$}, we accept the sample $\ket{T_i}$; If not, it is rejected, and we repeat. Such methods could be successful with probability $O(1)$. One sample only requires calculating one permanent, significantly better than the brute-force method of calculating the entire distribution.
-
-The permanent is a matrix function originating from the permutation symmetry of bosons, similar to the role of determinants for fermions. Na{\"i}ve calculation of the permanent of an $n\times n$ matrix requires $n!$ operations. However, a more efficient classical algorithm developed by Ryser \cite{bib:16} in 1963 requires $O(n^2 2^{n+1})$ operations, which is nonetheless exponential. No general polynomial-time algorithms have been described, in contrast to the clever Gaussian elimination method for calculate matrix determinants. In fact, calculating the permanent was proved to be \#P-complete in 1979 by Valiant \cite{bib:17}. A more intuitive understanding is that the permanent corresponds to counting the number of different matching ways between input state and output state through the interferometer, much like adding Feynman paths \cite{???} to determine quantum amplitudes.
-
-Consequently, for a classical simulator, the time required to acquire a sample using this approach is,
+The permanent is a matrix function originating from the permutation symmetry of bosons, similar to the role of determinants for fermions. Na{\"i}ve calculation of the permanent of an $n\times n$ matrix requires $n!$ operations. However, a more efficient classical algorithm developed by Ryser \cite{bib:16} in 1963 requires $O(n^2 2^{n+1})$ operations, which is nonetheless exponential. No general polynomial-time algorithms have been described, in contrast to the clever Gaussian elimination method for calculate matrix determinants. In fact, calculating the permanent was proved to be \#P-complete in 1979 by Valiant \cite{bib:17}. A more intuitive understanding is that the permanent corresponds to counting the number of different matching ways between input state and output state through the interferometer, much like adding Feynman paths \cite{} to determine quantum amplitudes.
+Consequently, for a classical simulator, the time required to acquire a sample using this approach is,
 \begin{align}
 \tau_c \approx \frac{n^2 2^{n+1}}{A},
 \end{align}
@@ -121,10 +119,8 @@ Comparing the requisite times, we plot the critical photon-number as a function 
 \includegraphics[width=\columnwidth]{curves_1}
 \caption{The quantum and classical supremacy of (spatially-encoded) boson-sampling is divided by the red lines, where the top-right region corresponds to quantum supremacy and vice versa. The efficiency denoted on the horizontal axis is the overall system efficiency. (a) $R=76$MHz. The numbers 3, 6, etc. in the lines refer to $10^3\mathrm{FLOPS}$, $10^6\mathrm{FLOPS}$ etc. of the classical simulator. (b) $A=10^9\mathrm{Hz}$. The numbers 2, 3, etc. in the lines denote photon-number.} \label{fig:curves_1}
 \end{figure}
-
-The repetition rate $R$ is another important factor affecting the performance of quantum simulators that we must consider in practical experiments. If $\eta^n$ is taken as the post-selection success probability of a single trial, then \mbox{$\eta^n R$} indicates how many successful runs we can implement per second. For example, to beat a gigaFLOPS classical computer, four-photon boson-sampling with $R=76\mathrm{MHz}$ ($R$ vs $A$) is sufficient if the total efficiency is \mbox{$\eta=0.4$}. As shown in Fig.~\ref{fig:curves_1}(b), however, \mbox{$\eta=0.2$} and \mbox{$n=2$} is sufficient if the repetition rate increases to 1GHz. In other words, by increasing the repetition rate, the efficiency and photon-number requirements are relaxed. However, we cannot increase the repetition rate indefinitely. It is restricted by the pulse rate of the SPS, experimental architecture, and dead-time of the detectors. In the next section we discuss the impact of the choice of experimental architecture.
-
-Here we must point out two things. First, Ryser's algorithm is actually not faster than using the original formula to calculate the matrix permanent when photon number is small (\mbox{$n<6\sim 7$}). Thus the above conditions may be not tight. For example, the efficiency must be larger than $\sim 0.6$ if two- (four)-photon boson-sampling with a repetition rate of 1GHz (76MHz) is expected to beat a gigaFLOPS classical computer. 
+The repetition rate $R$ is another important factor affecting the performance of quantum simulators that we must consider in practical experiments. If $\eta^n$ is taken as the post-selection success probability of a single trial, then \mbox{$\eta^n R$} indicates how many successful runs we can implement per second. For example, to beat a gigaFLOPS classical computer, four-photon boson-sampling with $R=76\mathrm{MHz}$ ($R$ vs $A$) is sufficient if the total efficiency is \mbox{$\eta=0.4$}. As shown in Fig.~\ref{fig:curves_1}(b), however, \mbox{$\eta=0.2$} and \mbox{$n=2$} is sufficient if the repetition rate increases to 1GHz. In other words, by increasing the repetition rate, the efficiency and photon-number requirements are relaxed. However, we cannot increase the repetition rate indefinitely. It is restricted by the pulse rate of the SPS, experimental architecture, and dead-time of the detectors. In the next section we discuss the impact of the choice of experimental architecture.
+Here we must point out two things. First, Ryser's algorithm is actually not faster than using the original formula to calculate the matrix permanent when photon number is small (\mbox{$n<6\sim 7$}). Thus the above conditions may be not tight. For example, the efficiency must be larger than $\sim 0.6$ if two- (four)-photon boson-sampling with a repetition rate of 1GHz (76MHz) is expected to beat a gigaFLOPS classical computer. 
 
 Why then should we nonetheless scale up to more photons (\mbox{$n=20\sim 30$}), even though boson-sampling with relatively few photons could beat current prevailing personal computers in realistic experimental regimes? One reason is that no finite experiment can make a decisive conclusion about the ECT, since it is a conjecture about the asymptotic limit. In the field of computational complexity, the significance of boson-sampling rests largely on its exponentially faster sampling speed than that of classical simulators, rather than certain times of specific triumphs in the competitions between quantum and classical computers. Thus, through upscaling we can make stronger statements about asymptotic behaviour (albeit never a completely conclusive one). Another cause is that people have not physically constructed relatively large multi-photon interferometers yet. The theory of boson-sampling still faces the risk of failure and quantum devices may break down with more photons. Finally, although no practical uses for boson-sampling have been described, it is entirely plausible that useful applications may be found in the future. Were that the case, scaling up boson-sampling experiments would similarly scale up the size of the problems it could solve.
 
@@ -132,111 +128,27 @@ Why then should we nonetheless scale up to more photons (\mbox{$n=20\sim 30$}), 
 
 \subsection{Spatial Encoding Architecture}
 
-A fully spatially-encoded scheme is one whereby the circuit itself does not consume any time resources (beyond the propagation time from the input to the output time of the circuit, which is fixed). This includes optical waveguides, fused fibre couplers and bulk-optics circuits, as shown in Fig.~\ref{fig:space_encoding}. The time required for this scheme is the same as Eq.~\ref{eq:tau_q}.
+A fully spatially-encoded scheme is one whereby the circuit itself does not consume any time resources (beyond the propagation time from the input to the output time of the circuit, which is fixed). This includes optical waveguides, fused fibre couplers and bulk-optics circuits, as shown in Fig.~\ref{fig:space_encoding}. The time required for this scheme is the same as Eq.~\ref{eq:2}.
 
 \begin{figure}[!htb]
 \includegraphics[width=\columnwidth]{space_encoding}
 \caption{Spatially-encoded optical circuits: (a) optical waveguide; (b) fused fibre coupler; and, (c) bulk-optics.} \label{fig:space_encoding}
 \end{figure}
 
-It was proven by Reck et al. \cite{bib:18} that an arbitrary $m$-mode linear optical network can be efficiently constructed using $O(m^2)$ linear optical elements (i.e. beamsplitters and phase-shifters). This can be reduced to $O(mn)$ in the case of boson-sampling, where there are $n$ photons in $m$ modes. Although `efficient', this scaling implies that constructing a network with hundreds of modes with discrete elements, one probably needs several room-sized optical tables, inevitably suffering from severe air turbulence and mechanical instability. For perfect quantum interference, photons should arrive at the points of interference simultaneously and be perfectly mode-matched (to be discussed in more detail in Sec.~\ref{sec:fidelity_of_devices}), which means all of the thousands of optical elements must be carefully simultaneously aligned. More integrated and stable alternatives are of pressing importance. In fact, all initial demonstrations of boson-sampling were based on integrated optical circuits including, waveguides based on direct laser writing techniques \cite{bib:4, bib:5, bib:6} and fused fibre couplers \cite{bib:10}.
+It was proven by Reck \emph{et al.} \cite{bib:18} that an arbitrary $m$-mode linear optical network can be efficiently constructed using $O(m^2)$ linear optical elements (i.e. beamsplitters and phase-shifters). This can be reduced to $O(mn)$ in the case of boson-sampling, where there are $n$ photons in $m$ modes. Although `efficient', this scaling implies that constructing a network with hundreds of modes with discrete elements, one probably needs several room-sized optical tables, inevitably suffering from severe air turbulence and mechanical instability. For perfect quantum interference, photons should arrive at the points of interference simultaneously and be perfectly mode-matched (to be discussed in more detail in Sec.~\ref{sec:fidelity_of_devices}), which means all of the thousands of optical elements must be carefully simultaneously aligned. More integrated and stable alternatives are of pressing importance. In fact, all initial demonstrations of boson-sampling were based on integrated optical circuits including, waveguides based on direct laser writing techniques \cite{bib:4, bib:5, bib:6} and fused fibre couplers \cite{bib:10}.
 
 \subsection{Time-Bin Encoding Architecture}
-
-An alternative scheme fully employs time-bin encoding to construct the interferometer network, which was proposed \cite{bib:19} in 2014 and first demonstrated \cite{bib:11} in 2016. The main idea is to utilise the temporal degree of freedom, by applying a mapping from spatial modes to time-bins. This scheme has fixed experimental complexity and only needs one high repetition rate SPS, one time-resolved detector and one dynamic beamsplitter, which makes it much easier to align the experimental setup since there is only a single point of interference. The architecture is shown in Fig.~\ref{fig:loop_arch}.
 
 \begin{figure}[!htb]
 \includegraphics[width=\columnwidth]{loop_arch}
 \caption{The fibre-loop scheme for boson-sampling. A pulse-train of photons in $m$ time-bins defines the input state, with time-bin separation $\tau$. The pulse-train is coupled into and out of the outer loop using two outer dynamic switches. The inner loop of length $\tau$ allows neighbouring time-bins to interfere at the central dynamic switch. The outer two switches need only switch between being completely reflective and completely transmissive, whereas the inner switch must be able to tune to any beamsplitter reflectivity. The only component that scales with the size of the interferometer is the length of the outer loop, which must be long enough to contain the entire pulse-train, $>m\tau$.} \label{fig:loop_arch}
 \end{figure}
 
-In this design, a sequence of single photons is injected and interference with one other through the time delay and fibre beamsplitter. As in Fig.~\ref{fig:loop_arch}, a small fibre loop of round-trip time \mbox{$\tau=1/R$} acts as the time delay, where the node is a dynamic beam splitter for interference. The small loop is embedded in a large fibre loop of travelling time $>m\tau$, which is used to return the `photon pulse-train' back for next round of interference. These two embedding fibre loops together fully construct the interference network that encodes only in the temporal degree of freedom. According to Reck's result, one needs $O(m^2)$ beamsplitters to construct an arbitrary \mbox{$m\times m$} interferometer. For a with $m$ time bins, the beamsplitter works $m$ times in each round trip. So $m$ round trips are required to implement an arbitrary  unitary transformation. After $m$ loops of evolution, the photons are all coupled out of the loop for time-resolved coincidence measurements.
-
-As described above, the circuit itself consumes time resources $m^2\tau$, thus the effective repetition rate is,
-\begin{align}
-\frac{1}{m^2\tau}=\frac{R'}{m^2},
-\end{align}
-where $R'$ is the repetition frequency of the photonic time-bins. We use it instead of $R$ in Eq.~\ref{eq:tau_q} and obtain,
-\begin{align}
-\tau_t = \frac{m^2}{\eta^n R'}.
-\end{align}
-Comparing $\tau_t$ with $\tau_c$ and following the same way for original boson-sampling in Sec.~\ref{sec:sampling_time}, we plot the critical photon-number to reach quantum supremacy as a function of $\eta$ for the time-bin encoding scheme.
-
-We see that the boundary lines in Fig.~\ref{fig:curves_2} move to the right relative to Fig.~\ref{fig:curves_1}(a), in the case of utilising spatial encoding. For example, to beat a classical computer of gigaFLOPS, the minimum required photon number increases to 9 if we employ time-bin encoding. This is because, for temporal encoding, there is only one spatial mode so that all the $m^2$ operations to realise the unitary transformation can only be extended in the temporal degree of freedom. Thus, its scalability is forced to be more dependent on the repetition rate of the SPS and the dead-time of the single-photon detector.
-
-\begin{figure}[!htb]
-\includegraphics[width=\columnwidth]{curves_2}
-\caption{The quantum and classical supremacy of (a) temporal-encoding, and (b) hybrid-encoding boson-sampling, is divided by the red line, where quantum supremacy is in the top-right region, and vice versa. The numbers 3, 6, etc. in the line refer to $10^3$FLOPS, $10^6$FLOPS etc. of classical computers respectively. The efficiency denoted on the horizontal axis is the overall system efficiency. Given the magnitude of the coupling strength, a single step including a beam splitter operation and phase-shifting operation takes \mbox{$\tau\sim0.3\mu\mathrm{s}$} \cite{bib:20}. Effective repeat frequency (a) \mbox{$R'=1/(13\mathrm{ns}\cdot 10^4)$}, (b) \mbox{$R'=1/(0.3\mu\mathrm{s}\cdot n^2).$}} \label{fig:curves_2}
-\end{figure}
-
 \subsection{Hybrid Encoding Architecture}
-
-The unitary network can also be encoded into a hybrid architecture -- partially spatial and partially temporal. Recently, Peropadre et al. \cite{bib:20} proposed such a hybrid scheme based on a superconducting device, named `microwave boson-sampling'. They pointed out that, the three fundamental steps of boson-sampling -- i.e. preparation of single-photon states, unitary transformations, and photodetection -- can all be realised using microwave photons with high fidelity (shown in Fig.~\ref{fig:microwave}). For $m$-mode boson-sampling, one needs $m$ storage resonators in total, where microwave photons are produced and stored. And between every pair of adjacent storage resonators there is a superconducting ring to tune the coupling. Each storage resonator has a corresponding X-mon qubit, which plays an essential role in preparation, phase-shifting and measurement. At the other side of the X-mon qubit, a low-Q (measurement) resonator is coupled to implement non-demolition measurement.
-
-\begin{figure}[!htb]
-\includegraphics[width=\columnwidth]{microwave}
-\caption{Hybrid-encoding (microwave) boson-sampling proposed in \cite{bib:20}. The X-mon qubit is capacitively coupled to the storage and measurement cavities. The tuneable coupler between adjacent storage cavities is a superconducting ring intersected by a Josephson junction.} \label{fig:microwave}
-\end{figure}
-
-Compared to fabricating a unitary network in waveguides, the spatial degree of freedom in the transverse axis is retained as there are $m$ storage resonators and auxiliary qubits in microwave boson-sampling. But the longitudinal spatial modes are replaced by $m$ controlled temporal steps. Suppose a single step including a beamsplitter operation and phase-shift operation takes time $\tau_m$, so the total operational time for an \mbox{$m\times m$} unitary transformation is $\tau_m m$ \comment{Shouldn't this be $m^2$?}. Taking the reciprocal of the total operational time as the effective repeat frequency, we obtain the formula for $\tau_q$ for this scheme. Comparing with $\tau_c$, we plot the supremacy boundary for microwave boson-sampling, shown in Fig.~\ref{fig:curves_2}(b).
-
-From the perspective of the encoding scheme, the sampling speed (unitary transformation) of microwave a boson-sampler is much slower than that of spatially-encoding boson-samplers. As showed in Fig.~\ref{fig:curves_2}, to beat the same advanced classical computer, we actually need higher system efficiency or a larger number of photons if the microwave scheme is utilised. However, the advantage of the superconducting platform exactly lies in its marvelously high fidelities ($>0.90$) of generation and measurement processes \cite{bib:21}, to which no ordinary optical boson-sampler is comparable. Though with high processing speed, the effective repeat frequency of a spatially-encoded optical boson-sampler is greatly reduced by post-selection due to the limited collection and detection efficiency. \comment{This doesn't make sense to me - explain it better}
 
 \subsection{Lossy Boson-Sampling}
 
-In real-world experiments, photons are inevitably subject to loss and other errors, making it sample from an erroneous distribution rather than the desired boson-sampling distribution. As boson-sampling only comprises passive optical elements, it is not universal and there are no known fault tolerance or error-correction schemes. From the beginning, Aaronson and Arkhipov 
-cite{bib:2} have already noted this problem. And in their original paper introducing boson-sampling, proved that boson-sampling is classically hard even if sampling from an approximate distribution with multiplicative error. Furthermore, several follow-up works have discussed the effect of realistic experimental imperfections in more detail, such as losses \cite{bib:22}, mode-mismatch due to calibration errors within the linear optical network \cite{bib:23, bib:24}, and photon distinguishability \cite{bib:25, bib:26, bib:27, bib:28, bib:29, bib:30}.
-
-It was shown that the hardness remains in the same complexity when the average fidelity per optical element of the unitary network scales as \mbox{$1-O(1/n^2)$}. In the presence of varying degrees of photon distinguishability, the probability of each sample is related to an immanent, a more general matrix function than permanents and determinants, conjectured to be as computationally hard as the permanent in general \cite{bib:31, bib:32}.
-
-To deal with photon loss due to sub-unity transmittance within the circuit and inefficient detection, post-selection, which discards samples with lost photons, is usually adopted in experiments. However, assuming that on average each photon has a constant probability to finally trigger a detector at the output, the experimental runtime overhead arising from post-selection will increase exponentially with the number of photons in the system.
-
-Recently, Aaronson and Brod \cite{bib:33} demonstrated that if $O(1)$ photons are lost at the input (i.e. $k$ out of \mbox{$n+k$}), the probability of each output configuration is given by,
-\begin{align}
-\mathrm{Pr}(T) = \frac{1}{|\Lambda_{n+k,n}|} \sum_{s\in m,n+k,n} |\mathrm{Per}(U_{S,T})|^2.
-\end{align}
-\comment{Need to define $\Lambda$ and meaning of $s\in m,n+k,n$.}
-
-It was also proved that calculating $\mathrm{Pr}(U_{S,T})$ is as least as hard as calculating the permanent of an \mbox{$m\times n$} submatrix of a Harr-random matrix. Let us introduce a modification of $\tau_q$ and $\tau_c$ in the context of boson-sampling with lost photons. The average sampling interval $\tau_q$ is obtained by replacing the probability of detecting $n$ photons in coincidence, $\eta^n$, in Eq.~\ref{eq:tau_q} with,
-\begin{align}
-P(n,n_\mathrm{los}) = \eta^n(1-\eta)^{n_\mathrm{lost}}\binom{n+n_
-\mathrm{lost}}{n_\mathrm{lost}},
-\end{align}
-where $n$ is the number of photons after loss, and $n_\mathrm{lost}$ is the number of lost photons. So we have,
-\begin{align}
-\tau_q = \frac{1}{\eta^n(1-\eta)^{n_\mathrm{lost}}\binom{n+n_
-\mathrm{lost}}{n_\mathrm{lost}}R}.
-\end{align}
-
-Because \emph{Theorem 1} in \cite{bib:33} states that boson-sampling with a constant number of lost photons is (at least) as hard as ideal boson-sampling, then for a classical simulator, Eq.~\ref{eq:tau_q} can still be applied to boson-sampling with lost photons whose photon number after loss is $n$.
-
-Provided the repeat frequency of the quantum system is 76MHz and the clock speed of the classical computer is 1GHz, in Fig.~\ref{fig:curve_hybrid} we plot the minimum required number of photons after loss to achieve quantum supremacy against the increasing total efficiency of the quantum boson-sampler.
-
-\begin{figure}[!htb]
-\includegraphics[width=\columnwidth]{curves_loss}
-\caption{The quantum and classical supremacy of boson-sampling with lost photons is separated by the red line, where the top-right side corresponds to the quantum regime and vice versa. Here the clock speed of the classical computer is gigaFLOPS, i.e $10^9$FLOPS. The efficiency denoted on the horizontal axis is the overall system efficiency. The numbers 0, 1, 2 \emph{etc.} in the line refer to the number of lost photons, $n_\mathrm{lost}$. The detection efficiency: (a) \mbox{$\eta_d=0.5$} (b) \mbox{$\eta_d=1$}. \comment{(Why does the curve have the change in direction?})} \label{fig:curve_hybrid}
-\end{figure}
-
-From right to left, the lines respectively refer to no lost photons, one lost photon, and so on. It is shown that when the efficiency is lower than $\sim 0.4$, theoretically, a quantum sampler implementing standard boson-sampling cannot win the game no matter how large it scales in size. However, by employing the scheme of boson-sampling with lost photons, a quantum sampler of $\sim 0.3$ total efficiency can beat the classical competitor if 5 photons remain after loss and another extra photon was injected but lost. Our result agrees with Rohde's theory \cite{bib:22} that quantum superiority can be retained by injecting extra photons to compensate for loss in the quantum device.
-
 \subsection{Scattershot Boson-Sampling}
-
-\begin{figure}[!htb]
-\includegraphics[width=\columnwidth]{scattershot_model}
-\caption{The scheme for scattershot boson-sampling \cite{bib:36}. For an \mbox{$m\times m$}-mode interferometer, there are $m$ pairs of SPDCs, of which only $n$ generate single photons at a time.} \label{fig:scattershot_model}
-\end{figure}
-
-
-
-
-
-
-
-%\begin{figure}[!htb]
-%\includegraphics[width=\columnwidth]{lossy}
-%\caption{???} \label{fig:lossy}
-%\end{figure}
-
 
 \section{Fidelity of Boson-Sampling Devices} \label{sec:fidelity_of_devices}
 
@@ -303,7 +215,7 @@ F(\hat\rho_1,\hat\rho_2) = F(\hat{U}\hat\rho_1\hat{U}^\dag, \hat{U}\hat\rho_2\ha
 \end{align}
 the output fidelity is the same as the input fidelity, \mbox{$F_\mathrm{out} = F_\mathrm{total}$}. The output fidelity has a direct operational interpretation, as the probability that a given sample was taken from a boson-sampling distribution (as opposed to some other erroneous distribution).
 
-The relationship between the single-photon input and net output fidelities are illustrated in Fig.~\ref{fig:fidelity}. Based on this, to achieve an output fidelity of \mbox{$F_\mathrm{out} = 0.9$} (i.e 90\% confidence that a given sample is a legitimate boson-sampling sample) requires single-photon input fidelities of \mbox{$F_\mathrm{in} = 0.995$} for 10 photons, and \mbox{$F_\mathrm{in} = 0.998$} for 20 photons. This type of single-photon interference fidelity is realistic using present-day technology, which comes very close to unity.
+The relationship between the single-photon input and net output fidelities are illustrated in Fig.~\ref{fig:fidelity}. Based on this, to achieve an output fidelity of \mbox{$F_\mathrm{out} = 0.9$} requires single-photon input fidelities of \mbox{$F_\mathrm{in} = 0.995$} for 10 photons, and \mbox{$F_\mathrm{in} = 0.998$} for 20 photons. This type of single-photon interference fidelity is realistic using present-day technology, which comes very close to unity.
 
 \begin{figure}[!htb]
 \includegraphics[width=\columnwidth]{fidelity}
@@ -334,7 +246,7 @@ The best narrowband-filtered SPDC source reported thus far exhibits a purity of 
 
 \subsection{Four-Wave Mixing (FWM)}
 
-Four-wave mixing is a third-order nonlinear effect in which two pump photons are converted into two correlated photons. Although the nonlinear effect per unit length of FWM is relatively small compared to SPDC, photon-pairs can be produced effectively by increasing the interaction length, such as in long optical fibres \cite{bib:45, bib:46} or silicon-based waveguides \cite{bib:43, bib:44}. Spontaneous Raman scattering is one of dominant noise mechanisms, however, which could be either suppressed or detuned. Recently, Spring et al. have prepared silica-based SPSs with purity \mbox{$\sim 97\%$} and heralding efficiency \mbox{$\sim 31\%$} \cite{bib:44}. They further implemented the experiments of two and three-photon Hong-Ou-Mandel interference with high visibilities \cite{bib:44}. Such heralded sources are also valuable for SBS. Another potential advantage of  FWM sources is their high coupling efficiency with circuits integrated on the same platform \cite{bib:43, bib:44}.
+Four-wave mixing is a third-order nonlinear effect in which two pump photons are converted into two correlated photons. Although the nonlinear effect per unit strength \comment{(length??)} of FWM is relatively small compared to SPDC, photon-pairs can be produced effectively by increasing the interaction length, such as in long optical fibres \cite{bib:45, bib:46} or silicon-based waveguides \cite{bib:43, bib:44}. Spontaneous Raman scattering is one of dominant noise mechanisms, however, which could be either suppressed or detuned. Recently, Spring \emph{et al.} have prepared silica-based SPSs with purity \mbox{$\sim 97\%$} and heralding efficiency \mbox{$\sim 31\%$} \cite{bib:44}. They further implemented the experiments of two and three-photon Hong-Ou-Mandel interference with high visibilities \cite{bib:44}. Such heralded sources are also valuable for SBS. Another potential advantage of  FWM sources is their high coupling efficiency with circuits integrated on the same platform \cite{bib:43, bib:44}.
 
 \subsection{Quantum Dots (QD)}
 
@@ -352,20 +264,9 @@ Optical waveguides are one of the most common methods to construct large-scale l
 
 The first waveguide platform we consider is silica-on-silicon planar lightwave circuits (PLC) \cite{bib:61}, due to its ultra-low propagation loss ($<0.01$dB/cm) and coupling loss ($<0.1$dB/facet). In present small-scale quantum applications \cite{bib:9}, its coupling loss of $\sim 0.4$dB/facet may be low enough. However, each directional coupler (DC) exhibits loss of $\sim 0.1$dB, still unacceptable for large-scale circuits containing hundreds of DCs. In principle, losses could be improved to meet requirements using state-of-the-art techniques. Another more severe problem dimming the prospect for such micrometer waveguides is the size of DCs. As shown in Tab.~\ref{tab:one}, the smallest radius is 2mm, achieved by PLC waveguides with index contrast of 1.5\%, allowing for tight bends and shortest DC length (1mm). In fact, they usually reach several millimetres \cite{bib:9}, leading to an exaggerated total length of $\sim 1$m for circuits containing hundreds of DCs.
 
-\begin{table*}
-\begin{tabular}{|c|c|c|c|c|c|}
-\hline
-Silica & Technology & $\Delta$(\%) & Min. radius (mm) & PL (db/cm) & CL (dB/facet) \\
-\hline
-\hline
-Ge-doped & PLC  & 0.25 & 25 & $<0.01$ & $<0.1$ \\Ge-doped & PLC  & 1.5  & 2  & 0.05    & 2.0 \\Fused    & FLDW & 0.7  & 50 & 0.3     & 0.1 \\Fused    & FLDW & 1.0  & 15 & 0.6     & 0.1 \\
-\hline
-\end{tabular} \caption{Properties of waveguides fabricated by PLC \cite{bib:61} and FLDW \cite{bib:62} (wavelength: 1550 nm).} \label{tab:one}
-\end{table*}
-
 The problem of size also haunts another popular platform in the field of optical quantum processing -- fused silica waveguides, fabricated using femtosecond laser direct-written (FLDW) technology. Unlike PLC fabrication, the FLDW is a powerful and flexible technique for rapid 3D fabrication, requiring no masking procedure or cleanroom environment. However, this one-step fabrication process also makes the propagation loss rely heavily on the motion control accuracy of the precision stage \cite{bib:63}. FLDW waveguides exhibit lowest losses on the order of 0.1dB/cm \cite{bib:63}, substantially higher than that of PLC waveguides. Also, the maximum refractive index contrast achieved so far is 1\%, which limits waveguide bends to a radius of about 15 mm (see Tab.~\ref{tab:one}).
 
-A possible solution to relaxing this problem is silicon nitride ($\mathrm{Si}_3\mathrm{N}_4$) planar waveguides, which are also transparent from visible through telecom wavelengths. Thanks to higher refractive index contrast ($\sim 25$\%), their integration density could be about an order of magnitude more compact than silica waveguides. In fact, Bowers et al. have developed high-aspect-ratio $\mathrm{Si}_3\mathrm{N}_4$ waveguides with favourably low propagation loss ($<1$dB/m) \cite{bib:64}, and minimum bend radii less than 1mm \cite{bib:65}.
+A possible solution to relaxing this problem is silicon nitride ($\mathrm{Si}_3\mathrm{N}_4$) planar waveguides, which are also transparent from visible through telecom wavelengths. Thanks to higher refractive index contrast ($\sim 25$\%), their integration density could be about an order of magnitude more compact than silica waveguides. In fact, Bowers \emph{et al.} have developed high-aspect-ratio $\mathrm{Si}_3\mathrm{N}_4$ waveguides with favourably low propagation loss ($<1$dB/m) \cite{bib:64}, and minimum bend radii less than 1mm \cite{bib:65}.
 
 Another possible solution would be silicon waveguides, which have higher refractive index than the other waveguides mentioned previously, thus allowing a dramatic reduction in the bend radius ($<10\mu\mathrm{m}$). Correspondingly, the length of DC can be dramatically reduced, e.g. the $2\times 2$ MMI coupler in silicon ($27\mu\mathrm{m}$) \cite{bib:66} is 40 times shorter than the one in silica (1.1mm) \cite{bib:67}. On the other hand, the best propagation losses can reach 0.1dB/cm \cite{bib:68, bib:69} and coupling losses of 0.5dB/facet are possible using spot-size converters (SSC) \cite{bib:70, bib:71}. That is to say, it is possible to construct large networks with thousands of DCs with insertion loss as low as 2dB in principle. However, current quantum experiments based on silicon waveguides \cite{bib:43, bib:72} have typical propagation losses of $2\sim 4$dB/cm and coupling losses of $2\sim 4$dB/facet, leading to device losses in the range of $6\sim 10$dB. Another important loss we cannot ignore is the excess loss of each DC, on the order of 0.1dB \cite{bib:72, bib:73, bib:74}, a substantial hurdle in the quest for scalability. Note that visible wavelengths, including 780nm, are forbidden, but 1550nm, the typical telecom wavelength, is in its transparent window and can be detected with high-efficiency ($>95\%$) using superconducting single-photon detectors \cite{bib:75}.
 
@@ -379,7 +280,7 @@ In order to lower loss \cite{bib:11}, the controlled switch was realised using a
 
 \subsection{Fibre Beamsplitters}
 
-Due to the ultra-low loss of single mode fibres (0.2dB/km at 1550nm), fused fibre couplers (FFC) are a promising candidate. The couplings between any two adjacent fibres are hard to control on a large scale due to the fusing process, thus commercial FFCs are rare with greater than $4\times 4$ input/output modes. In fact, such random coupling devices are not welcomed by applications other than boson-sampling. In one of the first demonstrations of boson-sampling \cite{bib:10}, the circuit was a 3×3 FFC with coupling efficiency of 64\%. Recently, Lin et al. \cite{bib:78} fabricated a $15\times 15$-mode FBS and claimed that such a large-scale device has a total loss as low as 1dB, and could potentially be scaled up to hundreds of modes with improvements to the fabrication process.
+Due to the ultra-low loss of single mode fibres (0.2dB/km at 1550nm), fused fibre couplers (FFC) are a promising candidate. The couplings between any two adjacent fibres are hard to control on a large scale due to the fusing process, thus commercial FFCs are rare with greater than $4\times 4$ input/output modes. In fact, such random coupling devices are not welcomed by applications other than boson-sampling. In one of the first demonstrations of boson-sampling \cite{bib:10}, the circuit was a 3×3 FFC with coupling efficiency of 64\%. Recently, Lin \emph{et al.} \cite{bib:78} fabricated a $15\times 15$-mode FBS and claimed that such a large-scale device has a total loss as low as 1dB, and could potentially be scaled up to hundreds of modes with improvements to the fabrication process.
 
 \subsection{Miniaturised Bulk-Optics}
 

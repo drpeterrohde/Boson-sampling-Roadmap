@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.6)  21 SEP 2016 23:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.6)  22 SEP 2016 05:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -404,143 +404,267 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 
 Class revtex4 Warning: Assuming \noaffiliation for Authors after me.
 
-(./paper.toc)
+(./paper.toc
+Overfull \hbox (3.50012pt too wide) detected at line 19
+ \OT1/cmr/m/n/8 10
+ []
+
+
+Overfull \hbox (3.50012pt too wide) detected at line 20
+ \OT1/cmr/m/n/8 10
+ []
+
+
+Overfull \hbox (3.50012pt too wide) detected at line 21
+ \OT1/cmr/m/n/8 10
+ []
+
+
+Overfull \hbox (3.50012pt too wide) detected at line 22
+ \OT1/cmr/m/n/8 11
+ []
+
+
+Overfull \hbox (3.50012pt too wide) detected at line 23
+ \OT1/cmr/m/n/8 11
+ []
+
+
+Overfull \hbox (3.50012pt too wide) detected at line 24
+ \OT1/cmr/m/n/8 11
+ []
+
+
+Overfull \hbox (3.50012pt too wide) detected at line 25
+ \OT1/cmr/m/n/8 12
+ []
+
+
+Overfull \hbox (3.50012pt too wide) detected at line 26
+ \OT1/cmr/m/n/8 12
+ []
+
+
+Overfull \hbox (3.50012pt too wide) detected at line 27
+ \OT1/cmr/m/n/8 12
+ []
+
+
+Overfull \hbox (3.50012pt too wide) detected at line 28
+ \OT1/cmr/m/n/8 12
+ []
+
+
+Overfull \hbox (3.50012pt too wide) detected at line 29
+ \OT1/cmr/m/n/8 12
+ []
+
+
+Overfull \hbox (3.50012pt too wide) detected at line 30
+ \OT1/cmr/m/n/8 13
+ []
+
+
+Overfull \hbox (3.50012pt too wide) detected at line 31
+ \OT1/cmr/m/n/8 13
+ []
+
+
+Overfull \hbox (3.50012pt too wide) detected at line 33
+ \OT1/cmr/m/n/8 13
+ []
+
+
+Overfull \hbox (3.50012pt too wide) detected at line 34
+ \OT1/cmr/m/n/8 13
+ []
+
+
+Overfull \hbox (3.50012pt too wide) detected at line 35
+ \OT1/cmr/m/n/8 13
+ []
+
+)
 \tf@toc=\write4
 \openout4 = `paper.toc'.
 
- [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] <mod
-el.pdf, id=218, 321.2pt x 152.57pt>
+ [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<model.pdf, id=218, 321.2pt x 152.57pt>
 File: model.pdf Graphic file (type pdf)
  <use model.pdf>
 Package pdftex.def Info: model.pdf used on input line 64.
 (pdftex.def)             Requested size: 246.0pt x 116.85301pt.
 
 
-LaTeX Warning: Reference `eq:2' on page 2 undefined on input line 82.
+Package natbib Warning: Citation `???' on page 2 undefined on input line 96.
 
-<space_encoding.pdf, id=220, 454.69875pt x 99.37125pt>
+[2 <./model.pdf>]
+
+Package natbib Warning: Citation `???' on page 3 undefined on input line 108.
+
+<curves_1.pdf, id=279, 371.3875pt x 181.67876pt>
+File: curves_1.pdf Graphic file (type pdf)
+ <use curves_1.pdf>
+Package pdftex.def Info: curves_1.pdf used on input line 121.
+(pdftex.def)             Requested size: 246.0pt x 120.34357pt.
+ [3]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 128.
+
+<space_encoding.pdf, id=296, 454.69875pt x 99.37125pt>
 File: space_encoding.pdf Graphic file (type pdf)
 
 <use space_encoding.pdf>
-Package pdftex.def Info: space_encoding.pdf used on input line 85.
+Package pdftex.def Info: space_encoding.pdf used on input line 138.
 (pdftex.def)             Requested size: 246.0pt x 53.76277pt.
+ <loop_arch.pdf, id=313, 253.94875pt x 148.555pt>
+File: loop_arch.pdf Graphic file (type pdf)
 
+<use loop_arch.pdf>
+Package pdftex.def Info: loop_arch.pdf used on input line 149.
+(pdftex.def)             Requested size: 246.0pt x 143.91002pt.
+ [4 <./curves_1.pdf> <./space_encoding.pdf>]
 
-LaTeX Warning: Reference `fidelity_of_devices' on page 2 undefined on input lin
-e 89.
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 154.
 
-[2 <./model.pdf> <./space_encoding.pdf>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 105.
+<curves_2.pdf, id=347, 342.27875pt x 169.63374pt>
+File: curves_2.pdf Graphic file (type pdf)
+ <use curves_2.pdf>
+Package pdftex.def Info: curves_2.pdf used on input line 168.
+(pdftex.def)             Requested size: 246.0pt x 121.92136pt.
+
+<microwave.pdf, id=353, 240.9pt x 153.57375pt>
+File: microwave.pdf Graphic file (type pdf)
+ <use microwave.pdf>
+Package pdftex.def Info: microwave.pdf used on input line 177.
+(pdftex.def)             Requested size: 246.0pt x 156.8306pt.
+ [5 <./loop_arch.pdf> <./curves_2.pdf>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 182.
+
+[6 <./microwave.pdf>] <curves_loss.pdf, id=472, 352.31625pt x 173.64874pt>
+File: curves_loss.pdf Graphic file (type pdf)
+
+<use curves_loss.pdf>
+Package pdftex.def Info: curves_loss.pdf used on input line 216.
+(pdftex.def)             Requested size: 246.0pt x 121.24857pt.
+ <scattershot_model.pdf, id=475, 336.25626pt x 148.555pt>
+File: scattershot_model.pdf Graphic file (type pdf)
+
+<use scattershot_model.pdf>
+Package pdftex.def Info: scattershot_model.pdf used on input line 225.
+(pdftex.def)             Requested size: 246.0pt x 108.68225pt.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 247.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 105.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 247.
 
-Underfull \hbox (badness 1331) in paragraph at lines 105--106
+Underfull \hbox (badness 1331) in paragraph at lines 247--248
  []\OT1/cmr/m/n/10 Source time-jitter: This is caused by clas-si-cal
  []
 
 
-Underfull \hbox (badness 1694) in paragraph at lines 107--108
+Underfull \hbox (badness 1694) in paragraph at lines 249--250
  \OT1/cmr/m/n/10 pletely dis-tin-guish-able pho-tons, boson-samplers
  []
 
 
-Package natbib Warning: Citation `bib:RohdeMauerer' on page 3 undefined on inpu
-t line 110.
+Package natbib Warning: Citation `bib:RohdeMauerer' on page 7 undefined on inpu
+t line 252.
 
-[3] <fidelity.pdf, id=290, 361.35pt x 380.42125pt>
+[7 <./curves_loss.pdf> <./scattershot_model.pdf>]
+<fidelity.pdf, id=508, 361.35pt x 380.42125pt>
 File: fidelity.pdf Graphic file (type pdf)
  <use fidelity.pdf>
-Package pdftex.def Info: fidelity.pdf used on input line 167.
+Package pdftex.def Info: fidelity.pdf used on input line 309.
 (pdftex.def)             Requested size: 246.0pt x 258.98486pt.
 
 
-Package natbib Warning: Citation `bib:MotesScal' on page 4 undefined on input l
-ine 177.
+Package natbib Warning: Citation `bib:MotesScal' on page 8 undefined on input l
+ine 319.
 
-[4 <./fidelity.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 187--188
+[8]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 320.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--330
 \OT1/cmr/m/n/10 Additionally, so-called quasi-phase-matching in a
  []
 
-[5]
-
-LaTeX Warning: Reference `tab:one' on page 6 undefined on input line 211.
-
-
-LaTeX Warning: Reference `tab:one' on page 6 undefined on input line 213.
-
-<loop_arch.pdf, id=490, 253.94875pt x 148.555pt>
-File: loop_arch.pdf Graphic file (type pdf)
- <use loop_arch.pdf>
-Package pdftex.def Info: loop_arch.pdf used on input line 224.
-(pdftex.def)             Requested size: 246.0pt x 143.91002pt.
- [6]
-
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 230.
-
+[9 <./fidelity.pdf>] [10]
 Missing character: There is no × in font cmr10!
 
-Underfull \hbox (badness 1721) in paragraph at lines 234--235
+Underfull \hbox (badness 1721) in paragraph at lines 385--386
 []\OT1/cmr/m/n/10 Due to the ultra-low loss of sin-gle mode fi-bres
  []
 
 
-Underfull \hbox (badness 1728) in paragraph at lines 238--239
+Underfull \hbox (badness 1728) in paragraph at lines 389--390
 []\OT1/cmr/m/n/10 As men-tioned above, dis-crete bulk-optics cir-cuits
  []
 
-[7 <./loop_arch.pdf>]
-Underfull \hbox (badness 1831) in paragraph at lines 260--261
+[11]
+Underfull \hbox (badness 1831) in paragraph at lines 411--412
 []\OT1/cmr/m/n/10 Titanium su-per-con-duct-ing tran-si-tion edge sen-sors
  []
 
-[8]
-Underfull \hbox (badness 3386) in paragraph at lines 274--275
+[12]
+Underfull \hbox (badness 3386) in paragraph at lines 425--426
 []\OT1/cmr/m/n/10 The anal-y-sis pre-sented here pro-vides an ini-tial
  []
 
-(./paper.bbl
+(./paper.bbl [13]
 Underfull \hbox (badness 1895) in paragraph at lines 138--150
  \OT1/cmr/m/n/9 S. Un-sle-ber, C. Chen, H. Wang, Y.-M. He, et al.,
  []
 
 
-Underfull \hbox (badness 2005) in paragraph at lines 221--233
- []\OT1/cmr/m/n/9 J. W. Sil-ver-stone, D. Bon-neau, K. Ohira, N. Suzuki,
- []
-
-[9]
-Missing character: There is no ¡ in font cmr9!
-Missing character: There is no ¯ in font cmr9!
-Missing character: There is no ¡ in font cmr9!
-Missing character: There is no ¯ in font cmr9!
-
-Underfull \hbox (badness 1968) in paragraph at lines 465--473
- []\OT1/cmr/m/n/9 K. Sakuma, S. Ishikawa, T. Shikata, T. Fukuda, and
- []
-
-Missing character: There is no ¡ in font cmr9!
-Missing character: There is no ¯ in font cmr9!
-
-Underfull \hbox (badness 1888) in paragraph at lines 644--656
- \OT1/cmr/m/n/9 poulidis, R. Schmogrow, P. Za-kyn-thi-nos, R. Palmer,
- []
-
-
-Underfull \hbox (badness 1412) in paragraph at lines 723--735
+Underfull \hbox (badness 1412) in paragraph at lines 224--237
  []\OT1/cmr/m/n/9 M. Hofheinz, H. Wang, M. Ans-mann, R. C. Bial-czak,
  []
 
 Missing character: There is no ¡ in font cmr9!
 Missing character: There is no ¯ in font cmr9!
 
-Underfull \hbox (badness 2012) in paragraph at lines 739--751
+Underfull \hbox (badness 2005) in paragraph at lines 382--394
+ []\OT1/cmr/m/n/9 J. W. Sil-ver-stone, D. Bon-neau, K. Ohira, N. Suzuki,
+ []
+
+Missing character: There is no ¡ in font cmr9!
+Missing character: There is no ¯ in font cmr9!
+Missing character: There is no ¡ in font cmr9!
+Missing character: There is no ¯ in font cmr9!
+
+Underfull \hbox (badness 1968) in paragraph at lines 635--643
+ []\OT1/cmr/m/n/9 K. Sakuma, S. Ishikawa, T. Shikata, T. Fukuda, and
+ []
+
+[14]
+Missing character: There is no ¡ in font cmr9!
+Missing character: There is no ¯ in font cmr9!
+
+Underfull \hbox (badness 1888) in paragraph at lines 805--817
+ \OT1/cmr/m/n/9 poulidis, R. Schmogrow, P. Za-kyn-thi-nos, R. Palmer,
+ []
+
+
+Underfull \hbox (badness 1412) in paragraph at lines 876--889
+ []\OT1/cmr/m/n/9 M. Hofheinz, H. Wang, M. Ans-mann, R. C. Bial-czak,
+ []
+
+Missing character: There is no ¡ in font cmr9!
+Missing character: There is no ¯ in font cmr9!
+
+Underfull \hbox (badness 2012) in paragraph at lines 893--905
  []\OT1/cmr/m/n/9 M. Hofheinz, E. Weig, M. Ans-mann, R. C. Bial-czak,
  []
 
@@ -548,57 +672,56 @@ Underfull \hbox (badness 2012) in paragraph at lines 739--751
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 297.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 297.
-[10] (./paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 297.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 297.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 448.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 448.
+[15] (./paper.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 448.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 448.
 Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: 3E0951B7A880B1E9F0EF979CF98B92AB;2233.
-
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 8393 strings out of 493089
- 116697 string characters out of 6134842
- 279649 words of memory out of 5000000
- 11648 multiletter control sequences out of 15000+600000
- 15271 words of font info for 60 fonts, out of 8000000 for 9000
+ 8537 strings out of 493089
+ 118643 string characters out of 6134842
+ 249883 words of memory out of 5000000
+ 11742 multiletter control sequences out of 15000+600000
+ 15438 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 32i,9n,35p,1565b,521s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,11n,35p,1565b,607s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><
 /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></u
 sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr
 /local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/l
-ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loc
-al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2
-015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2015/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2015/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2015/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2015/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2015/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/local/texlive/2015/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmtt8.pfb>
-Output written on paper.pdf (10 pages, 604282 bytes).
+ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/loc
+al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local
+/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2015/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2015/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2015/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2015/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmssi9.pfb></usr/local/texlive/2015/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmtt9.pfb>
+Output written on paper.pdf (15 pages, 1131098 bytes).
 PDF statistics:
- 746 PDF objects out of 1000 (max. 8388607)
- 673 compressed objects within 7 object streams
- 121 named destinations out of 1000 (max. 500000)
- 277 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 964 PDF objects out of 1000 (max. 8388607)
+ 866 compressed objects within 9 object streams
+ 165 named destinations out of 1000 (max. 500000)
+ 302 words of extra memory for PDF output out of 10000 (max. 10000000)
 

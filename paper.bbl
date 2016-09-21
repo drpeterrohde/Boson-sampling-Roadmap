@@ -1,5 +1,5 @@
 \providecommand{\noopsort}[1]{}\providecommand{\singleletter}[1]{#1}%
-\begin{thebibliography}{64}
+\begin{thebibliography}{85}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -148,6 +148,50 @@
   \bibnamefont{et~al.}, \bibinfo{journal}{arXiv:1603.04127}
   (\bibinfo{year}{2016}).
 
+\bibitem[{\citenamefont{Troyansky and Tishby}(1996)}]{bib:12}
+\bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Troyansky}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Tishby}}, in
+  \emph{\bibinfo{booktitle}{Proc. 4th Workshop on Physics and Computation,
+  Boston, 1996}} (\bibinfo{year}{1996}), vol.~\bibinfo{volume}{96}.
+
+\bibitem[{\citenamefont{Arkhipov and Kuperberg}(2012)}]{bib:13}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Arkhipov}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Kuperberg}},
+  \bibinfo{journal}{arXiv:1106.0849}  (\bibinfo{year}{2012}).
+
+\bibitem[{\citenamefont{Spagnolo et~al.}(2013)\citenamefont{Spagnolo, Vitelli,
+  Sansoni, Maiorino, Mataloni, Sciarrino, Brod, Galv{\~a}o, Crespi, Ramponi
+  et~al.}}]{bib:14}
+\bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Spagnolo}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Vitelli}},
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Sansoni}},
+  \bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Maiorino}},
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Mataloni}},
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Sciarrino}},
+  \bibinfo{author}{\bibfnamefont{D.~J.} \bibnamefont{Brod}},
+  \bibinfo{author}{\bibfnamefont{E.~F.} \bibnamefont{Galv{\~a}o}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Crespi}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Ramponi}},
+  \bibnamefont{et~al.}, \bibinfo{journal}{Phys. Rev. Lett.}
+  \textbf{\bibinfo{volume}{111}}, \bibinfo{pages}{130503}
+  (\bibinfo{year}{2013}).
+
+\bibitem[{\citenamefont{Wikipedia}(2016)}]{bib:15}
+\bibinfo{author}{\bibnamefont{Wikipedia}}, \emph{\bibinfo{title}{Rejection
+  sampling --- wikipedia{,} the free encyclopedia}} (\bibinfo{year}{2016}),
+  \urlprefix\url{https://en.wikipedia.org/w/index.php?title=Rejection_sampling&oldid=739554960}.
+
+\bibitem[{\citenamefont{Ryser}(1963)}]{bib:16}
+\bibinfo{author}{\bibfnamefont{H.~J.} \bibnamefont{Ryser}},
+  \emph{\bibinfo{title}{Combinatorial mathematics}}
+  (\bibinfo{publisher}{Mathematical Association of America},
+  \bibinfo{year}{1963}).
+
+\bibitem[{\citenamefont{Valiant}(1979)}]{bib:17}
+\bibinfo{author}{\bibfnamefont{L.~G.} \bibnamefont{Valiant}},
+  \bibinfo{journal}{Theor. Comput. Sci.} \textbf{\bibinfo{volume}{8}},
+  \bibinfo{pages}{189} (\bibinfo{year}{1979}).
+
 \bibitem[{\citenamefont{Reck et~al.}(1994)\citenamefont{Reck, Zeilinger,
   Bernstein, and Bertani}}]{bib:18}
 \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Reck}},
@@ -156,6 +200,123 @@
   \bibnamefont{and} \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Bertani}},
   \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{73}},
   \bibinfo{pages}{58} (\bibinfo{year}{1994}).
+
+\bibitem[{\citenamefont{Motes et~al.}(2014)\citenamefont{Motes, Gilchrist,
+  Dowling, and Rohde}}]{bib:19}
+\bibinfo{author}{\bibfnamefont{K.~R.} \bibnamefont{Motes}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Gilchrist}},
+  \bibinfo{author}{\bibfnamefont{J.~P.} \bibnamefont{Dowling}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{P.~P.} \bibnamefont{Rohde}},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{113}},
+  \bibinfo{pages}{120501} (\bibinfo{year}{2014}).
+
+\bibitem[{\citenamefont{Peropadre et~al.}(2015)\citenamefont{Peropadre,
+  Guerreschi, Huh, and Aspuru-Guzik}}]{bib:20}
+\bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Peropadre}},
+  \bibinfo{author}{\bibfnamefont{G.~G.} \bibnamefont{Guerreschi}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Huh}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Aspuru-Guzik}},
+  \bibinfo{journal}{arXiv:1510.08064}  (\bibinfo{year}{2015}).
+
+\bibitem[{\citenamefont{Hofheinz
+  et~al.}(2009{\natexlab{a}})\citenamefont{Hofheinz, Wang, Ansmann, Bialczak,
+  Lucero, Neeley, O'Connell, Sank, Wenner, Martinis et~al.}}]{bib:21}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Hofheinz}},
+  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Wang}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Ansmann}},
+  \bibinfo{author}{\bibfnamefont{R.~C.} \bibnamefont{Bialczak}},
+  \bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Lucero}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Neeley}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{O'Connell}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Sank}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Wenner}},
+  \bibinfo{author}{\bibfnamefont{J.~M.} \bibnamefont{Martinis}},
+  \bibnamefont{et~al.}, \bibinfo{journal}{Nature}
+  \textbf{\bibinfo{volume}{459}}, \bibinfo{pages}{546}
+  (\bibinfo{year}{2009}{\natexlab{a}}).
+
+\bibitem[{\citenamefont{Rohde and Ralph}(2012)}]{bib:22}
+\bibinfo{author}{\bibfnamefont{P.~P.} \bibnamefont{Rohde}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{T.~C.} \bibnamefont{Ralph}},
+  \bibinfo{journal}{Phys. Rev. A} \textbf{\bibinfo{volume}{85}},
+  \bibinfo{pages}{022332} (\bibinfo{year}{2012}).
+
+\bibitem[{\citenamefont{Arkhipov}(2015)}]{bib:23}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Arkhipov}},
+  \bibinfo{journal}{Phys. Rev. A} \textbf{\bibinfo{volume}{92}},
+  \bibinfo{pages}{062326} (\bibinfo{year}{2015}).
+
+\bibitem[{\citenamefont{Leverrier and Garc{\'\i}a-Patr{\'o}n}(2015)}]{bib:24}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Leverrier}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Garc{\'\i}a-Patr{\'o}n}},
+  \bibinfo{journal}{Quant. Inf. Comp.} \textbf{\bibinfo{volume}{15}},
+  \bibinfo{pages}{0489} (\bibinfo{year}{2015}).
+
+\bibitem[{\citenamefont{Rohde}(2012)}]{bib:25}
+\bibinfo{author}{\bibfnamefont{P.~P.} \bibnamefont{Rohde}},
+  \bibinfo{journal}{Phys. Rev. A} \textbf{\bibinfo{volume}{86}},
+  \bibinfo{pages}{052321} (\bibinfo{year}{2012}).
+
+\bibitem[{\citenamefont{Shchesnovich}(2014)}]{bib:26}
+\bibinfo{author}{\bibfnamefont{V.~S.} \bibnamefont{Shchesnovich}},
+  \bibinfo{journal}{Phys. Rev. A} \textbf{\bibinfo{volume}{89}},
+  \bibinfo{pages}{022333} (\bibinfo{year}{2014}).
+
+\bibitem[{\citenamefont{Shchesnovich}(2015{\natexlab{a}})}]{bib:27}
+\bibinfo{author}{\bibfnamefont{V.~S.} \bibnamefont{Shchesnovich}},
+  \bibinfo{journal}{Phys. Rev. A} \textbf{\bibinfo{volume}{91}},
+  \bibinfo{pages}{013844} (\bibinfo{year}{2015}{\natexlab{a}}).
+
+\bibitem[{\citenamefont{Shchesnovich}(2015{\natexlab{b}})}]{bib:28}
+\bibinfo{author}{\bibfnamefont{V.~S.} \bibnamefont{Shchesnovich}},
+  \bibinfo{journal}{Phys. Rev. A} \textbf{\bibinfo{volume}{91}},
+  \bibinfo{pages}{063842} (\bibinfo{year}{2015}{\natexlab{b}}).
+
+\bibitem[{\citenamefont{Tichy}(2015)}]{bib:29}
+\bibinfo{author}{\bibfnamefont{M.~C.} \bibnamefont{Tichy}},
+  \bibinfo{journal}{Phys. Rev. A} \textbf{\bibinfo{volume}{91}},
+  \bibinfo{pages}{022316} (\bibinfo{year}{2015}).
+
+\bibitem[{\citenamefont{Rohde}(2015)}]{bib:30}
+\bibinfo{author}{\bibfnamefont{P.~P.} \bibnamefont{Rohde}},
+  \bibinfo{journal}{Phys. Rev. A} \textbf{\bibinfo{volume}{91}},
+  \bibinfo{pages}{012307} (\bibinfo{year}{2015}).
+
+\bibitem[{\citenamefont{B{\"u}rgisser}(2000)}]{bib:31}
+\bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{B{\"u}rgisser}},
+  \bibinfo{journal}{SIAM J. Comput.} \textbf{\bibinfo{volume}{30}},
+  \bibinfo{pages}{1023} (\bibinfo{year}{2000}).
+
+\bibitem[{\citenamefont{Tillmann et~al.}(2015)\citenamefont{Tillmann, Tan,
+  Stoeckl, Sanders, de~Guise, Heilmann, Nolte, Szameit, and Walther}}]{bib:32}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Tillmann}},
+  \bibinfo{author}{\bibfnamefont{S.-H.} \bibnamefont{Tan}},
+  \bibinfo{author}{\bibfnamefont{S.~E.} \bibnamefont{Stoeckl}},
+  \bibinfo{author}{\bibfnamefont{B.~C.} \bibnamefont{Sanders}},
+  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{de~Guise}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Heilmann}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Nolte}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Szameit}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Walther}},
+  \bibinfo{journal}{Phys. Rev. X} \textbf{\bibinfo{volume}{5}},
+  \bibinfo{pages}{041015} (\bibinfo{year}{2015}).
+
+\bibitem[{\citenamefont{Aaronson and Brod}(2016)}]{bib:33}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Aaronson}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{D.~J.} \bibnamefont{Brod}},
+  \bibinfo{journal}{Phys. Rev. A} \textbf{\bibinfo{volume}{93}},
+  \bibinfo{pages}{012335} (\bibinfo{year}{2016}).
+
+\bibitem[{\citenamefont{Lund et~al.}(2014)\citenamefont{Lund, Laing,
+  Rahimi-Keshari, Rudolph, O¡¯Brien, and Ralph}}]{bib:36}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Lund}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Laing}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Rahimi-Keshari}},
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Rudolph}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{O¡¯Brien}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Ralph}},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{113}},
+  \bibinfo{pages}{100502} (\bibinfo{year}{2014}).
 
 \bibitem[{\citenamefont{Zhang et~al.}(2015)\citenamefont{Zhang, Huang, Wang,
   Liu, Li, and Guo}}]{bib:39}
@@ -460,6 +621,15 @@
   Bulletin} \textbf{\bibinfo{volume}{28}}, \bibinfo{pages}{365}
   (\bibinfo{year}{2003}).
 
+\bibitem[{\citenamefont{Eaton et~al.}(2011)\citenamefont{Eaton, Ng, Osellame,
+  and Herman}}]{bib:62}
+\bibinfo{author}{\bibfnamefont{S.~M.} \bibnamefont{Eaton}},
+  \bibinfo{author}{\bibfnamefont{M.~L.} \bibnamefont{Ng}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Osellame}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{P.~R.} \bibnamefont{Herman}},
+  \bibinfo{journal}{J. Non-Cryst. Solids} \textbf{\bibinfo{volume}{357}},
+  \bibinfo{pages}{2387} (\bibinfo{year}{2011}).
+
 \bibitem[{\citenamefont{Sakuma et~al.}(2003)\citenamefont{Sakuma, Ishikawa,
   Shikata, Fukuda, and Hosoya}}]{bib:63}
 \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Sakuma}},
@@ -619,15 +789,6 @@
   \bibinfo{journal}{Opt. Express} \textbf{\bibinfo{volume}{16}},
   \bibinfo{pages}{3032} (\bibinfo{year}{2008}).
 
-\bibitem[{\citenamefont{Motes et~al.}(2014)\citenamefont{Motes, Gilchrist,
-  Dowling, and Rohde}}]{bib:19}
-\bibinfo{author}{\bibfnamefont{K.~R.} \bibnamefont{Motes}},
-  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Gilchrist}},
-  \bibinfo{author}{\bibfnamefont{J.~P.} \bibnamefont{Dowling}},
-  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{P.~P.} \bibnamefont{Rohde}},
-  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{113}},
-  \bibinfo{pages}{120501} (\bibinfo{year}{2014}).
-
 \bibitem[{\citenamefont{Winzer et~al.}(2010)\citenamefont{Winzer, Gnauck,
   Doerr, Magarini, and Buhl}}]{bib:76}
 \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Winzer}},
@@ -666,14 +827,6 @@
   \emph{\bibinfo{booktitle}{Proceedings International Photonics and
   OptoElectronics, Wuhan, China, 2015}} (\bibinfo{organization}{OSA},
   \bibinfo{year}{2015}), p. \bibinfo{pages}{OT2C.4}.
-
-\bibitem[{\citenamefont{Peropadre et~al.}(2015)\citenamefont{Peropadre,
-  Guerreschi, Huh, and Aspuru-Guzik}}]{bib:20}
-\bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Peropadre}},
-  \bibinfo{author}{\bibfnamefont{G.~G.} \bibnamefont{Guerreschi}},
-  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Huh}}, \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Aspuru-Guzik}},
-  \bibinfo{journal}{arXiv:1510.08064}  (\bibinfo{year}{2015}).
 
 \bibitem[{\citenamefont{Rohde et~al.}(2015)\citenamefont{Rohde, Motes, Knott,
   Fitzsimons, Munro, and Dowling}}]{bib:79}
@@ -717,9 +870,9 @@
   \bibinfo{journal}{Nat. Photon.} \textbf{\bibinfo{volume}{9}},
   \bibinfo{pages}{615} (\bibinfo{year}{2015}).
 
-\bibitem[{\citenamefont{Hofheinz et~al.}(2009)\citenamefont{Hofheinz, Wang,
-  Ansmann, Bialczak, Lucero, Neeley, O'Connell, Sank, Wenner, Martinis
-  et~al.}}]{bib:83}
+\bibitem[{\citenamefont{Hofheinz
+  et~al.}(2009{\natexlab{b}})\citenamefont{Hofheinz, Wang, Ansmann, Bialczak,
+  Lucero, Neeley, O'Connell, Sank, Wenner, Martinis et~al.}}]{bib:83}
 \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Hofheinz}},
   \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Wang}},
   \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Ansmann}},
@@ -731,7 +884,8 @@
   \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Wenner}},
   \bibinfo{author}{\bibfnamefont{J.~M.} \bibnamefont{Martinis}},
   \bibnamefont{et~al.}, \bibinfo{journal}{Nature}
-  \textbf{\bibinfo{volume}{459}}, \bibinfo{pages}{546} (\bibinfo{year}{2009}).
+  \textbf{\bibinfo{volume}{459}}, \bibinfo{pages}{546}
+  (\bibinfo{year}{2009}{\natexlab{b}}).
 
 \bibitem[{\citenamefont{Hofheinz et~al.}(2008)\citenamefont{Hofheinz, Weig,
   Ansmann, Bialczak, Lucero, Neeley, O¡¯connell, Wang, Martinis, and
