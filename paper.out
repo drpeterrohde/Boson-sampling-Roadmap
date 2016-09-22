@@ -1,33 +1,33 @@
 \BOOKMARK [1][-]{section*.1}{Contents}{}% 1
 \BOOKMARK [1][-]{section*.2}{Introduction}{}% 2
-\BOOKMARK [1][-]{section*.3}{Sampling Time}{}% 3
-\BOOKMARK [2][-]{section*.4}{Quantum Simulation}{section*.3}% 4
-\BOOKMARK [2][-]{section*.5}{Classical Simulation}{section*.3}% 5
+\BOOKMARK [1][-]{section*.3}{Sampling time}{}% 3
+\BOOKMARK [2][-]{section*.4}{Quantum simulation}{section*.3}% 4
+\BOOKMARK [2][-]{section*.5}{Classical simulation}{section*.3}% 5
 \BOOKMARK [2][-]{section*.6}{Threshold}{section*.3}% 6
-\BOOKMARK [1][-]{section*.7}{Experimental Schemes}{}% 7
-\BOOKMARK [2][-]{section*.8}{Spatial Encoding Architecture}{section*.7}% 8
-\BOOKMARK [2][-]{section*.9}{Time-Bin Encoding Architecture}{section*.7}% 9
-\BOOKMARK [2][-]{section*.10}{Hybrid Encoding Architecture}{section*.7}% 10
-\BOOKMARK [2][-]{section*.11}{Lossy Boson-Sampling}{section*.7}% 11
-\BOOKMARK [2][-]{section*.12}{Scattershot Boson-Sampling}{section*.7}% 12
-\BOOKMARK [3][-]{section*.13}{Analysis}{section*.12}% 13
-\BOOKMARK [1][-]{section*.14}{Fidelity of Boson-Sampling Devices}{}% 14
-\BOOKMARK [1][-]{section*.15}{Advances in Single-Photon Sources}{}% 15
-\BOOKMARK [2][-]{section*.16}{Spontaneous Parametric Down-Conversion \(SPDC\)}{section*.15}% 16
-\BOOKMARK [2][-]{section*.17}{Four-Wave Mixing \(FWM\)}{section*.15}% 17
-\BOOKMARK [2][-]{section*.18}{Quantum Dots \(QD\)}{section*.15}% 18
-\BOOKMARK [1][-]{section*.19}{Advances in Linear Optical Networks}{}% 19
-\BOOKMARK [2][-]{section*.20}{Optical Waveguides}{section*.19}% 20
-\BOOKMARK [2][-]{section*.21}{Fibre-Loops}{section*.19}% 21
-\BOOKMARK [2][-]{section*.22}{Fibre Beamsplitters}{section*.19}% 22
-\BOOKMARK [2][-]{section*.23}{Miniaturised Bulk-Optics}{section*.19}% 23
-\BOOKMARK [2][-]{section*.24}{Microwave Circuits}{section*.19}% 24
-\BOOKMARK [1][-]{section*.25}{Advances in Single-Photon Detectors}{}% 25
-\BOOKMARK [2][-]{section*.26}{Single-Photon Avalanche Diodes \(SPAD\)}{section*.25}% 26
-\BOOKMARK [2][-]{section*.27}{Superconducting Nanowire Single-Photon Detectors \(SNSPD\)}{section*.25}% 27
-\BOOKMARK [2][-]{section*.28}{Superconducting Transition-Edge Sensors \(TES\)}{section*.25}% 28
+\BOOKMARK [1][-]{section*.7}{Experimental schemes}{}% 7
+\BOOKMARK [2][-]{section*.8}{Spatial encoding architecture}{section*.7}% 8
+\BOOKMARK [2][-]{section*.9}{Time-bin encoding architecture}{section*.7}% 9
+\BOOKMARK [2][-]{section*.10}{Hybrid encoding architecture}{section*.7}% 10
+\BOOKMARK [2][-]{section*.11}{Lossy boson-sampling}{section*.7}% 11
+\BOOKMARK [2][-]{section*.12}{Scattershot boson-sampling}{section*.7}% 12
+\BOOKMARK [3][-]{section*.13}{Analysis of scattershot boson-sampling}{section*.12}% 13
+\BOOKMARK [1][-]{section*.14}{Fidelity of boson-sampling devices}{}% 14
+\BOOKMARK [1][-]{section*.15}{Advances in single-photon sources}{}% 15
+\BOOKMARK [2][-]{section*.16}{Spontaneous parametric down-conversion}{section*.15}% 16
+\BOOKMARK [2][-]{section*.17}{Four-wave mixing}{section*.15}% 17
+\BOOKMARK [2][-]{section*.18}{Quantum dots}{section*.15}% 18
+\BOOKMARK [1][-]{section*.19}{Advances in linear optical networks}{}% 19
+\BOOKMARK [2][-]{section*.20}{Optical waveguides}{section*.19}% 20
+\BOOKMARK [2][-]{section*.21}{Fibre-loops}{section*.19}% 21
+\BOOKMARK [2][-]{section*.22}{Fibre beamsplitters}{section*.19}% 22
+\BOOKMARK [2][-]{section*.23}{Miniaturised bulk-optics}{section*.19}% 23
+\BOOKMARK [2][-]{section*.24}{Microwave circuits}{section*.19}% 24
+\BOOKMARK [1][-]{section*.25}{Advances in single-photon detectors}{}% 25
+\BOOKMARK [2][-]{section*.26}{Single-photon avalanche diodes}{section*.25}% 26
+\BOOKMARK [2][-]{section*.27}{Superconducting nanowire single-photon detectors}{section*.25}% 27
+\BOOKMARK [2][-]{section*.28}{Superconducting transition-edge sensors}{section*.25}% 28
 \BOOKMARK [1][-]{section*.29}{Conclusion}{}% 29
 \BOOKMARK [1][-]{section*.30}{Acknowledgments}{}% 30
-\BOOKMARK [1][-]{section*.31}{Numerically Modelling the Effects of Signal-to-Noise Ratios}{}% 31
-\BOOKMARK [1][-]{section*.32}{Details of Scattershot Boson-Sampling Analysis}{}% 32
+\BOOKMARK [1][-]{section*.31}{Numerically modelling the effects of signal-to-noise ratios}{}% 31
+\BOOKMARK [1][-]{section*.32}{Details of scattershot boson-sampling analysis}{}% 32
 \BOOKMARK [1][-]{section*.33}{References}{}% 33
