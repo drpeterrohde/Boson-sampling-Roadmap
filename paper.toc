@@ -8,7 +8,7 @@
 \contentsline {subsection}{\numberline {C}Threshold}{3}{section*.6}
 \contentsline {section}{\numberline {III}Experimental schemes}{4}{section*.7}
 \contentsline {subsection}{\numberline {A}Spatial encoding architecture}{4}{section*.8}
-\contentsline {subsection}{\numberline {B}Time-bin encoding architecture}{4}{section*.9}
+\contentsline {subsection}{\numberline {B}Time-bin encoding architecture}{5}{section*.9}
 \contentsline {subsection}{\numberline {C}Hybrid encoding architecture}{5}{section*.10}
 \contentsline {subsection}{\numberline {D}Lossy boson-sampling}{6}{section*.11}
 \contentsline {subsection}{\numberline {E}Scattershot boson-sampling}{7}{section*.12}
@@ -18,7 +18,7 @@
 \contentsline {subsection}{\numberline {A}Spontaneous parametric down-conversion}{11}{section*.16}
 \contentsline {subsection}{\numberline {B}Four-wave mixing}{12}{section*.17}
 \contentsline {subsection}{\numberline {C}Quantum dots}{12}{section*.18}
-\contentsline {section}{\numberline {VI}Advances in linear optical networks}{12}{section*.19}
+\contentsline {section}{\numberline {VI}Advances in linear optical networks}{13}{section*.19}
 \contentsline {subsection}{\numberline {A}Optical waveguides}{13}{section*.20}
 \contentsline {subsection}{\numberline {B}Fibre-loops}{13}{section*.21}
 \contentsline {subsection}{\numberline {C}Fibre beamsplitters}{14}{section*.22}
@@ -28,9 +28,10 @@
 \contentsline {subsection}{\numberline {A}Single-photon avalanche diodes}{15}{section*.26}
 \contentsline {subsection}{\numberline {B}Superconducting nanowire single-photon detectors}{15}{section*.27}
 \contentsline {subsection}{\numberline {C}Superconducting transition-edge sensors}{15}{section*.28}
-\contentsline {section}{\numberline {VIII}Conclusion}{15}{section*.29}
-\contentsline {section}{\numberline {}Acknowledgments}{16}{section*.30}
+\contentsline {section}{\numberline {VIII}A vision for the future -- the post-classical era}{15}{section*.29}
+\contentsline {section}{\numberline {IX}Conclusion}{15}{section*.30}
+\contentsline {section}{\numberline {}Acknowledgments}{16}{section*.31}
 \appendix 
-\contentsline {section}{\numberline {A}Numerically modelling the effects of signal-to-noise ratios}{16}{section*.31}
-\contentsline {section}{\numberline {B}Details of scattershot boson-sampling analysis}{16}{section*.32}
-\contentsline {section}{\numberline {}References}{16}{section*.33}
+\contentsline {section}{\numberline {A}Numerically modelling the effects of signal-to-noise ratios}{16}{section*.32}
+\contentsline {section}{\numberline {B}Details of scattershot boson-sampling analysis}{16}{section*.33}
+\contentsline {section}{\numberline {}References}{16}{section*.34}
