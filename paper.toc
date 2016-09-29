@@ -34,4 +34,8 @@
 \appendix 
 \contentsline {section}{\numberline {A}Numerically modelling the effects of signal-to-noise ratios}{16}{section*.32}
 \contentsline {section}{\numberline {B}Details of scattershot boson-sampling analysis}{16}{section*.33}
-\contentsline {section}{\numberline {}References}{16}{section*.34}
+\contentsline {subsection}{\numberline {1}Case 1}{16}{section*.34}
+\contentsline {subsection}{\numberline {2}Case 2}{18}{section*.35}
+\contentsline {subsection}{\numberline {3}Case 3}{18}{section*.36}
+\contentsline {subsection}{\numberline {4}Case 4}{18}{section*.37}
+\contentsline {section}{\numberline {}References}{18}{section*.38}

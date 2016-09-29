@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.6)  22 SEP 2016 17:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.6)  29 SEP 2016 22:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -504,12 +504,32 @@ Overfull \hbox (3.50012pt too wide) detected at line 37
  \OT1/cmr/m/n/8 16
  []
 
+
+Overfull \hbox (3.50012pt too wide) detected at line 38
+ \OT1/cmr/m/n/8 18
+ []
+
+
+Overfull \hbox (3.50012pt too wide) detected at line 39
+ \OT1/cmr/m/n/8 18
+ []
+
+
+Overfull \hbox (3.50012pt too wide) detected at line 40
+ \OT1/cmr/m/n/8 18
+ []
+
+
+Overfull \hbox (3.50012pt too wide) detected at line 41
+ \OT1/cmr/m/n/8 18
+ []
+
 )
 \tf@toc=\write4
 \openout4 = `paper.toc'.
 
  [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<model.pdf, id=227, 597.23125pt x 290.82452pt>
+<model.pdf, id=247, 597.23125pt x 290.82452pt>
 File: model.pdf Graphic file (type pdf)
  <use model.pdf>
 Package pdftex.def Info: model.pdf used on input line 64.
@@ -518,7 +538,7 @@ Package pdftex.def Info: model.pdf used on input line 64.
 
 Package natbib Warning: Citation `???' on page 3 undefined on input line 96.
 
-<curves_1.pdf, id=299, 845.1575pt x 420.93596pt>
+<curves_1.pdf, id=318, 845.1575pt x 420.93596pt>
 File: curves_1.pdf Graphic file (type pdf)
  <use curves_1.pdf>
 Package pdftex.def Info: curves_1.pdf used on input line 121.
@@ -528,7 +548,7 @@ Package pdftex.def Info: curves_1.pdf used on input line 121.
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
  on input line 126.
 
-<space_encoding.pdf, id=321, 845.1575pt x 198.40384pt>
+<space_encoding.pdf, id=341, 845.1575pt x 198.40384pt>
 File: space_encoding.pdf Graphic file (type pdf)
 
 <use space_encoding.pdf>
@@ -536,31 +556,31 @@ Package pdftex.def Info: space_encoding.pdf used on input line 144.
 (pdftex.def)             Requested size: 246.0pt x 57.74754pt.
  [4 <./curves_1.pdf, page is rotated 270 degrees> <./space_encoding.pdf, page i
 s rotated 270 degrees>]
-<loop_arch.pdf, id=367, 232.75194pt x 133.32443pt>
+<loop_arch.pdf, id=387, 232.75194pt x 133.32443pt>
 File: loop_arch.pdf Graphic file (type pdf)
  <use loop_arch.pdf>
 Package pdftex.def Info: loop_arch.pdf used on input line 155.
 (pdftex.def)             Requested size: 172.19925pt x 98.63818pt.
 
-<curves_2.pdf, id=373, 845.1575pt x 426.53622pt>
+<curves_2.pdf, id=393, 845.1575pt x 426.53622pt>
 File: curves_2.pdf Graphic file (type pdf)
  <use curves_2.pdf>
 Package pdftex.def Info: curves_2.pdf used on input line 174.
 (pdftex.def)             Requested size: 246.0pt x 124.14792pt.
  [5 <./loop_arch.pdf> <./curves_2.pdf, page is rotated 270 degrees>]
-<microwave.pdf, id=434, 597.23125pt x 389.1836pt>
+<microwave.pdf, id=455, 597.23125pt x 389.1836pt>
 File: microwave.pdf Graphic file (type pdf)
  <use microwave.pdf>
 Package pdftex.def Info: microwave.pdf used on input line 183.
 (pdftex.def)             Requested size: 246.0pt x 160.30267pt.
- [6 <./microwave.pdf>] <curves_loss.pdf, id=501, 845.1575pt x 424.68985pt>
+ [6 <./microwave.pdf>] <curves_loss.pdf, id=521, 845.1575pt x 424.68985pt>
 File: curves_loss.pdf Graphic file (type pdf)
 
 <use curves_loss.pdf>
 Package pdftex.def Info: curves_loss.pdf used on input line 221.
 (pdftex.def)             Requested size: 246.0pt x 123.6105pt.
 
-<scattershot_model.pdf, id=517, 597.23125pt x 275.91772pt>
+<scattershot_model.pdf, id=537, 597.23125pt x 275.91772pt>
 File: scattershot_model.pdf Graphic file (type pdf)
 
 <use scattershot_model.pdf>
@@ -568,7 +588,7 @@ Package pdftex.def Info: scattershot_model.pdf used on input line 234.
 (pdftex.def)             Requested size: 246.0pt x 113.64905pt.
  [7 <./curves_loss.pdf, page is rotated 270 degrees> <./scattershot_model.pdf>]
 
-<curve_scattershot.pdf, id=593, 597.23125pt x 599.94727pt>
+<curve_scattershot.pdf, id=613, 597.23125pt x 599.94727pt>
 File: curve_scattershot.pdf Graphic file (type pdf)
 
 <use curve_scattershot.pdf>
@@ -579,13 +599,13 @@ Underfull \hbox (badness 1137) in paragraph at lines 276--277
 []\OT1/cmr/m/n/10 When the de-tec-tors are per-fect but non-number-
  []
 
-<SBS_pair_gen.pdf, id=621, 597.23125pt x 384.87117pt>
+<SBS_pair_gen.pdf, id=641, 597.23125pt x 384.87117pt>
 File: SBS_pair_gen.pdf Graphic file (type pdf)
  <use SBS_pair_gen.pdf>
 Package pdftex.def Info: SBS_pair_gen.pdf used on input line 287.
 (pdftex.def)             Requested size: 246.0pt x 158.5264pt.
 
-<SBS_eff.pdf, id=623, 845.1575pt x 571.46819pt>
+<SBS_eff.pdf, id=643, 845.1575pt x 571.46819pt>
 File: SBS_eff.pdf Graphic file (type pdf)
  <use SBS_eff.pdf>
 Package pdftex.def Info: SBS_eff.pdf used on input line 296.
@@ -614,7 +634,7 @@ Package natbib Warning: Citation `bib:RohdeMauerer' on page 10 undefined on inp
 ut line 311.
 
 [10 <./SBS_eff.pdf, page is rotated 270 degrees>]
-<fidelity.pdf, id=665, 361.35pt x 380.42125pt>
+<fidelity.pdf, id=685, 361.35pt x 380.42125pt>
 File: fidelity.pdf Graphic file (type pdf)
  <use fidelity.pdf>
 Package pdftex.def Info: fidelity.pdf used on input line 368.
@@ -664,7 +684,53 @@ Underfull \hbox (badness 3386) in paragraph at lines 490--491
 []\OT1/cmr/m/n/10 The anal-y-sis pre-sented here pro-vides an ini-tial
  []
 
-(./paper.bbl
+
+Package natbib Warning: Citation `bib:90' on page 16 undefined on input line 50
+0.
+
+
+Package natbib Warning: Citation `bib:91' on page 16 undefined on input line 50
+0.
+
+<SNR.pdf, id=986, 427.5975pt x 404.51125pt>
+File: SNR.pdf Graphic file (type pdf)
+ <use SNR.pdf>
+Package pdftex.def Info: SNR.pdf used on input line 503.
+(pdftex.def)             Requested size: 393.6015pt x 372.35237pt.
+ [16]
+Underfull \hbox (badness 3291) in paragraph at lines 547--549
+\OT1/cmr/m/n/10 where the sub-script $\OML/cmm/m/it/10 t$ \OT1/cmr/m/n/10 in-di
+-cates the word ``total-
+ []
+
+[17 <./SNR.pdf>]
+Underfull \hbox (badness 1043) in paragraph at lines 561--562
+[]\OT1/cmr/m/n/10 Therefore, when $\OML/cmm/m/it/10 n$ \OT1/cmr/m/n/10 co-in-ci
+-dence count-ing are both
+ []
+
+
+LaTeX Warning: Reference `whichOne' on page 18 undefined on input line 573.
+
+
+LaTeX Warning: Reference `whichOne' on page 18 undefined on input line 573.
+
+
+Underfull \hbox (badness 1215) in paragraph at lines 587--588
+\OT1/cmr/m/n/10 achieve quan-tum supremacy with in-creas-ing pho-ton
+ []
+
+
+Underfull \hbox (badness 2359) in paragraph at lines 592--593
+[]\OT1/cmr/m/n/10 When com-ing to the case with photon-number-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 592--593
+\OT1/cmr/m/n/10 resolving de-tec-tors but with-out shut-ters, us-ing
+ []
+
+(./paper.bbl [18]
 Underfull \hbox (badness 1895) in paragraph at lines 138--150
  \OT1/cmr/m/n/9 S. Un-sle-ber, C. Chen, H. Wang, Y.-M. He, et al.,
  []
@@ -674,7 +740,6 @@ Underfull \hbox (badness 1412) in paragraph at lines 224--237
  []\OT1/cmr/m/n/9 M. Hofheinz, H. Wang, M. Ans-mann, R. C. Bial-czak,
  []
 
-[16]
 Missing character: There is no ¡ in font cmr9!
 Missing character: There is no ¯ in font cmr9!
 
@@ -686,12 +751,11 @@ Missing character: There is no ¡ in font cmr9!
 Missing character: There is no ¯ in font cmr9!
 Missing character: There is no ¡ in font cmr9!
 Missing character: There is no ¯ in font cmr9!
-
+[19]
 Underfull \hbox (badness 1968) in paragraph at lines 669--677
  []\OT1/cmr/m/n/9 K. Sakuma, S. Ishikawa, T. Shikata, T. Fukuda, and
  []
 
-[17]
 Missing character: There is no ¡ in font cmr9!
 Missing character: There is no ¯ in font cmr9!
 
@@ -715,22 +779,26 @@ Underfull \hbox (badness 2012) in paragraph at lines 927--939
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 513.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 513.
-[18] (./paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 513.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 513.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 616.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 616.
+[20] (./paper.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 616.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 616.
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: A90C685275B7F7EE96C28B11993F38B6;2358.
+(rerunfilecheck)             Checksum: 2BA30972BD934439C05192CBC18F671A;2578.
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 8591 strings out of 493089
- 119453 string characters out of 6134842
- 249877 words of memory out of 5000000
- 11775 multiletter control sequences out of 15000+600000
+ 8637 strings out of 493089
+ 119904 string characters out of 6134842
+ 265170 words of memory out of 5000000
+ 11800 multiletter control sequences out of 15000+600000
  15438 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 32i,11n,35p,1588b,633s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,11n,35p,1588b,598s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><
 /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></u
@@ -761,10 +829,10 @@ e1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmtt9.pfb>
-Output written on paper.pdf (18 pages, 2240333 bytes).
+Output written on paper.pdf (20 pages, 3277222 bytes).
 PDF statistics:
- 1118 PDF objects out of 1200 (max. 8388607)
- 1007 compressed objects within 11 object streams
- 183 named destinations out of 1000 (max. 500000)
- 333 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1175 PDF objects out of 1200 (max. 8388607)
+ 1061 compressed objects within 11 object streams
+ 203 named destinations out of 1000 (max. 500000)
+ 370 words of extra memory for PDF output out of 10000 (max. 10000000)
 
