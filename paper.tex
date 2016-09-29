@@ -491,18 +491,121 @@ The analysis presented here provides an initial roadmap for what is perhaps the 
 
 Also from a theoretical perspective is the broader question of `What good is a boson-sampler? What does it even do?'. The answer is that, to the best of our knowledge, it really doesn't solve any particular problem of practical interest, which may lead some to question the merit of pursuing this line of research at all. However, we take the entirely opposing view that, although it doesn't solve a problem of interest, the mere fact that it could outperform existing classical computers and provide a proof-of-principle of quantum supremacy would already be a stunning achievement and reinvigorate the field. And given the relative simplicity of the boson-sampling architecture, and the rapid developments taking place in the field, it is plausible that the first ever post-classical quantum device may be a boson-sampler.
 
-%
-% Acknowledgments
-%
-
 \begin{acknowledgments}
 \end{acknowledgments}
-
 \appendix
 
-\section{Numerically modelling the effects of signal-to-noise ratios}
+\section{Numerically modelling the effects of signal-to-noise ratios} \label{app:A}
 
-\section{Details of scattershot boson-sampling analysis}
+Here we provide more details on the reasonable range of the signal-to-noise ratio (SNR) of boson-sampling output data. More specifically, we use a Bayesian approach \cite{bib:90} to validate ideal boson-sampling (\mbox{$SNR\to\infty$}) against hypothetical mixed sampling (SNR equals some finite value). For the sake of simplicity, the hypothetical sampling is mixing between ideal boson-sampling and thermal state sampling \cite{bib:91}. As shown in Fig.~\ref{fig:SNR}, given \mbox{$n = 5$} and \mbox{$m = 10$}, only if \mbox{$SNR > 1.8$}, the Bayesian analysis can reach a relatively high success rate. Accordingly, we suppose \mbox{$SNR = 2$} as a minimum requirement in the App.~\ref{app:B}.
+
+\begin{figure*}[!htb]
+\includegraphics[width=1.6\columnwidth]{SNR}
+\caption{Bayesian approach to validate ideal boson-sampling (\mbox{$SNR\to\infty$}) against hypothetical mixed sampling (SNR equals some finite value). Here we set \mbox{$n=5$}, \mbox{$m=10$}. In all plots, blue shaded regions correspond to one standard deviations of the boson-sampling validation, obtained by averaging over a numerical simulation with 1,000 Haar-uniform unitary matrices. (a) \mbox{$SNR = 1.0$}, success rate: \mbox{$(0 \pm 0)\% $}; (b) \mbox{$SNR = 1.2$}, success rate: \mbox{$(3 \pm 17)\% $}; (c) \mbox{$SNR = 1.4$}, success rate: \mbox{$(57 \pm 49)\% $}; (d) \mbox{$SNR = 1.6$}, success rate: \mbox{$(96 \pm 19)\% $}; (e) \mbox{$SNR = 1.8$}, success rate: \mbox{$(100 \pm 0)\%$}; (f) \mbox{$SNR = 2.0$}, success rate: \mbox{$(100 \pm 0)\% $}.} \label{fig:SNR}
+\end{figure*}
+
+\section{Details of scattershot boson-sampling analysis} \label{app:B}
+
+\subsection{Case 1}
+
+First, let us start from the case without shutters or resolving single photon detectors.
+
+Suppose among $m$ SPDC sources, the number of sources generating single-photon is $s$ and generating twin-photon is $t$. For inefficient and non-resolving detectors, the probability of such event is,
+\begin{align} \label{eq:1}
+{P_\mathrm{gen}}(s,t) = {p^s}{p^{2t}}{(1 - p - {p^2})^{m - s - t}}\binom{m}{s,t},
+\end{align}
+where $p$ is the single-photon generating efficiency of each SPDC source.
+
+Given $s$ single-photons, the probability of coupling successfully $z$ single-photons to the circuit is,
+\begin{align} \label{eq:2}
+{P_\mathrm{1in}}(s,z) = p_\mathrm{in}^{z}{(1 - {p_\mathrm{in}})^{s - z}} \binom{s}{z},
+\end{align}
+where ${p_\mathrm{in}}$ is the single-photon coupling efficiency.
+
+Given $s$ single-photons, the probability of detecting ${n_1}$ single-photons is,
+\begin{align} \label{eq:3}
+{P_\mathrm{1d}}(s,{n_1}) = {\eta ^{{n_1}}}{(1 - \eta )^{s - {n_1}}}\binom{s}{n_1},
+\end{align}
+where $\eta$ is the single-photon detecting efficiency.
+
+Given $t$ twin-photons, the probability of coupling successfully $x$ twin-photons and $y$ single-photons to the circuit is,
+\begin{align} \label{eq:4}
+{P_\mathrm{2in}}(t,x,y) = p_\mathrm{in}^{2x}{[2{p_\mathrm{in}}(1 - {p_\mathrm{in}})]^y} {(1 - {p_\mathrm{in}})^{2(t - x - y)}} \binom{t}{x,y}.
+\end{align}
+
+Given $t$ twin-photons, the probability that ${n_2}$ detectors will click is,
+\begin{align} \label{eq:5}
+{P_\mathrm{2d}} = {P_\mathrm{1d}}(\eta \to {\eta _2}),
+\end{align}
+where \mbox{${\eta _2} = \eta (2 - \eta )$} is the probability that a detector will click if a twin-photon is injected.
+
+Satisfying the coincidence condition of $n$ triggering and $n$ counting after the circuit, the probability of getting a sample is of the form,
+\begin{align} \label{eq:6}
+&{P_{t(0,0)}} = \sum_{q = n}^m {\sum\limits_{t = 0}^q {{P_\mathrm{gen}}(q - t,t) }} \nonumber \\
+&\cdot \sum_{n_1 = \max [n - t,0]}^{\min [q - t,n]} {{P_\mathrm{1d}}(q - t,{n_1})}{P_\mathrm{2d}}(t,n - {n_1}) \nonumber \\
+&\cdot \sum_{2x + y + z \ge n} {{P_\mathrm{1in}}(q - t,z){P_\mathrm{2in}}(t,x,y)}{P_\mathrm{1d}}(2x + y + z,n),
+\end{align}
+where the subscript $t$ indicates the word ``total-probability'', and $(0,0)$ indicates the case without shutters or photon-number-resolving detectors.
+
+However, the correct boson-sampling should be on condition that exactly $n$ heralded single photons are coupling to the circuit. Specifically, in the $s$ single-photon sources, the probability of triggering and coupling successfully ${n_1}$ single-photons to the circuit is,
+\begin{align} \label{eq:7}
+{P_\mathrm{1in1}}(s,{n_1}) = {({p_\mathrm{in}}\eta )^{{n_1}}} {[(1 - {p_\mathrm{in}})(1 - \eta )]^{s - {n_1}}} \binom{s}{n_1}.
+\end{align}
+
+In the $t$ twin-photon sources, the probability of triggering and coupling successfully ${n_2}$ single-photons to the circuit is,
+\begin{align} \label{eq:8}
+{P_\mathrm{2in1}}(t,{n_2}) &= {[2{p_\mathrm{in}}(1 - {p_{in}}){\eta_2}]^{{n_2}}} \nonumber \\
+&\cdot {[{(1 - {p_\mathrm{in}})^2}(1 - {\eta _2})]^{t - {n_2}}}\binom{t}{n_2}.
+\end{align}
+
+Therefore, when $n$ coincidence counting are both recorded at heralding and at the output, the probability that it is a correct boson-sampling signal is given by,
+\begin{align} \label{eq:9}
+{P_{c(0,0)}} &= \sum_{q = n}^m {\sum_{t = 0}^q {{P_\mathrm{gen}}} } (q - t,t) \nonumber \\
+&\cdot\sum_{{n_1} = \max [n - t,0]}^{\min [q - t,n]} {{P_\mathrm{1in1}}(q - t,{n_1})} {P_\mathrm{2in1}}(t,n - {n_1}){\eta ^n},
+\end{align}
+where the subscript $c$ indicates the word `correct'.
+
+To ensure $SNR$ larger than two, which is quite a low requirement for correct sampling, we plot the requirement for coupling and detection efficiency when increasing $n$. As shown in Fig. 11(a), the requirements for detectors and coupling are rather high if without shutter or photon-number-resolving detectors. When the coupling efficiency is 0.9 and the detection efficiency is 0.95, we can only scale boson-sampling experiments to 4 photons.
+
+
+\subsection{Case 2}
+
+If employing shutters, but without photon-number-resolving detectors, we can apply some small modifications to the Eqs.~\ref{whichOne} \& \ref{whichOne} to obtain,
+\begin{align} \label{eq:1011}
+{P_{t(0,1)}} &= \sum_{q = n}^m {\sum_{t = 0}^q {{P_\mathrm{gen}}(q - t,t)\sum_{{n_1} = \max [n - t,0]}^{\min [q - t,n]} } } \nonumber \\
+& {{P_\mathrm{1d}}(q - t,{n_1})}{P_\mathrm{2d}}(t,n - {n_1})\sum_{2x + y + z \ge n}  \nonumber \\
+& {{P_\mathrm{1in}}({n_1},z){P_\mathrm{2in}}(n-{n_1},x,y)}{P_\mathrm{1d}}(2x + y + z,n), \nonumber \\
+{P_{c(0,1)}} &= \sum_{q = n}^m {\sum_{t = 0}^q {{P_\mathrm{gen}}} } (q - t,t)\sum_{{n_1} = \max [n - t,0]}^{\min [q - t,n]} \nonumber \\
+&{P_\mathrm{1in1}^\mathrm{shutter}(q - t,{n_1})} P_\mathrm{2in1}^\mathrm{shutter}(t,n - {n_1}){\eta^n},
+\end{align}
+where,
+\begin{align} \label{eq:1213}
+P_\mathrm{1in1}^\mathrm{shutter}(s,{n_1}) &= {({p_\mathrm{in}}\eta )^{{n_1}}}{(1 - \eta )^{s - {n_1}}}\binom{s}{n_1}, \nonumber \\
+P_\mathrm{2in1}^\mathrm{shutter}(t,{n_2}) &= {[2{p_\mathrm{in}}(1 - {p_\mathrm{in}}){\eta_2}]^{{n_2}}} {(1 - {\eta _2})^{t - {n_2}}} \binom{t}{{n_2}}.
+\end{align}
+
+To satisfy \mbox{$SNR>2$}, we plot the requirements to achieve quantum supremacy with increasing photon number in Fig. 11(b). From the figure, we can see that when the size of a boson-sampler is relatively small, i.e. \mbox{$n = 3 \sim 4$}, the requirement for coupling efficiency is relaxed a little by employing the shutter. We can implement 4 photon SBS with 0.8 coupling efficiency and 0.95 detection efficiency without photon-number-resolving detectors.
+
+
+\subsection{Case 3}
+
+When coming to the case with photon-number-resolving detectors but without shutters, using \mbox{${\eta '_2}  = 2\eta (1 - \eta )$} to subsititude ${\eta _2}$ in Eqs.~\ref{eq:6} \& \ref{eq:9}, we have
+\begin{align} \label{eq:1415}
+{P_{t(1,0)}} = {P_{t(0,0)}}({\eta _2} \to {\eta '_2} ), \nonumber \\
+{P_{c(1,0)}} = {P_{c(0,0)}}({\eta _2} \to {\eta '_2} ).
+\end{align}
+
+In the same way, to guarantee \mbox{$SNR > 2$}, we determine the lower bound for coupling efficiency and detection efficiency against the scaling of the SBS device. Comparing Figs.~\ref{fig:SNR}(a,c), if photon-number-resolving detectors of 0.95 detection efficiency were utilised, the quantum system could perform almost as well as a quantum system with perfect photodetectors that were non-photon-number-resolving.
+
+\subsection{Case 4}
+
+Finally, both shutters and photon-number-resolving detectors are available. Just employing Eq.~\ref{eq:1011}, and changing ${\eta _2}$ to ${\eta '_2} $ as we have done before, we obtain
+\begin{align} \label{eq:1617}
+{P_{t(1,1)}} &= {P_{t(0,1)}}({\eta _2} \to {\eta '_2} ), \nonumber \\
+{P_{c(1,1)}} &= {P_{c(0,1)}}({\eta _2} \to {\eta '_2} ).
+\end{align}
+
+We are glad to see that, as shown in Fig.~\ref{fig:SNR}(d), the rigorous requirements in detection efficiency and coupling efficiency of the quantum system can be substantially loosened. And a SBS of 20 photons seems appears viable if the detection and coupling efficiency of the device can reach 0.95 and 0.8, respectively.
 
 %
 % Bibliography
