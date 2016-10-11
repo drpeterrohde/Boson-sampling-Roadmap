@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.14)  29 SEP 2016 22:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.14)  11 OCT 2016 16:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -487,7 +487,7 @@ Overfull \hbox (3.50012pt too wide) detected at line 31
 
 
 Overfull \hbox (3.50012pt too wide) detected at line 32
- \OT1/cmr/m/n/8 15
+ \OT1/cmr/m/n/8 16
  []
 
 
@@ -517,17 +517,17 @@ Overfull \hbox (3.50012pt too wide) detected at line 38
 
 
 Overfull \hbox (3.50012pt too wide) detected at line 39
- \OT1/cmr/m/n/8 18
+ \OT1/cmr/m/n/8 19
  []
 
 
 Overfull \hbox (3.50012pt too wide) detected at line 40
- \OT1/cmr/m/n/8 18
+ \OT1/cmr/m/n/8 19
  []
 
 
 Overfull \hbox (3.50012pt too wide) detected at line 41
- \OT1/cmr/m/n/8 18
+ \OT1/cmr/m/n/8 19
  []
 
 )
@@ -686,51 +686,56 @@ Underfull \hbox (badness 1831) in paragraph at lines 472--473
  []
 
 [15]
-Underfull \hbox (badness 3386) in paragraph at lines 490--491
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 516.
+
+
+Underfull \hbox (badness 3386) in paragraph at lines 527--528
 []\OT1/cmr/m/n/10 The anal-y-sis pre-sented here pro-vides an ini-tial
  []
 
-<SNR.pdf, id=990, 427.5975pt x 404.51125pt>
+<SNR.pdf, id=995, 427.5975pt x 404.51125pt>
 File: SNR.pdf Graphic file (type pdf)
  <use SNR.pdf>
-Package pdftex.def Info: SNR.pdf used on input line 503.
+Package pdftex.def Info: SNR.pdf used on input line 540.
 (pdftex.def)             Requested size: 393.6015pt x 372.35237pt.
- [16]
-Underfull \hbox (badness 3291) in paragraph at lines 547--549
+ [16] [17 <./SNR.pdf>]
+Underfull \hbox (badness 3291) in paragraph at lines 584--586
 \OT1/cmr/m/n/10 where the sub-script $\OML/cmm/m/it/10 t$ \OT1/cmr/m/n/10 in-di
 -cates the word ``total-
  []
 
-[17 <./SNR.pdf>]
-Underfull \hbox (badness 1043) in paragraph at lines 561--562
+
+Underfull \hbox (badness 1043) in paragraph at lines 598--599
 []\OT1/cmr/m/n/10 Therefore, when $\OML/cmm/m/it/10 n$ \OT1/cmr/m/n/10 co-in-ci
 -dence count-ing are both
  []
 
 
-LaTeX Warning: Reference `whichOne' on page 18 undefined on input line 573.
+LaTeX Warning: Reference `whichOne' on page 18 undefined on input line 610.
 
 
-LaTeX Warning: Reference `whichOne' on page 18 undefined on input line 573.
+LaTeX Warning: Reference `whichOne' on page 18 undefined on input line 610.
 
 
-Underfull \hbox (badness 1215) in paragraph at lines 587--588
+Underfull \hbox (badness 1215) in paragraph at lines 624--625
 \OT1/cmr/m/n/10 achieve quan-tum supremacy with in-creas-ing pho-ton
  []
 
-
-Underfull \hbox (badness 2359) in paragraph at lines 592--593
+[18]
+Underfull \hbox (badness 2359) in paragraph at lines 629--630
 []\OT1/cmr/m/n/10 When com-ing to the case with photon-number-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 592--593
+Underfull \hbox (badness 10000) in paragraph at lines 629--630
 \OT1/cmr/m/n/10 resolving de-tec-tors but with-out shut-ters, us-ing
  []
 
 
 (/Users/peterrohde/OneDrive/Documents/Publications/GitHub/Boson-sampling-Roadma
-p/.texpadtmp/paper.bbl [18]
+p/.texpadtmp/paper.bbl
 Underfull \hbox (badness 1895) in paragraph at lines 138--150
  \OT1/cmr/m/n/9 S. Un-sle-ber, C. Chen, H. Wang, Y.-M. He, et al.,
  []
@@ -742,7 +747,7 @@ Underfull \hbox (badness 1412) in paragraph at lines 224--237
 
 Missing character: There is no ¡ in font cmr9!
 Missing character: There is no ¯ in font cmr9!
-
+[19]
 Underfull \hbox (badness 2005) in paragraph at lines 416--428
  []\OT1/cmr/m/n/9 J. W. Sil-ver-stone, D. Bon-neau, K. Ohira, N. Suzuki,
  []
@@ -751,7 +756,7 @@ Missing character: There is no ¡ in font cmr9!
 Missing character: There is no ¯ in font cmr9!
 Missing character: There is no ¡ in font cmr9!
 Missing character: There is no ¯ in font cmr9!
-[19]
+
 Underfull \hbox (badness 1968) in paragraph at lines 669--677
  []\OT1/cmr/m/n/9 K. Sakuma, S. Ishikawa, T. Shikata, T. Fukuda, and
  []
@@ -775,32 +780,32 @@ Underfull \hbox (badness 2012) in paragraph at lines 927--939
  []\OT1/cmr/m/n/9 M. Hofheinz, E. Weig, M. Ans-mann, R. C. Bial-czak,
  []
 
-)
+[20])
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 616.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 616.
-[20]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 653.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 653.
+[21]
 (/Users/peterrohde/OneDrive/Documents/Publications/GitHub/Boson-sampling-Roadma
 p/.texpadtmp/paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 616.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 616.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 653.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 653.
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: A90C685275B7F7EE96C28B11993F38B6;2358.
+(rerunfilecheck)             Checksum: 2BA30972BD934439C05192CBC18F671A;2578.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 8647 strings out of 493117
- 121364 string characters out of 6135432
- 267314 words of memory out of 5000000
- 11785 multiletter control sequences out of 15000+600000
+ 8655 strings out of 493117
+ 121465 string characters out of 6135432
+ 250785 words of memory out of 5000000
+ 11789 multiletter control sequences out of 15000+600000
  15438 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 32i,11n,35p,1588b,598s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,11n,35p,1588b,655s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><
 /usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></u
@@ -832,10 +837,10 @@ e1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type
 public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmtt9.pfb>
 Output written on /Users/peterrohde/OneDrive/Documents/Publications/GitHub/Boso
-n-sampling-Roadmap/.texpadtmp/paper.pdf (20 pages, 3277644 bytes).
+n-sampling-Roadmap/.texpadtmp/paper.pdf (21 pages, 3279185 bytes).
 PDF statistics:
- 1183 PDF objects out of 1200 (max. 8388607)
- 1069 compressed objects within 11 object streams
- 205 named destinations out of 1000 (max. 500000)
+ 1193 PDF objects out of 1200 (max. 8388607)
+ 1078 compressed objects within 11 object streams
+ 209 named destinations out of 1000 (max. 500000)
  370 words of extra memory for PDF output out of 10000 (max. 10000000)
 
