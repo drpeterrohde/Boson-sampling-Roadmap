@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d (TeX Live 2014)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: roadmap.aux
+The style file: apsrev.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: ../roadmap.bib
+Warning--I didn't find a database entry for "???"
+Warning--I didn't find a database entry for "bib:MotesScal"
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 93 entries,
+            3411 wiz_defined-function locations,
+            1625 strings with 29084 characters,
+and the built_in function-call counts, 92210 in all, are:
+= -- 4363
+> -- 4650
+< -- 578
++ -- 4262
+- -- 1154
+* -- 13265
+:= -- 9055
+add.period$ -- 93
+call.type$ -- 93
+change.case$ -- 373
+chr.to.int$ -- 87
+cite$ -- 93
+duplicate$ -- 8073
+empty$ -- 7047
+format.name$ -- 2571
+if$ -- 17014
+int.to.chr$ -- 7
+int.to.str$ -- 94
+missing$ -- 1217
+newline$ -- 294
+num.names$ -- 279
+pop$ -- 1700
+preamble$ -- 1
+purify$ -- 372
+quote$ -- 0
+skip$ -- 3944
+stack$ -- 0
+substring$ -- 2206
+swap$ -- 7016
+text.length$ -- 554
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 554
+warning$ -- 0
+while$ -- 267
+width$ -- 0
+write$ -- 934
+(There were 2 warnings)

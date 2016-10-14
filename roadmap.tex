@@ -308,7 +308,7 @@ Our analysis thus far has taken loss into consideration as a dominant form of er
 \item Mode-mismatch: When photons interfering at a beamsplitter are not perfectly indistinguishable, quantum interference is reduced. This arises whenever optical modes are not perfectly aligned upon interfering at a beamsplitter. In the limit of completely distinguishable photons, boson-samplers obey classical statistics, which are computationally easy to simulate.
 \end{itemize}
 
-To model the above, we must first employ a representation for photons, which accommodates their spatio-temporal structure. Ordinarily, we represent photons as the photon creation operator acting on the vacuum state, \mbox{$\ket{1}=\hat{a}^\dag\ket{0}$}. This is appropriate when dealing with indistinguishable photons. However, photons have rich spatio-temporal structure, and in these degrees of freedom photons are never perfectly indistinguishable. To capture this, we replace photon creation operators with mode operators \cite{bib:RohdeMauerer}, that represent photons in these additional degrees of freedom. In the temporal degree of freedom, for example,
+To model the above, we must first employ a representation for photons, which accommodates their spatio-temporal structure \cite{bib:RohdeRalph05}. Ordinarily, we represent photons as the photon creation operator acting on the vacuum state, \mbox{$\ket{1}=\hat{a}^\dag\ket{0}$}. This is appropriate when dealing with indistinguishable photons. However, photons have rich spatio-temporal structure, and in these degrees of freedom photons are never perfectly indistinguishable. To capture this, we replace photon creation operators with mode operators \cite{bib:RohdeMauererSilberhorn07}, that represent photons in these additional degrees of freedom. In the temporal degree of freedom, for example,
 \begin{align}
 \hat{A}^\dag_\psi = \int_{-\infty}^\infty \psi(t) \hat{a}^\dag(t) \,dt.
 \end{align}
@@ -480,38 +480,31 @@ Until now we have used our calculations to consider scenarios with relatively fe
 In Fig.~\ref{fig:moores_law} we plot historical trends in classical computing performance for both desktop PCs and top-end supercomputers. We extrapolate 5 years into the future, using an exponential fit, to predict the future progression of computer performance.
 
 \begin{figure}[!htb]
-%\includegraphics[width=\columnwidth]{moores_law}
+\includegraphics[width=\columnwidth]{moores_law}
 \caption{Extrapolation of desktop PC (bottom) and top-end supercomputer (top) performance over time, following an exponential fit, as predicted by Moore's Law.} \label{fig:moores_law}
 \end{figure}
 
-From our predictions for the performance of classical computing 5 years into the future, in Fig.~\ref{fig:outperform} we relate these predicted performances to the scattershot boson-sampling protocol, to estimate the number of photons required to match this performance. We further estimate the number of photons required to outperform these benchmarks by a factor of 10, taking us into the regime of post-classical computation.
-
-\begin{figure}[!htb]
-%\includegraphics[width=\columnwidth]{outperform}
-\caption{Performance of scattershot boson-sampling, showing data-points coinciding with our expectations for desktop PC and supercomputer performance in 5 years, as well as exceeding these anticipated performances by a factor of 10, which we use as a benchmark for the \emph{post-classical era}.} \label{fig:outperform}
-\end{figure}
-
-The number of photons required for these different benchmarks are summarised in Tab.~\ref{tab:benchmark_outperform}
+From our predictions for the performance of classical computing 5 years into the future, we relate these predictions to the scattershot boson-sampling protocol, to estimate the number of photons required to match this performance. We further estimate the number of photons required to outperform these benchmarks by a factor of 10, taking us into the regime of post-classical computation. The number of photons required for these different benchmarks are summarised in Tab.~\ref{tab:benchmark_outperform}.
 
 \begin{table*}[!htb]
 \begin{tabular}{|c|c|c|c|c|}
 \hline
-Classical computer in 5 years & Classical FLOPS & Single-photon efficiency ($\eta$) & Photon-number ($n$) & Single-photon fidelity ($F$) \\
+Classical computer in 5 years & Classical FLOPS & Single-photon efficiency ($\eta$) & Photon-number ($n$) & Single-photon fidelity ($F_\mathrm{in}$) \\
 \hline
 \hline
-Desktop PC & . & 99\% & . & . \\
- & & 99.9\% & . & . \\
+Desktop PC & $6.9\times 10^{10}$ & 99\% & 3 & 0.9826 \\
+ & & 99.9\% & 3 & 0.9826 \\
 \hline
-Desktop PC (10x) & . & 99\% & . & . \\
- & & 99.9\% & . & . \\
+Desktop PC (10x) & $6.9\times 10^{11}$ & 99\% & 5 & 0.9895 \\
+ & & 99.9\% & 5 & 0.9895 \\
 \hline
-Supercomputer & . & 99\% & . & . \\
- & & 99.9\% & . & . \\
+Supercomputer & $2.0\times 10^{18}$ & 99\% & 21 & 0.9975 \\
+ & & 99.9\% & 21 & 0.9975 \\
 \hline
-Supercomputer (10x) & . & 99\% & . & . \\
- & & 99.9\% & . & . \\
+Supercomputer (10x) & $2.0\times 10^{19}$ & 99\% & 24 & 0.9978 \\
+ & & 99.9\% & 23 & 0.9977 \\
 \hline
-\end{tabular} \caption{Comparison of the classical performance of different classical computers predicted in 5 year's time, their associated performance in FLOPS, respective number of photons required by a boson-sampler to match their performance.} \label{tab:benchmark_outperform}
+\end{tabular} \caption{Comparison of the classical performance of different classical computers predicted in 5 year's time, their associated performance in FLOPS, and respective photon-number required by a scattershot boson-sampler to match their performance. We assume the repetition rate of the boson-sampler to be an experimentally realistic \mbox{$R=76\mathrm{MHz}$}, and impose the requirement that the probability a given sample is taken from a boson-sampling distribution to be \mbox{$F_\mathrm{out}=0.9$}. \comment{Zuen: Please confirm that for your calculatins $\eta$ is the single-photon efficiency, not the net efficiency.}} \label{tab:benchmark_outperform}
 \end{table*}
 
 \section{Conclusion} \label{sec:conclusion}

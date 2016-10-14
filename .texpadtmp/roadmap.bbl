@@ -1,5 +1,4 @@
-\providecommand{\noopsort}[1]{}\providecommand{\singleletter}[1]{#1}%
-\begin{thebibliography}{89}
+\begin{thebibliography}{93}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -351,6 +350,20 @@
 \bibitem[{\citenamefont{Latmiral}(2015)}]{bib:37}
 \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Latmiral}},
   \bibinfo{journal}{arXiv:1511.08161}  (\bibinfo{year}{2015}).
+
+\bibitem[{\citenamefont{Rohde and Ralph}(2005)}]{bib:RohdeRalph05}
+\bibinfo{author}{\bibfnamefont{P.~P.} \bibnamefont{Rohde}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{T.~C.} \bibnamefont{Ralph}},
+  \bibinfo{journal}{Phys. Rev. A} \textbf{\bibinfo{volume}{71}},
+  \bibinfo{pages}{032320} (\bibinfo{year}{2005}).
+
+\bibitem[{\citenamefont{Rohde et~al.}(2007)\citenamefont{Rohde, Mauerer, and
+  Silberhorn}}]{bib:RohdeMauererSilberhorn07}
+\bibinfo{author}{\bibfnamefont{P.~P.} \bibnamefont{Rohde}},
+  \bibinfo{author}{\bibfnamefont{W.}~\bibnamefont{Mauerer}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Silberhorn}},
+  \bibinfo{journal}{New J. Phys.} \textbf{\bibinfo{volume}{9}},
+  \bibinfo{pages}{91} (\bibinfo{year}{2007}).
 
 \bibitem[{\citenamefont{Zhang et~al.}(2015)\citenamefont{Zhang, Huang, Wang,
   Liu, Li, and Guo}}]{bib:39}
@@ -1003,5 +1016,30 @@
   \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Senellart}},
   \bibnamefont{and} \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{White}},
   \bibinfo{journal}{arXiv:1603.00054}  (\bibinfo{year}{2016}{\natexlab{b}}).
+
+\bibitem[{\citenamefont{Bentivegna et~al.}(2014)\citenamefont{Bentivegna,
+  Spagnolo, Vitelli, Brod, Crespi, Flamini, Ramponi, Mataloni, Osellame,
+  Galv{\~a}o et~al.}}]{bib:90}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Bentivegna}},
+  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Spagnolo}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Vitelli}},
+  \bibinfo{author}{\bibfnamefont{D.~J.} \bibnamefont{Brod}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Crespi}},
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Flamini}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Ramponi}},
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Mataloni}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Osellame}},
+  \bibinfo{author}{\bibfnamefont{E.~F.} \bibnamefont{Galv{\~a}o}},
+  \bibnamefont{et~al.}, \bibinfo{journal}{Int. J. Quantum Inform.}
+  \textbf{\bibinfo{volume}{12}}, \bibinfo{pages}{1560028}
+  (\bibinfo{year}{2014}).
+
+\bibitem[{\citenamefont{Rahimi-Keshari
+  et~al.}(2015)\citenamefont{Rahimi-Keshari, Lund, and Ralph}}]{bib:91}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Rahimi-Keshari}},
+  \bibinfo{author}{\bibfnamefont{A.~P.} \bibnamefont{Lund}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{T.~C.} \bibnamefont{Ralph}},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{114}},
+  \bibinfo{pages}{060501} (\bibinfo{year}{2015}).
 
 \end{thebibliography}
