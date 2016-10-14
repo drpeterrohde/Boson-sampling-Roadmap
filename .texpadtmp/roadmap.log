@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.14)  14 OCT 2016 16:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.14)  15 OCT 2016 04:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -390,25 +390,21 @@ p/.texpadtmp/roadmap.out)
 \@outlinefile=\write3
 \openout3 = `roadmap.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 46.
+LaTeX Font Info:    Try loading font information for U+msa on input line 86.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 46.
+LaTeX Font Info:    Try loading font information for U+msb on input line 86.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 46.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 86.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-
-Class revtex4 Warning: Assuming \noaffiliation for Authors after me.
-
-
 (/Users/peterrohde/OneDrive/Documents/Publications/GitHub/Boson-sampling-Roadma
 p/.texpadtmp/roadmap.toc
 Overfull \hbox (3.50012pt too wide) detected at line 17
@@ -417,7 +413,7 @@ Overfull \hbox (3.50012pt too wide) detected at line 17
 
 
 Overfull \hbox (3.50012pt too wide) detected at line 18
- \OT1/cmr/m/n/8 11
+ \OT1/cmr/m/n/8 12
  []
 
 
@@ -442,7 +438,7 @@ Overfull \hbox (3.50012pt too wide) detected at line 22
 
 
 Overfull \hbox (3.50012pt too wide) detected at line 23
- \OT1/cmr/m/n/8 13
+ \OT1/cmr/m/n/8 14
  []
 
 
@@ -462,7 +458,7 @@ Overfull \hbox (3.50012pt too wide) detected at line 26
 
 
 Overfull \hbox (3.50012pt too wide) detected at line 27
- \OT1/cmr/m/n/8 14
+ \OT1/cmr/m/n/8 15
  []
 
 
@@ -487,7 +483,7 @@ Overfull \hbox (3.50012pt too wide) detected at line 31
 
 
 Overfull \hbox (3.50012pt too wide) detected at line 32
- \OT1/cmr/m/n/8 15
+ \OT1/cmr/m/n/8 16
  []
 
 
@@ -512,7 +508,7 @@ Overfull \hbox (3.50012pt too wide) detected at line 37
 
 
 Overfull \hbox (3.50012pt too wide) detected at line 38
- \OT1/cmr/m/n/8 18
+ \OT1/cmr/m/n/8 19
  []
 
 
@@ -535,204 +531,213 @@ Overfull \hbox (3.50012pt too wide) detected at line 41
 \openout4 = `roadmap.toc'.
 
  [1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<model.pdf, id=247, 597.23125pt x 290.82452pt>
+<model.pdf, id=246, 597.23125pt x 290.82452pt>
 File: model.pdf Graphic file (type pdf)
  <use model.pdf>
-Package pdftex.def Info: model.pdf used on input line 64.
+Package pdftex.def Info: model.pdf used on input line 104.
 (pdftex.def)             Requested size: 246.0pt x 119.78908pt.
  [2 <./model.pdf>]
 
-Package natbib Warning: Citation `???' on page 3 undefined on input line 96.
+Package natbib Warning: Citation `???' on page 3 undefined on input line 136.
 
-<curves_1.pdf, id=318, 845.1575pt x 420.93596pt>
+[3] <curves_1.pdf, id=337, 845.1575pt x 420.93596pt>
 File: curves_1.pdf Graphic file (type pdf)
  <use curves_1.pdf>
-Package pdftex.def Info: curves_1.pdf used on input line 121.
+Package pdftex.def Info: curves_1.pdf used on input line 161.
 (pdftex.def)             Requested size: 246.0pt x 122.5179pt.
- [3]
-
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 126.
 
 <space_encoding.pdf, id=341, 845.1575pt x 198.40384pt>
 File: space_encoding.pdf Graphic file (type pdf)
 
 <use space_encoding.pdf>
-Package pdftex.def Info: space_encoding.pdf used on input line 144.
+Package pdftex.def Info: space_encoding.pdf used on input line 184.
 (pdftex.def)             Requested size: 246.0pt x 57.74754pt.
  [4 <./curves_1.pdf, page is rotated 270 degrees> <./space_encoding.pdf, page i
 s rotated 270 degrees>]
 <loop_arch.pdf, id=387, 232.75194pt x 133.32443pt>
 File: loop_arch.pdf Graphic file (type pdf)
  <use loop_arch.pdf>
-Package pdftex.def Info: loop_arch.pdf used on input line 155.
+Package pdftex.def Info: loop_arch.pdf used on input line 195.
 (pdftex.def)             Requested size: 172.19925pt x 98.63818pt.
 
 <curves_2.pdf, id=393, 845.1575pt x 426.53622pt>
 File: curves_2.pdf Graphic file (type pdf)
  <use curves_2.pdf>
-Package pdftex.def Info: curves_2.pdf used on input line 174.
+Package pdftex.def Info: curves_2.pdf used on input line 214.
 (pdftex.def)             Requested size: 246.0pt x 124.14792pt.
- [5 <./loop_arch.pdf> <./curves_2.pdf, page is rotated 270 degrees>]
-<microwave.pdf, id=455, 597.23125pt x 389.1836pt>
+
+<microwave.pdf, id=399, 597.23125pt x 389.1836pt>
 File: microwave.pdf Graphic file (type pdf)
  <use microwave.pdf>
-Package pdftex.def Info: microwave.pdf used on input line 183.
+Package pdftex.def Info: microwave.pdf used on input line 223.
 (pdftex.def)             Requested size: 246.0pt x 160.30267pt.
- [6 <./microwave.pdf>] <curves_loss.pdf, id=521, 845.1575pt x 424.68985pt>
-File: curves_loss.pdf Graphic file (type pdf)
+ [5 <./loop_arch.pdf>]
 
-<use curves_loss.pdf>
-Package pdftex.def Info: curves_loss.pdf used on input line 221.
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 226.
+
+[6 <./curves_2.pdf, page is rotated 270 degrees> <./microwave.pdf>]
+<curves_loss.pdf, id=519, 845.1575pt x 424.68985pt>
+File: curves_loss.pdf Graphic file (type pdf)
+ <use curves_loss.pdf>
+Package pdftex.def Info: curves_loss.pdf used on input line 261.
 (pdftex.def)             Requested size: 246.0pt x 123.6105pt.
 
-<scattershot_model.pdf, id=537, 597.23125pt x 275.91772pt>
+<scattershot_model.pdf, id=535, 597.23125pt x 275.91772pt>
 File: scattershot_model.pdf Graphic file (type pdf)
 
 <use scattershot_model.pdf>
-Package pdftex.def Info: scattershot_model.pdf used on input line 234.
+Package pdftex.def Info: scattershot_model.pdf used on input line 274.
 (pdftex.def)             Requested size: 246.0pt x 113.64905pt.
- [7 <./curves_loss.pdf, page is rotated 270 degrees> <./scattershot_model.pdf>]
+ [7 <./curves_loss.pdf, page is rotated 270 degrees>]
 
-<curve_scattershot.pdf, id=613, 597.23125pt x 599.94727pt>
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 279.
+
+<curve_scattershot.pdf, id=581, 597.23125pt x 599.94727pt>
 File: curve_scattershot.pdf Graphic file (type pdf)
 
 <use curve_scattershot.pdf>
-Package pdftex.def Info: curve_scattershot.pdf used on input line 264.
+Package pdftex.def Info: curve_scattershot.pdf used on input line 304.
 (pdftex.def)             Requested size: 123.0pt x 123.55756pt.
- [8 <./curve_scattershot.pdf>]
-Underfull \hbox (badness 1137) in paragraph at lines 276--277
+ [8 <./scattershot_model.pdf> <./curve_scattershot.pdf>]
+Underfull \hbox (badness 1137) in paragraph at lines 316--317
 []\OT1/cmr/m/n/10 When the de-tec-tors are per-fect but non-number-
  []
 
 <SBS_pair_gen.pdf, id=641, 597.23125pt x 384.87117pt>
 File: SBS_pair_gen.pdf Graphic file (type pdf)
  <use SBS_pair_gen.pdf>
-Package pdftex.def Info: SBS_pair_gen.pdf used on input line 287.
+Package pdftex.def Info: SBS_pair_gen.pdf used on input line 327.
 (pdftex.def)             Requested size: 246.0pt x 158.5264pt.
 
 <SBS_eff.pdf, id=643, 845.1575pt x 571.46819pt>
 File: SBS_eff.pdf Graphic file (type pdf)
  <use SBS_eff.pdf>
-Package pdftex.def Info: SBS_eff.pdf used on input line 296.
+Package pdftex.def Info: SBS_eff.pdf used on input line 336.
 (pdftex.def)             Requested size: 369.0pt x 249.51096pt.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 306.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 346.
 
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 306.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 346.
 
-Underfull \hbox (badness 1331) in paragraph at lines 306--307
+Underfull \hbox (badness 1331) in paragraph at lines 346--347
  []\OT1/cmr/m/n/10 Source time-jitter: This is caused by clas-si-cal
  []
 
-
-Underfull \hbox (badness 1694) in paragraph at lines 308--309
+[9 <./SBS_pair_gen.pdf>]
+Underfull \hbox (badness 1694) in paragraph at lines 348--349
  \OT1/cmr/m/n/10 pletely dis-tin-guish-able pho-tons, boson-samplers
  []
 
-[9 <./SBS_pair_gen.pdf>] [10 <./SBS_eff.pdf, page is rotated 270 degrees>]
-<fidelity.pdf, id=692, 361.35pt x 380.42125pt>
+[10 <./SBS_eff.pdf, page is rotated 270 degrees>]
+<fidelity.pdf, id=689, 361.35pt x 380.42125pt>
 File: fidelity.pdf Graphic file (type pdf)
  <use fidelity.pdf>
-Package pdftex.def Info: fidelity.pdf used on input line 368.
+Package pdftex.def Info: fidelity.pdf used on input line 408.
 (pdftex.def)             Requested size: 246.0pt x 258.98486pt.
 
 
 Package natbib Warning: Citation `bib:MotesScal' on page 11 undefined on input 
-line 378.
+line 418.
 
 [11 <./fidelity.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 388--389
+Underfull \hbox (badness 10000) in paragraph at lines 428--429
 \OT1/cmr/m/n/10 Additionally, so-called quasi-phase-matching in a
  []
 
-
-Underfull \hbox (badness 1448) in paragraph at lines 404--405
+[12]
+Underfull \hbox (badness 1448) in paragraph at lines 444--445
 []\OT1/cmr/m/n/10 Furthermore, long streams of thou-sands of near-
  []
 
 
-Underfull \hbox (badness 1490) in paragraph at lines 404--405
+Underfull \hbox (badness 1490) in paragraph at lines 444--445
 \OT1/cmr/m/n/10 There the two-photon in-ter-fer-ence vis-i-bil-ity slightly
  []
 
-[12] [13]
-Underfull \hbox (badness 1721) in paragraph at lines 446--447
+[13]
+Underfull \hbox (badness 1721) in paragraph at lines 486--487
 []\OT1/cmr/m/n/10 Due to the ultra-low loss of sin-gle mode fi-bres
  []
 
 
-Underfull \hbox (badness 1728) in paragraph at lines 450--451
+Underfull \hbox (badness 1728) in paragraph at lines 490--491
 []\OT1/cmr/m/n/10 As men-tioned above, dis-crete bulk-optics cir-cuits
  []
 
 
-Underfull \hbox (badness 1132) in paragraph at lines 456--457
+Underfull \hbox (badness 1132) in paragraph at lines 496--497
 \OT1/cmr/m/n/10 photon-added or -subtracted squeezed states ([][]Ol-son
  []
 
 [14]
-Underfull \hbox (badness 1831) in paragraph at lines 472--473
+Underfull \hbox (badness 1831) in paragraph at lines 512--513
 []\OT1/cmr/m/n/10 Titanium su-per-con-duct-ing tran-si-tion edge sen-sors
  []
 
-<moores_law.pdf, id=980, 638.385pt x 484.81125pt>
+[15] <moores_law.pdf, id=989, 638.385pt x 484.81125pt>
 File: moores_law.pdf Graphic file (type pdf)
  <use moores_law.pdf>
-Package pdftex.def Info: moores_law.pdf used on input line 483.
+Package pdftex.def Info: moores_law.pdf used on input line 523.
 (pdftex.def)             Requested size: 246.0pt x 186.81935pt.
- [15]
-Underfull \hbox (badness 3386) in paragraph at lines 520--521
+
+<moores_super.pdf, id=993, 628.3089pt x 496.41347pt>
+File: moores_super.pdf Graphic file (type pdf)
+ <use moores_super.pdf>
+Package pdftex.def Info: moores_super.pdf used on input line 553.
+(pdftex.def)             Requested size: 246.0pt x 194.35793pt.
+
+Underfull \hbox (badness 3386) in paragraph at lines 567--568
 []\OT1/cmr/m/n/10 The anal-y-sis pre-sented here pro-vides an ini-tial
  []
 
-[16 <./moores_law.pdf>] <SNR.pdf, id=1034, 427.5975pt x 404.51125pt>
+[16 <./moores_law.pdf> <./moores_super.pdf>]
+<SNR.pdf, id=1079, 427.5975pt x 404.51125pt>
 File: SNR.pdf Graphic file (type pdf)
-
-<use SNR.pdf>
-Package pdftex.def Info: SNR.pdf used on input line 533.
+ <use SNR.pdf>
+Package pdftex.def Info: SNR.pdf used on input line 580.
 (pdftex.def)             Requested size: 393.6015pt x 372.35237pt.
-
-Underfull \hbox (badness 3291) in paragraph at lines 577--579
+ [17]
+Underfull \hbox (badness 3291) in paragraph at lines 624--626
 \OT1/cmr/m/n/10 where the sub-script $\OML/cmm/m/it/10 t$ \OT1/cmr/m/n/10 in-di
 -cates the word ``total-
  []
 
-
-Underfull \hbox (badness 1043) in paragraph at lines 591--592
+[18 <./SNR.pdf>]
+Underfull \hbox (badness 1043) in paragraph at lines 638--639
 []\OT1/cmr/m/n/10 Therefore, when $\OML/cmm/m/it/10 n$ \OT1/cmr/m/n/10 co-in-ci
 -dence count-ing are both
  []
 
-[17]
 
-LaTeX Warning: Reference `whichOne' on page 18 undefined on input line 603.
+LaTeX Warning: Reference `whichOne' on page 19 undefined on input line 650.
 
 
-LaTeX Warning: Reference `whichOne' on page 18 undefined on input line 603.
+LaTeX Warning: Reference `whichOne' on page 19 undefined on input line 650.
 
-[18 <./SNR.pdf>]
-Underfull \hbox (badness 1215) in paragraph at lines 617--618
+
+Underfull \hbox (badness 1215) in paragraph at lines 664--665
 \OT1/cmr/m/n/10 achieve quan-tum supremacy with in-creas-ing pho-ton
  []
 
 
-Underfull \hbox (badness 2359) in paragraph at lines 622--623
+Underfull \hbox (badness 2359) in paragraph at lines 669--670
 []\OT1/cmr/m/n/10 When com-ing to the case with photon-number-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 622--623
+Underfull \hbox (badness 10000) in paragraph at lines 669--670
 \OT1/cmr/m/n/10 resolving de-tec-tors but with-out shut-ters, us-ing
  []
 
 
 (/Users/peterrohde/OneDrive/Documents/Publications/GitHub/Boson-sampling-Roadma
-p/.texpadtmp/roadmap.bbl
+p/.texpadtmp/roadmap.bbl [19]
 Underfull \hbox (badness 1895) in paragraph at lines 137--149
  \OT1/cmr/m/n/9 S. Un-sle-ber, C. Chen, H. Wang, Y.-M. He, et al.,
  []
@@ -742,7 +747,6 @@ Underfull \hbox (badness 1412) in paragraph at lines 223--236
  []\OT1/cmr/m/n/9 M. Hofheinz, H. Wang, M. Ans-mann, R. C. Bial-czak,
  []
 
-[19]
 Missing character: There is no ¡ in font cmr9!
 Missing character: There is no ¯ in font cmr9!
 
@@ -754,12 +758,11 @@ Missing character: There is no ¡ in font cmr9!
 Missing character: There is no ¯ in font cmr9!
 Missing character: There is no ¡ in font cmr9!
 Missing character: There is no ¯ in font cmr9!
-
+[20]
 Underfull \hbox (badness 1968) in paragraph at lines 682--690
  []\OT1/cmr/m/n/9 K. Sakuma, S. Ishikawa, T. Shikata, T. Fukuda, and
  []
 
-[20]
 Missing character: There is no ¡ in font cmr9!
 Missing character: There is no ¯ in font cmr9!
 
@@ -783,13 +786,13 @@ Underfull \hbox (badness 2012) in paragraph at lines 940--952
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 646.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 646.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 693.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 693.
 [21]
 (/Users/peterrohde/OneDrive/Documents/Publications/GitHub/Boson-sampling-Roadma
 p/.texpadtmp/roadmap.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 646.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 646.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 693.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 693.
 Package rerunfilecheck Info: File `roadmap.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
 
@@ -798,13 +801,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 8664 strings out of 493117
- 121770 string characters out of 6135432
- 251934 words of memory out of 5000000
- 11796 multiletter control sequences out of 15000+600000
+ 8669 strings out of 493117
+ 121874 string characters out of 6135432
+ 270935 words of memory out of 5000000
+ 11799 multiletter control sequences out of 15000+600000
  15438 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 32i,11n,35p,1590b,635s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,11n,35p,1590b,602s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><
 /usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></u
@@ -836,10 +839,10 @@ e1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type
 public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmtt9.pfb>
 Output written on /Users/peterrohde/OneDrive/Documents/Publications/GitHub/Boso
-n-sampling-Roadmap/.texpadtmp/roadmap.pdf (21 pages, 3745721 bytes).
+n-sampling-Roadmap/.texpadtmp/roadmap.pdf (21 pages, 3812814 bytes).
 PDF statistics:
- 1226 PDF objects out of 1440 (max. 8388607)
- 1108 compressed objects within 12 object streams
- 210 named destinations out of 1000 (max. 500000)
- 375 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1271 PDF objects out of 1440 (max. 8388607)
+ 1144 compressed objects within 12 object streams
+ 211 named destinations out of 1000 (max. 500000)
+ 380 words of extra memory for PDF output out of 10000 (max. 10000000)
 
