@@ -175,10 +175,11 @@
   \textbf{\bibinfo{volume}{111}}, \bibinfo{pages}{130503}
   (\bibinfo{year}{2013}).
 
-\bibitem[{\citenamefont{Wikipedia}(2016)}]{bib:15}
-\bibinfo{author}{\bibnamefont{Wikipedia}}, \emph{\bibinfo{title}{Rejection
-  sampling --- wikipedia{,} the free encyclopedia}} (\bibinfo{year}{2016}),
-  \urlprefix\url{https://en.wikipedia.org/w/index.php?title=Rejection_sampling&oldid=739554960}.
+\bibitem[{\citenamefont{Fishman}(2013)}]{bib:fishman2013}
+\bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Fishman}},
+  \emph{\bibinfo{title}{Monte Carlo: concepts, algorithms, and applications}}
+  (\bibinfo{publisher}{Springer Science \& Business Media},
+  \bibinfo{year}{2013}).
 
 \bibitem[{\citenamefont{Ryser}(1963)}]{bib:16}
 \bibinfo{author}{\bibfnamefont{H.~J.} \bibnamefont{Ryser}},
